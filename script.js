@@ -40,6 +40,27 @@ const influencersData = [
         viewpoint: "警告 2026 年出現「指數高位震盪、個股劇烈波動」的結構性背離。密切關注中東地緣政治對油價與聯準會政策的影響。",
         stocks: ["GPU", "光連結 (CPO)", "伺服器基建"],
         entryPoint: "利用量化指標如<span class='highlight'> AAII（散戶情緒）與 NAAIM（投資經理敞口）</span>尋找賣點與避風港，在市場貪婪時保持冷靜。"
+    },
+    {
+        name: "Tom Lee (Fundstrat)",
+        style: "華爾街大多頭 / 宏觀量化",
+        viewpoint: "長線極度樂觀（標普年底上看7,700），但警告今年夏季可能有 15%-20% 的劇烈回調洗盤。看好『稀缺資產』。",
+        stocks: ["能源板塊", "基礎材料", "AI算力基建"],
+        entryPoint: "建議保留現金等待夏季<span class='highlight'> 15%-20% 回調</span>時，大力抄底能源與 AI 基建板塊。"
+    },
+    {
+        name: "Cathie Wood (ARK木頭姐)",
+        style: "破壞性創新 / 成長股",
+        viewpoint: "正在進行板塊輪動，減持舊半導體（如 AMD），大舉加倉國防科技、自動化與新一代 AI 硬體。",
+        stocks: ["NVDA", "KTOS", "CBRS", "AMZN"],
+        entryPoint: "六月初剛<span class='highlight'>砸六千萬美元買入 NVDA 30萬股</span>，並持續建倉國防科技 Kratos (KTOS) 與 Cerebras。"
+    },
+    {
+        name: "Jim Cramer (瘋狂錢坑)",
+        style: "華爾街名嘴 / 產業鏈分析",
+        viewpoint: "主打『AI 千層糕』(AI Layer Cake) 投資框架，從最底層的電力、晶片一路買到終端基礎設施。",
+        stocks: ["NVDA", "MU", "GEV", "VRT", "DELL"],
+        entryPoint: "強烈建議圍繞<span class='highlight'>電力與散熱基建 (GEV, VST, VRT)</span> 進行逢低佈局，因這是 AI 發展的絕對瓶頸。"
     }
 ];
 
