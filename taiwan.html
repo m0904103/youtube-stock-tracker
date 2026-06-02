@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台股網紅觀點追蹤 | 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <nav class="top-nav">
+        <a href="index.html" class="nav-btn">🇺🇸 美股觀點</a>
+        <a href="taiwan.html" class="nav-btn active">🇹🇼 台股觀點</a>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Taiwan Stocks Tracker</h1>
+            <p class="subtitle">2026.06</p>
+            <p>追蹤最具指標性的台股分析師與名嘴佈局策略</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="consensus-section">
+            <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                🔥 台股專屬：綜合推薦買入總表 (Ultimate Consensus)
+            </h2>
+            <div class="table-container">
+                <table class="consensus-table">
+                    <thead>
+                        <tr>
+                            <th>股票 / 板塊</th>
+                            <th>關注度 (提及次數)</th>
+                            <th>支持網紅 / 專家</th>
+                            <th>具體買入點位與核心理由</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="股票 / 板塊" class="ticker-cell">鴻海 (2317)</td>
+                            <td data-label="關注度"><span class="mentions hot">極度看好</span></td>
+                            <td data-label="支持網紅 / 專家">郭哲榮 (折折)</td>
+                            <td data-label="具體買入點位與核心理由"><strong>股東會行情：</strong>看好每年賺兩個股本的實力，給予 20 倍本益比預期，目標價上看 <strong>400 元</strong>。外資空單視為套利。</td>
+                        </tr>
+                        <tr>
+                            <td data-label="股票 / 板塊" class="ticker-cell">AI 代工 / 伺服器<br><small>(廣達 2382, 緯創 3231)</small></td>
+                            <td data-label="關注度"><span class="mentions high">高度關注</span></td>
+                            <td data-label="支持網紅 / 專家">老王</td>
+                            <td data-label="具體買入點位與核心理由"><strong>動能熱區：</strong>老王緊盯這兩檔的追價力道。建議嚴格執行紀律，收盤若跌破 <strong>5%</strong> 或跌破 5 日線即啟動減碼。</td>
+                        </tr>
+                        <tr>
+                            <td data-label="股票 / 板塊" class="ticker-cell">光通訊與軟體<br><small>(被動元件)</small></td>
+                            <td data-label="關注度"><span class="mentions">資金輪動</span></td>
+                            <td data-label="支持網紅 / 專家">股癌 (Gooaye)</td>
+                            <td data-label="具體買入點位與核心理由"><strong>尋找落後補漲：</strong>資金正在從硬體撤出，輪動至光通訊與軟體板塊，建議關注產業鏈訂單流向。</td>
+                        </tr>
+                        <tr>
+                            <td data-label="股票 / 板塊" class="ticker-cell">高股息與金融防禦<br><small>(國泰金 2882)</small></td>
+                            <td data-label="關注度"><span class="mentions">防禦配置</span></td>
+                            <td data-label="支持網紅 / 專家">阮慕驊, 權證小哥</td>
+                            <td data-label="具體買入點位與核心理由"><strong>除權息旺季：</strong>阮慕驊認為績優金融股受委屈，小哥則鎖定高殖利率與除權息行情的價差機會。</td>
+                        </tr>
+                        <tr>
+                            <td data-label="股票 / 板塊" class="ticker-cell">大盤避險策略</td>
+                            <td data-label="關注度"><span class="mentions hot">最高共識！</span></td>
+                            <td data-label="支持網紅 / 專家">阮慕驊, 股癌, 權證小哥, 郭哲榮</td>
+                            <td data-label="具體買入點位與核心理由"><strong>保留現金、拒絕槓桿：</strong>阮慕驊已將漲多持股 <strong>賣出 1/3</strong> 變現；小哥警告是「瘋子盤」；股癌與哲哲強烈呼籲切勿使用融資。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="grid" id="influencer-grid">
+            <!-- Cards will be injected by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 美股網紅觀點追蹤. 資料僅供參考，不構成投資建議。</p>
+    </footer>
+
+    <script src="taiwan-script.js"></script>
+</body>
+</html>
