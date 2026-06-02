@@ -122,6 +122,61 @@ h1 {
     padding-bottom: 80px;
 }
 
+.consensus-section {
+    margin-bottom: 50px;
+    background: linear-gradient(145deg, rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1));
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.consensus-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.consensus-card {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.consensus-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.ticker {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(to right, #34d399, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+}
+
+.mentions {
+    font-size: 0.85rem;
+    color: #fbcfe8;
+    background: rgba(236, 72, 153, 0.2);
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.reason {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
 .card {
     background: var(--card-bg);
     backdrop-filter: blur(16px);
