@@ -65,9 +65,9 @@ const influencersData = [
     {
         name: "股癌 Gooaye (謝孟恭)",
         style: "產業趨勢 / 散戶第一指標",
-        viewpoint: "堅持不報牌。近期觀察資金輪動至 ODM、光通訊與軟體板塊。強烈警告市場融資開槓桿過熱的風險。",
-        stocks: ["軟體板塊(IGV)", "光通訊", "被動元件"],
-        entryPoint: "不提供具體買點，強調<span class='highlight'>了解產業邏輯與控管槓桿風險</span>，提醒留意大盤修正的健康性。"
+        viewpoint: "堅持不直接報牌，但透過產業鏈推導資金流向。近期重點觀察軟體 SaaS 族群的復甦，以及光通訊與被動元件的訂單動態。",
+        stocks: ["CRM", "NOW", "SNOW", "OKTA", "光通訊板塊"],
+        entryPoint: "觀察到資金正在輪動至跌深的軟體股 <span class='highlight'>(如 Salesforce, ServiceNow, Snowflake)</span>，提醒留意大盤融資過高的修正風險。"
     },
     {
         name: "Dan Niles (華爾街頂級科技投資人)",
