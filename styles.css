@@ -163,7 +163,7 @@ h1 {
     line-height: 1.5;
 }
 
-.consensus-table tr:hover td {
+.consensus-table tr:hover {
     background: rgba(255, 255, 255, 0.03);
 }
 
