@@ -204,6 +204,13 @@ const twInfluencersData = [
         viewpoint: "以「精準研判趨勢轉折」聞名，近期對 6 月台股走勢持極度謹慎態度，屢次警告崩盤風險。",
         stocks: ["高空反轉股", "均線扣抵位置"],
         entryPoint: "強烈提醒留意大盤波動與崩盤風險。建議透過 <span class='highlight'>均線與扣抵位置</span> 尋找空點或避開過熱標的，作風犀利兩極。"
+    },
+    {
+        name: "股海老船長 (王軒中)",
+        style: "系統指標 / 光通訊",
+        viewpoint: "主打「王冠AI頂級智能指標系統」，強調減少人性情緒干擾。近期極度看好 CPO 光通訊族群，喊出「CPO非漲不可」。",
+        stocks: ["上詮 (3363)", "CPO 概念股"],
+        entryPoint: "利用專屬的 <span class='highlight'>智能指標系統</span> 輔助辨識多空趨勢，近期對上詮 (3363) 的法說與營收抱持強烈樂觀態度。"
     }
 ];
 
