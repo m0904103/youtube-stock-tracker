@@ -311,7 +311,49 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-@media (max-width: 768px) {
-    h1 { font-size: 2.2rem; }
-    .grid { grid-template-columns: 1fr; }
+@media screen and (max-width: 768px) {
+    .container { padding: 10px; }
+    header { padding: 40px 15px; }
+    header h1 { font-size: 2rem; }
+    header p { font-size: 1rem; padding: 0 10px; }
+    .consensus-section { padding: 20px 15px; border-radius: 16px; }
+    .consensus-section h2 { font-size: 1.3rem; line-height: 1.4; }
+
+    /* Convert Table to Premium Mobile Cards */
+    .table-container { border: none; overflow-x: hidden; }
+    .consensus-table { min-width: 100%; background: transparent; }
+    .consensus-table thead { display: none; }
+    .consensus-table tbody, .consensus-table tr, .consensus-table td { display: block; width: 100%; }
+    
+    .consensus-table tr {
+        margin-bottom: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 20px 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .consensus-table td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 12px 0;
+        text-align: left;
+    }
+    .consensus-table td:last-child { border-bottom: none; padding-bottom: 0; }
+    
+    .consensus-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 6px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    .ticker-cell { font-size: 1.5rem; padding-top: 0; }
+
+    /* Influencer Grid Optimization */
+    .grid { grid-template-columns: 1fr; gap: 15px; }
+    .card { padding: 20px; border-radius: 16px; }
+    .influencer-name { font-size: 1.4rem; }
 }
