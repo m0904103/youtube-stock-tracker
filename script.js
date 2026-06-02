@@ -61,6 +61,27 @@ const influencersData = [
         viewpoint: "主打『AI 千層糕』(AI Layer Cake) 投資框架，從最底層的電力、晶片一路買到終端基礎設施。",
         stocks: ["NVDA", "MU", "GEV", "VRT", "DELL"],
         entryPoint: "強烈建議圍繞<span class='highlight'>電力與散熱基建 (GEV, VST, VRT)</span> 進行逢低佈局，因這是 AI 發展的絕對瓶頸。"
+    },
+    {
+        name: "股癌 Gooaye (謝孟恭)",
+        style: "產業趨勢 / 散戶第一指標",
+        viewpoint: "堅持不報牌。近期觀察資金輪動至 ODM、光通訊與軟體板塊。強烈警告市場融資開槓桿過熱的風險。",
+        stocks: ["軟體板塊(IGV)", "光通訊", "被動元件"],
+        entryPoint: "不提供具體買點，強調<span class='highlight'>了解產業邏輯與控管槓桿風險</span>，提醒留意大盤修正的健康性。"
+    },
+    {
+        name: "Dan Niles (華爾街頂級科技投資人)",
+        style: "科技股分析 / 宏觀避險",
+        viewpoint: "看好 Agentic AI (代理型AI) 應用端，但預警 2027 年初 AI 泡沫可能迎來 30%-50% 的破裂與重置。",
+        stocks: ["AAPL", "AMZN", "CSCO", "BA"],
+        entryPoint: "看好<span class='highlight'> AAPL 與 AMZN </span>等科技巨頭的應用層落地，同時佈局波音 (BA) 等轉機股。"
+    },
+    {
+        name: "JC財經女孩 Jenny",
+        style: "財報基本面 / 價值投資",
+        viewpoint: "以系統性邏輯與財報數據判斷公司護城河，近期深度覆盤 COMPUTEX 展會與輝達、台積電的前景。",
+        stocks: ["NVDA", "TSM", "DELL", "QCOM", "MU"],
+        entryPoint: "依據<span class='highlight'>最新季報與競爭優勢</span>評估，不盲從市場追高，尋找具有長期護城河的優質科技股。"
     }
 ];
 
