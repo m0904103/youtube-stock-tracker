@@ -3,92 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股網紅觀點追蹤 | 2026</title>
+    <title>股市網紅觀點追蹤 | 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background-blobs">
+    <div class="background-animation">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
         <div class="blob blob-3"></div>
     </div>
+    
     <nav class="top-nav">
-        <a href="index.html" class="nav-btn active">🇺🇸 美股觀點</a>
-        <a href="taiwan.html" class="nav-btn">🇹🇼 台股觀點</a>
+        <button id="btn-us" class="nav-btn active" onclick="switchTab('us')">🇺🇸 美股觀點</button>
+        <button id="btn-tw" class="nav-btn" onclick="switchTab('tw')">🇹🇼 台股觀點</button>
     </nav>
 
     <header>
         <div class="container">
-            <h1>Influencer Stock Tracker <span class="badge">2026.06</span></h1>
-            <p class="subtitle">追蹤您最愛的六位美股 YouTuber 最新觀點與佈局策略</p>
+            <h1 id="page-title">US Stocks Tracker</h1>
+            <p class="subtitle">2026.06</p>
+            <p id="page-desc">追蹤您最愛的美股 YouTuber 最新觀點與佈局策略</p>
         </div>
     </header>
 
-    <main class="container">
-        <section class="consensus-section">
-            <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                🔥 全球與中文網紅：綜合推薦買入總表 (Ultimate Consensus)
-            </h2>
-            <div class="table-container">
-                <table class="consensus-table">
-                    <thead>
-                        <tr>
-                            <th>股票 / 板塊</th>
-                            <th>關注度 (提及次數)</th>
-                            <th>支持網紅 / 專家</th>
-                            <th>具體買入點位與核心理由</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="股票 / 板塊" class="ticker-cell">NVDA (輝達)</td>
-                            <td data-label="關注度"><span class="mentions hot">7 次 (極高)</span></td>
-                            <td data-label="支持網紅 / 專家">小左, 老李, NaNa, 游庭皓, Cathie Wood, Jim Cramer, Jenny</td>
-                            <td data-label="具體買入點位與核心理由"><strong>全球絕對核心：</strong>木頭姐(Cathie)大買。Jenny 從財報面確認其基本面；中文網紅建議等待 <strong>$215-$218</strong> 的技術支撐位進場，切勿追高。</td>
-                        </tr>
-                        <tr>
-                            <td data-label="股票 / 板塊" class="ticker-cell">MU (美光)</td>
-                            <td data-label="關注度"><span class="mentions hot">4 次 (極高)</span></td>
-                            <td data-label="支持網紅 / 專家">小左, 老李, Jim Cramer, Jenny</td>
-                            <td data-label="具體買入點位與核心理由"><strong>AI 記憶體超級週期：</strong>老李曾於 <strong>$90</strong> 附近建倉，Cramer 與 Jenny 亦強烈看好其數據中心需求，建議逢低加倉。</td>
-                        </tr>
-                        <tr>
-                            <td data-label="股票 / 板塊" class="ticker-cell">台積電 (TSM) / 供應鏈</td>
-                            <td data-label="關注度"><span class="mentions high">3 次 (高)</span></td>
-                            <td data-label="支持網紅 / 專家">游庭皓, 股癌(Gooaye), Jenny</td>
-                            <td data-label="具體買入點位與核心理由"><strong>半導體循環基石：</strong>游庭皓看好波段；股癌密切追蹤 ODM/EMS 與光通訊板塊的資金輪動，Jenny 則從競爭優勢切入看好 TSM。</td>
-                        </tr>
-                        <tr>
-                            <td data-label="股票 / 板塊" class="ticker-cell">電力與能源基建<br><small>(GEV, VST, CEG)</small></td>
-                            <td data-label="關注度"><span class="mentions high">3 次 (高)</span></td>
-                            <td data-label="支持網紅 / 專家">Tom Lee, Jim Cramer, 美股研究社</td>
-                            <td data-label="具體買入點位與核心理由"><strong>AI 的底層瓶頸：</strong>華爾街極度看好！Tom Lee 與 Cramer 認為電力與能源是下半年的「稀缺資產」，建議作為 AI 佈局的防禦對沖。</td>
-                        </tr>
-                        <tr>
-                            <td data-label="股票 / 板塊" class="ticker-cell">科技巨頭 / 軟體<br><small>(AAPL, AMZN, CRM, SNOW)</small></td>
-                            <td data-label="關注度"><span class="mentions">2 次 (中)</span></td>
-                            <td data-label="支持網紅 / 專家">Dan Niles, 股癌(Gooaye)</td>
-                            <td data-label="具體買入點位與核心理由"><strong>資金外溢效應：</strong>Dan Niles 看好 AAPL 與 AMZN 的應用層落地；股癌近期則明確點名觀察跌深的軟體股 <strong>CRM (Salesforce), NOW, SNOW, OKTA</strong> 的資金輪動機會。</td>
-                        </tr>
-                        <tr>
-                            <td data-label="股票 / 板塊" class="ticker-cell">防守/大盤策略</td>
-                            <td data-label="關注度"><span class="mentions">宏觀風險警告</span></td>
-                            <td data-label="支持網紅 / 專家">Tom Lee, Dan Niles, 股癌, 尼可拉斯楊</td>
-                            <td data-label="具體買入點位與核心理由"><strong>準備現金與控管槓桿：</strong>Tom Lee 預警夏季有 <strong>15%-20% 回調</strong>；Dan Niles 警告 2027 可能迎來 AI 泡沫破裂；股癌亦提醒市場融資過熱需注意風險。</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+    <!-- ================= 美股區塊 (US) ================= -->
+    <div id="section-us" class="tab-content active">
+        <main class="container">
+            <section class="consensus-section">
+                <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    🔥 美股：綜合推薦買入總表 (Ultimate Consensus)
+                </h2>
+                <div class="table-container">
+                    <table class="consensus-table">
+                        <thead>
+                            <tr>
+                                <th>股票 / 板塊</th>
+                                <th>關注度 (提及次數)</th>
+                                <th>支持網紅 / 專家</th>
+                                <th>具體買入點位與核心理由</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">NVDA (輝達)</td>
+                                <td data-label="關注度"><span class="mentions hot">7 次 (極高)</span></td>
+                                <td data-label="支持網紅 / 專家">小左, 老李, NaNa, 游庭皓, Cathie Wood, Jim Cramer, Jenny</td>
+                                <td data-label="具體買入點位與核心理由"><strong>全球絕對核心：</strong>木頭姐(Cathie)大買。Jenny 從財報面確認其基本面；中文網紅建議等待 <strong>$215-$218</strong> 的技術支撐位進場，切勿追高。</td>
+                            </tr>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">MU (美光)</td>
+                                <td data-label="關注度"><span class="mentions hot">4 次 (極高)</span></td>
+                                <td data-label="支持網紅 / 專家">小左, 老李, Jim Cramer, Jenny</td>
+                                <td data-label="具體買入點位與核心理由"><strong>AI 記憶體超級週期：</strong>老李曾於 <strong>$90</strong> 附近建倉，Cramer 與 Jenny 亦強烈看好其數據中心需求，建議逢低加倉。</td>
+                            </tr>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">台積電 (TSM) / 供應鏈</td>
+                                <td data-label="關注度"><span class="mentions high">3 次 (高)</span></td>
+                                <td data-label="支持網紅 / 專家">游庭皓, 股癌(Gooaye), Jenny</td>
+                                <td data-label="具體買入點位與核心理由"><strong>半導體循環基石：</strong>游庭皓看好波段；股癌密切追蹤 ODM/EMS 與光通訊板塊的資金輪動，Jenny 則從競爭優勢切入看好 TSM。</td>
+                            </tr>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">電力與能源基建<br><small>(GEV, VST, CEG)</small></td>
+                                <td data-label="關注度"><span class="mentions high">3 次 (高)</span></td>
+                                <td data-label="支持網紅 / 專家">Tom Lee, Jim Cramer, 美股研究社</td>
+                                <td data-label="具體買入點位與核心理由"><strong>AI 的底層瓶頸：</strong>華爾街極度看好！Tom Lee 與 Cramer 認為電力與能源是下半年的「稀缺資產」，建議作為 AI 佈局的防禦對沖。</td>
+                            </tr>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">科技巨頭 / 軟體<br><small>(AAPL, AMZN, CRM, SNOW)</small></td>
+                                <td data-label="關注度"><span class="mentions">2 次 (中)</span></td>
+                                <td data-label="支持網紅 / 專家">Dan Niles, 股癌(Gooaye)</td>
+                                <td data-label="具體買入點位與核心理由"><strong>資金外溢效應：</strong>Dan Niles 看好 AAPL 與 AMZN 的應用層落地；股癌近期則明確點名觀察跌深的軟體股 <strong>CRM (Salesforce), NOW, SNOW, OKTA</strong> 的資金輪動機會。</td>
+                            </tr>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">防守/大盤策略</td>
+                                <td data-label="關注度"><span class="mentions">宏觀風險警告</span></td>
+                                <td data-label="支持網紅 / 專家">Tom Lee, Dan Niles, 股癌, 尼可拉斯楊</td>
+                                <td data-label="具體買入點位與核心理由"><strong>準備現金與控管槓桿：</strong>Tom Lee 預警夏季有 <strong>15%-20% 回調</strong>；Dan Niles 警告 2027 可能迎來 AI 泡沫破裂；股癌亦提醒市場融資過熱需注意風險。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section class="influencers-section">
+                <div class="grid" id="influencers-grid-us">
+                    <!-- JS 自動注入 -->
+                </div>
+            </section>
+        </main>
+    </div>
 
-        <div class="grid" id="influencer-grid">
-            <!-- Cards will be injected by JavaScript -->
-        </div>
-    </main>
+    <!-- ================= 台股區塊 (TW) ================= -->
+    <div id="section-tw" class="tab-content" style="display: none;">
+        <main class="container">
+            <section class="consensus-section">
+                <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    🔥 台股：綜合推薦買入總表 (Ultimate Consensus)
+                </h2>
+                <div class="table-container">
+                    <table class="consensus-table">
+                        <thead>
+                            <tr>
+                                <th>股票 / 板塊</th>
+                                <th>關注度 (提及次數)</th>
+                                <th>支持網紅 / 專家</th>
+                                <th>具體買入點位與核心理由</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">台積電 (2330)</td>
+                                <td data-label="關注度"><span class="mentions hot">極度看好</span></td>
+                                <td data-label="支持網紅 / 專家">杜金龍, 郭哲榮, 權證小哥</td>
+                                <td data-label="具體買入點位與核心理由"><strong>護國神山：</strong>杜金龍精算合理價 <strong>1960~2000元</strong>，建議拉回買進。</td>
+                            </tr>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">鴻海 (2317)</td>
+                                <td data-label="關注度"><span class="mentions hot">極度看好</span></td>
+                                <td data-label="支持網紅 / 專家">郭哲榮 (折折), 塗敏峰</td>
+                                <td data-label="具體買入點位與核心理由"><strong>股東會行情：</strong>郭哲榮看好每年賺兩個股本的實力，給予 20 倍本益比預期，目標價上看 <strong>400 元</strong>。外資空單視為套利。</td>
+                            </tr>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">AI 代工 / 伺服器<br><small>(廣達 2382, 緯創 3231)</small></td>
+                                <td data-label="關注度"><span class="mentions high">高度關注</span></td>
+                                <td data-label="支持網紅 / 專家">老王, 陳龍</td>
+                                <td data-label="具體買入點位與核心理由"><strong>動能熱區：</strong>老王緊盯這兩檔的追價力道。建議嚴格執行紀律，收盤若跌破 <strong>5%</strong> 或跌破 5 日線即啟動減碼。陳龍則持續看好 AI 輪動。</td>
+                            </tr>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">高股息與金融防禦<br><small>(國泰金 2882)</small></td>
+                                <td data-label="關注度"><span class="mentions">防禦配置</span></td>
+                                <td data-label="支持網紅 / 專家">阮慕驊, 權證小哥, 獅公</td>
+                                <td data-label="具體買入點位與核心理由"><strong>除權息旺季：</strong>阮慕驊與獅公認為績優金融股受委屈，可搭配主動式 ETF 布局，小哥則鎖定高殖利率與除權息行情的價差機會。</td>
+                            </tr>
+                            <tr>
+                                <td data-label="股票 / 板塊" class="ticker-cell">大盤避險策略</td>
+                                <td data-label="關注度"><span class="mentions hot">最高共識！</span></td>
+                                <td data-label="支持網紅 / 專家">杜金龍, 獅公, 阮慕驊, 股癌, 權證小哥</td>
+                                <td data-label="具體買入點位與核心理由"><strong>保留現金、拒絕槓桿：</strong>杜金龍警告短線過熱將回檔 4000 點，建議現金 50%；阮慕驊已將漲多持股賣出 1/3；獅公提醒最後逃命波或買點抉擇；小哥警告是「瘋子盤」。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section class="influencers-section">
+                <div class="grid" id="influencers-grid-tw">
+                    <!-- JS 自動注入 -->
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer>
-        <p>&copy; 2026 美股網紅觀點追蹤. 資料僅供參考，不構成投資建議。</p>
+        <p>&copy; 2026 股市網紅觀點追蹤. 資料僅供參考，不構成投資建議。</p>
     </footer>
 
     <script src="script.js"></script>
