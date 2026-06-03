@@ -280,25 +280,6 @@ footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-siz
 }
 .refresh-btn:hover { background: rgba(255, 255, 255, 0.1); }
 
-/* Guide Modal Styles */
-.guide-modal-content { max-width: 650px; padding: 30px 40px; max-height: 85vh; overflow-y: auto; }
-.guide-modal-content::-webkit-scrollbar { width: 8px; }
-.guide-modal-content::-webkit-scrollbar-thumb { background: rgba(56, 189, 248, 0.4); border-radius: 10px; }
-.guide-body { color: var(--text-main); font-size: 0.95rem; line-height: 1.7; }
-.guide-body p { margin-bottom: 15px; color: var(--text-muted); }
-.guide-body h4 { color: var(--accent-1); font-size: 1.15rem; margin: 25px 0 10px; font-weight: 700; border-bottom: 1px solid rgba(56, 189, 248, 0.2); padding-bottom: 5px; }
-.guide-body ul { list-style-type: none; padding-left: 0; margin-bottom: 20px; }
-.guide-body li { position: relative; padding-left: 20px; margin-bottom: 12px; color: #cbd5e1; }
-.guide-body li::before { content: '⚡'; position: absolute; left: 0; top: 0; font-size: 0.85rem; color: var(--accent-2); }
-.guide-body strong { color: #fff; font-weight: 700; }
-.guide-conclusion { margin-top: 30px; background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10b981; padding: 15px; color: #34d399; font-weight: 700; border-radius: 0 12px 12px 0; }
-
-.guide-btn {
-    background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: var(--accent-1);
-    padding: 6px 12px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: all 0.3s;
-}
-.guide-btn:hover { background: var(--accent-1); color: #fff; box-shadow: 0 4px 10px rgba(56, 189, 248, 0.4); }
-
 /* FAB */
 .fab {
     position: fixed; bottom: 40px; right: 40px; width: 64px; height: 64px; border-radius: 50%;

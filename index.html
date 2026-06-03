@@ -163,68 +163,17 @@
         <div class="modal-content top-modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <h2 id="modal-title">🔥 戰情雷達</h2>
-            
-            <div class="modal-tabs">
-                <button id="modal-tab-hot" class="modal-tab-btn active" onclick="switchModalTab('hot')">🔥 綜合熱議</button>
-                <button id="modal-tab-daytrade" class="modal-tab-btn" onclick="switchModalTab('daytrade')">⚡ 短線當沖</button>
-            </div>
-
-            <div id="modal-body-hot" class="modal-body-section"></div>
-            <div id="modal-body-daytrade" class="modal-body-section" style="display: none;"></div>
-        </div>
-    </div>
-
-    <!-- 巨鯨當沖心法 Modal -->
-    <div id="guide-modal" class="modal">
-        <div class="modal-content guide-modal-content">
-            <span class="close-btn" onclick="closeGuideModal()">&times;</span>
-            <h2 id="modal-title" style="color: #fff; text-align: center; margin-bottom: 25px; font-size: 1.6rem; font-weight: 800; letter-spacing: -0.5px;">📖 巨鯨當沖 實戰篩選心法</h2>
-            <div class="guide-body">
-                <p>在台股市場中進行當沖交易，「選股」是決定勝負的第一步。當沖標的不能靠直覺盲目挑選，必須依循嚴格、量化且具備高度流動性與波動性的邏輯。以下為當沖老手的四大核心階段：</p>
-                
-                <h4>一、 盤前篩選：構建「高流動性與高波動」基礎池</h4>
-                <ul>
-                    <li><strong>成交量與流動性：</strong> 每日成交量需達 2,000 張以上，新手建議鎖定 3,000 張至 10 萬張的熱門標的。日成交金額大於 5,000 萬元。單次當沖總金額控制在單日總成交金額的 1% 到 2% 之內。</li>
-                    <li><strong>波動度與價差：</strong> 每日平均振幅必須在 3% 以上。交易摩擦成本約 0.3%~0.4%，振幅過小則無獲利空間。</li>
-                    <li><strong>排除危險標的：</strong> 盤前主動過濾「處置股」、「注意股」及「禁現沖名單」，防範全額交割或無法回補的風險。</li>
-                </ul>
-
-                <h4>二、 盤前新聞與題材分析：鎖定「族群連動」</h4>
-                <ul>
-                    <li><strong>掃描大新聞：</strong> 8:00-8:30 瀏覽國內外頭條及最新營收法說會。</li>
-                    <li><strong>族群連動效應：</strong> 資金會外溢，應理出題材中最強的「龍頭股」及潛在的「連動/補漲股」。</li>
-                </ul>
-
-                <h4>三、 開盤即時篩選與觀盤指標（黃金 30 分鐘）</h4>
-                <ul>
-                    <li><strong>避開極端開盤股：</strong> 開盤漲跌幅若超過 7% 應避免，防範鎖死漲跌停的斷頭風險。</li>
-                    <li><strong>跳空缺口與開盤價：</strong> 開盤價是日內「多空分界線」，強勢股會迅速脫離並站穩開盤價上方。</li>
-                    <li><strong>當沖比與爆量估算：</strong> 當沖比率超過 40% 代表資金高度聚集。早盤成交量暴增是極佳動能標的。</li>
-                </ul>
-
-                <h4>四、 盤中操作工具與交易轉折點判斷</h4>
-                <ul>
-                    <li><strong>當日均價線：</strong> 維持在均價線上代表多方占優，拉回不破可偏多；均線上壓制則偏空。</li>
-                    <li><strong>精準識破假突破：</strong> 假突破無接力買盤且留長上影線。真突破伴隨爆量，拉回測試時「量縮不破」。</li>
-                    <li><strong>量能衰竭口訣：</strong> 「空在爆量漲不動、買在爆量跌不動」。持續爆量卻不漲是放空點；急殺爆量不破底是做多點。</li>
-                </ul>
-
-                <h4>五、 實戰紀律與新手避坑指南</h4>
-                <ul>
-                    <li><strong>汰弱留強：</strong> 表現弱於大盤或無量整理應果斷抽回資金。</li>
-                    <li><strong>專注少數：</strong> 新手操作最好維持在 1 至 3 檔以內。</li>
-                    <li><strong>黃金時間：</strong> 9:00 至 12:30。12:30 後不建議開新部位。</li>
-                    <li><strong>開通信用戶避險：</strong> 先賣後買務必開立信用戶，以防漲停無法回補時可改融券留倉。</li>
-                    <li><strong>堅守停損：</strong> 絕對不凹單攤平，進場前決定好停損位置並嚴格執行。</li>
-                </ul>
-                <div class="guide-conclusion">這套 SOP 能幫助交易者避開冷門地雷，在當沖戰場中取得長期的期望值優勢。</div>
+            <div id="modal-body" class="top-list-container">
+                <!-- JS will inject top 5 here -->
             </div>
         </div>
     </div>
+
+
 
     <!-- Floating Action Button -->
     <button id="fab-top" class="fab" onclick="showTopStocks()">🏆</button>
 
-    <script src="script.js?v=11"></script>
+    <script src="script.js?v=12"></script>
 </body>
 </html>
