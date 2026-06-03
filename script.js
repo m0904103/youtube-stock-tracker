@@ -85,6 +85,7 @@ const usInfluencersData = [
     },
     {
         name: "Keith Gill (Roaring Kitty)",
+        isDayTrader: true,
         style: "草根巨鯨 / 事件驅動",
         viewpoint: "以深度的價值分析與強大的社群迷因號召力，策動散戶資金與華爾街空頭對作。展現出跨板塊的事件驅動與演算法前置交易效應。",
         stocks: ["GME (遊戲驛站)", "CHWY (Chewy)"],
@@ -200,6 +201,7 @@ const twInfluencersData = [
     },
     {
         name: "權證小哥",
+        isDayTrader: true,
         style: "籌碼分析 / 雙刀戰法",
         viewpoint: "大盤屢創新高且強勢股全面亮燈，已進入「瘋子盤」。提醒千萬不能盲目追高，必須看懂主力動向與資金流向。",
         stocks: ["陽明 (2609)", "長榮 (2603)", "世芯-KY (3661)"],
@@ -291,6 +293,7 @@ const twInfluencersData = [
     },
     {
         name: "張濬安 (航海王)",
+        isDayTrader: true,
         style: "散戶巨鯨 / 極致槓桿",
         viewpoint: "打破法人階級壁壘的傳奇。精準預判總經趨勢與黑天鵝事件，利用全市場、全工具（個股期、墊丙）進行極端槓桿押注。",
         stocks: ["長榮 (2603)", "陽明 (2609)", "萬海 (2615)"],
@@ -298,6 +301,7 @@ const twInfluencersData = [
     },
     {
         name: "菲比斯 (菲神)",
+        isDayTrader: true,
         style: "籌碼定價 / 價值投機",
         viewpoint: "提倡「獲利金三角」：從宏觀事件驅動尋找實體經濟供需失衡，並結合股權籌碼結構的流動性溢價進行投機避險。",
         stocks: ["長榮航 (2618)", "華航 (2610)", "群創 (3481)"],
@@ -305,6 +309,7 @@ const twInfluencersData = [
     },
     {
         name: "巨人傑",
+        isDayTrader: true,
         style: "高頻當沖 / 微觀流動性",
         viewpoint: "將台股當沖推向物理極限（月交易量800億）。操作邏輯脫離主觀預測，更接近造市商與統計套利。",
         stocks: ["迎廣 (6117)", "所羅門 (2359)", "昆盈 (2365)"],
@@ -312,6 +317,7 @@ const twInfluencersData = [
     },
     {
         name: "葛瀚中 (Mgk)",
+        isDayTrader: true,
         style: "短線周轉 / 投機社會學",
         viewpoint: "主張「富人靠報酬率，窮人靠周轉率」。將投機交易昇華為年輕世代打破階級固化的實質抗爭途徑。",
         stocks: ["士電 (1503)", "奇鋐 (3017)"],
@@ -430,17 +436,17 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(showTopStocks, 1000);
 });
 
-// 計算排行邏輯
-function calculateTopStocks(data) {
+// 計算排行邏輯 (支援過濾)
+function calculateTopStocks(data, filterFn = null) {
     const counts = {};
-    data.forEach(inf => {
+    const filteredData = filterFn ? data.filter(filterFn) : data;
+    filteredData.forEach(inf => {
         inf.stocks.forEach(stock => {
             counts[stock] = (counts[stock] || 0) + 1;
         });
     });
     return Object.entries(counts)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 5);
+        .sort((a, b) => b[1] - a[1]);
 }
 
 function showTopStocks() {
@@ -448,11 +454,30 @@ function showTopStocks() {
     const data = isUS ? usInfluencersData : twInfluencersData;
     const marketName = isUS ? "🇺🇸 美股" : "🇹🇼 台股";
     
-    const topStocks = calculateTopStocks(data);
-    document.getElementById('modal-title').innerHTML = `🔥 今日 ${marketName} 最熱議 Top 5`;
+    const topStocks = calculateTopStocks(data).slice(0, 5);
+    const topDayTrade = calculateTopStocks(data, inf => inf.isDayTrader).slice(0, 3);
+    
+    document.getElementById('modal-title').innerHTML = `🔥 ${marketName} 戰情雷達`;
     const tbody = document.getElementById('modal-body');
     
     let html = '';
+    
+    // 當沖/短線巨鯨特別區塊
+    if (topDayTrade.length > 0) {
+        html += `<h3 style="color: #38bdf8; font-size: 1.1rem; margin: 0 0 10px; padding-bottom: 5px; border-bottom: 1px solid rgba(56, 189, 248, 0.3); text-align: left;">⚡ 當沖/短線巨鯨 鎖定標的 Top 3</h3>`;
+        topDayTrade.forEach((item, index) => {
+            html += `
+                <div class="top-item" style="border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.05); padding: 10px 20px;">
+                    <span class="rank" style="color: #38bdf8; font-size: 1.2rem;">${index + 1}</span>
+                    <span class="stock" style="font-size: 1rem;">${item[0]}</span>
+                    <span class="count" style="background: #0284c7; padding: 4px 10px; font-size: 0.85rem;">${item[1]} 票</span>
+                </div>
+            `;
+        });
+        html += `<h3 style="color: #f43f5e; font-size: 1.1rem; margin: 25px 0 10px; padding-bottom: 5px; border-bottom: 1px solid rgba(244, 63, 94, 0.3); text-align: left;">🔥 綜合市場 熱議 Top 5</h3>`;
+    }
+
+    // 綜合 Top 5
     topStocks.forEach((item, index) => {
         let medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`;
         html += `
