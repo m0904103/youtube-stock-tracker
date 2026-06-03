@@ -50,17 +50,17 @@ const usInfluencersData = [
     },
     {
         name: "Cathie Wood (ARK木頭姐)",
-        style: "破壞性創新 / 成長股",
-        viewpoint: "正在進行板塊輪動，減持舊半導體（如 AMD），大舉加倉國防科技、自動化與新一代 AI 硬體。",
-        stocks: ["NVDA", "KTOS", "CBRS", "AMZN"],
-        entryPoint: "六月初剛砸<span class='highlight'>六千萬美元買入 NVDA 30萬股</span>，並持續建倉國防科技 Kratos (KTOS) 與 Cerebras。"
+        style: "破壞性創新 / 高貝塔成長",
+        viewpoint: "無視短期波動，堅信 5 年以上的技術折現率。大舉加倉被錯殺的 AI 軟體股，並堅信比特幣為新興市場終極防禦機制。",
+        stocks: ["PLTR (Palantir)", "BTC (比特幣上看 75萬)", "ARK 創新基金"],
+        entryPoint: "在市場因估值擔憂拋售時逆勢 <span class='highlight'>大買 1115 萬美元的 Palantir</span>，展現極致成長流派的韌性與定海神針作用。"
     },
     {
         name: "Jim Cramer (瘋狂錢坑)",
-        style: "華爾街名嘴 / 產業鏈分析",
-        viewpoint: "主打『AI 千層糕』(AI Layer Cake) 投資框架，從最底層的電力、晶片一路買到終端基礎設施。",
-        stocks: ["NVDA", "MU", "GEV", "VRT", "DELL"],
-        entryPoint: "強烈建議圍繞<span class='highlight'>電力與散熱基建 (GEV, VST, VRT)</span> 進行逢低佈局，因這是 AI 發展的絕對瓶頸。"
+        style: "華爾街名嘴 / 反向指標",
+        viewpoint: "在電視節目上頻繁推薦短線熱點，被散戶與量化演算法視為標準的「反向指標」。曾強烈呼籲在比特幣 4 萬美元時拋售。",
+        stocks: ["SJIM (反向 Cramer ETF)", "短期高頻熱門股"],
+        entryPoint: "其推薦往往出現 <span class='highlight'>拉升後迅速回落</span> 的現象，儘管反向 ETF 已清算，但他仍是散戶測試市場水溫的最佳反指標。"
     },
     {
         name: "股癌 Gooaye (謝孟恭)",
@@ -82,6 +82,83 @@ const usInfluencersData = [
         viewpoint: "以系統性邏輯與財報數據判斷公司護城河，近期深度覆盤 COMPUTEX 展會與輝達、台積電的前景。",
         stocks: ["NVDA", "TSM", "DELL", "QCOM", "MU"],
         entryPoint: "依據最新季報與競爭優勢評估，不盲從市場追高，尋找具有長期護城河的優質科技股。"
+    },
+    {
+        name: "Keith Gill (Roaring Kitty)",
+        style: "草根巨鯨 / 事件驅動",
+        viewpoint: "以深度的價值分析與強大的社群迷因號召力，策動散戶資金與華爾街空頭對作。展現出跨板塊的事件驅動與演算法前置交易效應。",
+        stocks: ["GME (遊戲驛站)", "CHWY (Chewy)"],
+        entryPoint: "利用符號化與密碼學式的社群溝通機制（如推文圖片）引發散戶與演算法 <span class='highlight'>瘋狂追價與伽馬擠壓</span>。"
+    },
+    {
+        name: "Unusual Whales",
+        style: "數據武裝 / 宏觀追蹤",
+        viewpoint: "打破數據不對稱。揭露前10%高淨值家庭財富集中對市場波動率的影響，並實時追蹤國會議員內線交易與暗池期權流動。",
+        stocks: ["國會議員追蹤標的", "高波動期權標的"],
+        entryPoint: "透過即時追蹤 <span class='highlight'>政客交易紀錄與期權異常流動</span> 作為事件驅動的量化交易訊號（Alpha）。"
+    },
+    {
+        name: "All-In Podcast (Chamath 等)",
+        style: "矽谷擴音器 / 創投前沿",
+        viewpoint: "主導 SaaS 軟體、創投一級市場與前沿科技的定價敘事。精準解構 SpaceX 估值模型與聯準會政策對軟體股的毀滅性打擊。",
+        stocks: ["SpaceX (未上市)", "Anthropic (未上市)", "SaaS 軟體股"],
+        entryPoint: "作為一二級市場的敘事橋樑，為華爾街機構在評估新興獨角獸時提供 <span class='highlight'>強而有力的內部定價基準</span>。"
+    },
+    {
+        name: "Mike Wilson (Morgan Stanley)",
+        style: "首席策略師 / 總經預判",
+        viewpoint: "從大空頭華麗轉身為超級多頭。認為市場已消化地緣風險，在「三重再平衡」與強勁 EPS 支撐下，將標普年底目標價大幅上調。",
+        stocks: ["S&P 500 (上看 8000)", "羅素 3000 落後補漲股"],
+        entryPoint: "強調在強勁企業定價能力下，美股 <span class='highlight'>不需依賴降息即可維持漲勢</span>，給予被動基金放膽買進的理論基礎。"
+    },
+    {
+        name: "Dan Ives (Wedbush)",
+        style: "科技大多頭 / 衍生受益者",
+        viewpoint: "提出「AI 乘數效應」：Nvidia 硬體每投入1美元，將衍生出 8-10 美元的生態圈商機。市場已進入 AI 建設第二階段。",
+        stocks: ["MSFT (微軟)", "AAPL (蘋果)", "TSLA (特斯拉)", "PLTR (Palantir)", "CRWD (CrowdStrike)"],
+        entryPoint: "尋找具備軟體整合與資安護城河的 <span class='highlight'>AI 第二波衍生受益者 (Derivative Beneficiaries)</span>。"
+    },
+    {
+        name: "Adam Kobeissi & Marko Kolanovic",
+        style: "量化防禦 / 宏觀看空",
+        viewpoint: "警告市場頂部集中風險。點出億萬富豪投資指數與標普比率創新低，且中東能源危機可能提早引發「五月賣出走人」魔咒。",
+        stocks: ["大盤避險", "白銀 (看空)"],
+        entryPoint: "透過 <span class='highlight'>內部動能衰竭數據</span> 佐證科技股反彈逼近極限，提醒資金即將向中小型股流動或撤出。"
+    },
+    {
+        name: "Bill Ackman (Pershing Square)",
+        style: "深度價值 / 極端集中",
+        viewpoint: "極致的集中投資（僅持10-12檔），善於利用市場短期恐慌或槓桿清算引發的錯殺進行逢低佈局，發掘企業隱藏價值。",
+        stocks: ["MSFT (微軟)", "AMZN (亞馬遜)", "META (Meta)"],
+        entryPoint: "趁微軟面臨季度深度回檔、前瞻本益比降至 21 倍時 <span class='highlight'>大舉建倉</span>，看好其 Azure 與 OpenAI 股權的隱含價值。"
+    },
+    {
+        name: "Stanley Druckenmiller",
+        style: "宏觀動能 / 板塊漂移",
+        viewpoint: "完美詮釋「板塊漂移」智慧。認為 AI 基礎設施擴張速度可能超越實體採用曲線，精準進行獲利了結與賽道轉換以規避泡沫。",
+        stocks: ["AVGO (博通)", "INTC (英特爾)", "ARM (安謀)"],
+        entryPoint: "徹底清倉 Nvidia，資金大規模轉向 <span class='highlight'>解決算力瓶頸（客製化晶片與高速記憶體）</span> 的半導體基建企業。"
+    },
+    {
+        name: "Ray Dalio (Bridgewater)",
+        style: "百年週期 / 全天候避險",
+        viewpoint: "基於百年債務週期進行全天候防禦轉移。徹底規避中國政策風險與中美脫鉤，並警告當前與布雷頓森林體系瓦解時極為相似。",
+        stocks: ["NEM (Newmont 黃金)", "TIPS (抗通膨債)"],
+        entryPoint: "大幅減持美國大盤 ETF 與清倉中概股，轉向以 <span class='highlight'>黃金等無法被隨意印製的實體資產</span> 作為購買力基準。"
+    },
+    {
+        name: "Elon Musk",
+        style: "超級實體 / 資本循環",
+        viewpoint: "創造互相支撐、難以做空的龐大帝國（SpaceX 收購 xAI）。透過旗下企業互相採購消化庫存，展現極限跨界與資源調度能力。",
+        stocks: ["TSLA (特斯拉)", "SpaceX (未上市)", "xAI (未上市)"],
+        entryPoint: "華爾街預估其旗下企業可能在 2027 年迎來 <span class='highlight'>3.6 兆美元的終極合併</span>，放空其任何一家企業的風險呈指數級增加。"
+    },
+    {
+        name: "Jensen Huang (黃仁勳)",
+        style: "算力霸權 / 生態系綁定",
+        viewpoint: "宣告進入「代理式 AI」時代。憑藉 60% CoWoS 產能壟斷與 50% 淨利率，其言論直接決定整個半導體產業鏈與那斯達克的生殺大權。",
+        stocks: ["NVDA (輝達)", "AI 工廠生態鏈"],
+        entryPoint: "一句「供應鏈產能無虞」即可瞬間消弭市場不確定性，其 <span class='highlight'>營收指引與產能宣示</span> 具備一錘定音的定價權。"
     }
 ];
 
