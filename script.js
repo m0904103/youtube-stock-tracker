@@ -3,49 +3,49 @@ const usInfluencersData = [
         name: "小左美股第一视角",
         style: "價格行為 / 技術分析",
         viewpoint: "市場處於「二次探底」博弈期，科技巨頭可能面臨「王權交替」。提醒警惕泡沫，注重順勢交易與宏觀數據（利率/通膨）影響。",
-        stocks: ["NVDA", "TSLA", "MU", "PLTR", "ARM", "DELL"],
+        stocks: ["NVDA (輝達)", "TSLA (特斯拉)", "MU (美光)", "PLTR (Palantir)", "ARM (安謀)", "DELL (戴爾)"],
         entryPoint: "看重技術支撐阻力位與趨勢線。建議不盲目追高，等待關鍵支撐位確認有效後再分批建倉。"
     },
     {
         name: "老李玩钱 (Your Favorite ⭐️)",
         style: "理性長線 / 帳戶實盤",
         viewpoint: "發布了「6月必買」與下半年佈局策略。對市場高位震盪保持理性，針對 AI 與記憶體板塊進行深入解析。",
-        stocks: ["MU", "INTC", "SNDK", "RKLB", "NVDA"],
+        stocks: ["MU (美光)", "INTC (英特爾)", "SNDK (新帝)", "RKLB (火箭實驗室)", "NVDA (輝達)"],
         entryPoint: "建議逢低佈局。具體買入價格與加倉點位通常在會員頻道展示，強調在波動中做好倉位控管。"
     },
     {
         name: "NaNa說美股",
         style: "幽默犀利 / 大眾視角",
         viewpoint: "以「小白語言」解構市場，近期吐槽舊科技巨頭與價值投資的窘境。認為市場展現韌性，資金正在板塊間快速輪動。",
-        stocks: ["NVDA (AI硬體)", "舊科技巨頭 (減持觀望)"],
+        stocks: ["NVDA (輝達)", "GOOGL (谷歌)"],
         entryPoint: "強烈建議不盲目追高，應耐心等待個股回調至關鍵技術支撐（如年線附近）再考慮介入。"
     },
     {
         name: "美股研究社",
         style: "財報基本面 / 華爾街動向",
         viewpoint: "AI 依舊是 2026 盈利核心（貢獻標普500七成增長）。華爾街投資範式正在轉變，資金逐漸向防禦型與實體經濟板塊擴散。",
-        stocks: ["AI 產業鏈", "能源板塊", "金融板塊", "工業板塊"],
+        stocks: ["NVDA (輝達)", "XLE (能源ETF)", "XLF (金融ETF)", "XLI (工業ETF)"],
         entryPoint: "推薦採取槓鈴策略 (Barbell Strategy)：一端抱緊具備結構成長的 AI 標的，一端配置防禦型資產平衡風險。"
     },
     {
         name: "游庭皓的財經皓角",
         style: "總體經濟 / 景氣循環",
         viewpoint: "探討 AI 行情是否為超級週期。分析台美韓印股市競合關係，以及半導體庫存循環對全球供應鏈的影響。",
-        stocks: ["TSMC (台積電)", "NVDA", "台灣供應鏈"],
+        stocks: ["TSM (台積電)", "NVDA (輝達)", "EWT (台灣ETF)"],
         entryPoint: "依循景氣循環投資法，於半導體庫存去化完成及資本支出上升期進行波段價差操作。"
     },
     {
         name: "尼可拉斯楊Live精",
         style: "量化指標 / 非主流視角",
         viewpoint: "警告 2026 年出現「指數高位震盪、個股劇烈波動」的結構性背離。密切關注中東地緣政治對油價與聯準會政策的影響。",
-        stocks: ["GPU", "光連結 (CPO)", "伺服器基建"],
+        stocks: ["NVDA (輝達)", "MRVL (邁威爾)", "SMCI (美超微)"],
         entryPoint: "利用量化指標如 AAII（散戶情緒）與 NAAIM（投資經理敞口）尋找賣點與避風港，在市場貪婪時保持冷靜。"
     },
     {
         name: "Tom Lee (Fundstrat)",
         style: "華爾街大多頭 / 宏觀量化",
         viewpoint: "長線極度樂觀（標普年底上看7,700），但警告今年夏季可能有 15%-20% 的劇烈回調洗盤。看好『稀缺資產』。",
-        stocks: ["能源板塊", "基礎材料", "AI算力基建"],
+        stocks: ["XLE (能源ETF)", "XLB (原物料ETF)", "VRT (維諦技術)"],
         entryPoint: "建議保留現金等待夏季 <span class='highlight'>15%-20% 回調</span>時，大力抄底能源與 AI 基建板塊。"
     },
     {
@@ -59,28 +59,28 @@ const usInfluencersData = [
         name: "Jim Cramer (瘋狂錢坑)",
         style: "華爾街名嘴 / 反向指標",
         viewpoint: "在電視節目上頻繁推薦短線熱點，被散戶與量化演算法視為標準的「反向指標」。曾強烈呼籲在比特幣 4 萬美元時拋售。",
-        stocks: ["SJIM (反向 Cramer ETF)", "短期高頻熱門股"],
+        stocks: ["SJIM (反向 ETF)", "GEV (奇異能源)", "VRT (維諦技術)"],
         entryPoint: "其推薦往往出現 <span class='highlight'>拉升後迅速回落</span> 的現象，儘管反向 ETF 已清算，但他仍是散戶測試市場水溫的最佳反指標。"
     },
     {
         name: "股癌 Gooaye (謝孟恭)",
         style: "產業趨勢 / 散戶第一指標",
         viewpoint: "堅持不直接報牌，但透過產業鏈推導資金流向。近期重點觀察軟體 SaaS 族群的復甦，以及光通訊與被動元件的訂單動態。",
-        stocks: ["CRM", "NOW", "SNOW", "OKTA", "光通訊板塊"],
+        stocks: ["CRM (Salesforce)", "NOW (ServiceNow)", "SNOW (Snowflake)", "OKTA (Okta)", "LITE (Lumentum)"],
         entryPoint: "觀察到資金正在輪動至跌深的軟體股 <span class='highlight'>(如 Salesforce, ServiceNow, Snowflake)</span>，提醒留意大盤融資過高的修正風險。"
     },
     {
         name: "Dan Niles (華爾街頂級科技投資人)",
         style: "科技股分析 / 宏觀避險",
         viewpoint: "看好 Agentic AI (代理型AI) 應用端，但預警 2027 年初 AI 泡沫可能迎來 30%-50% 的破裂與重置。",
-        stocks: ["AAPL", "AMZN", "CSCO", "BA"],
+        stocks: ["AAPL (蘋果)", "AMZN (亞馬遜)", "CSCO (思科)", "BA (波音)"],
         entryPoint: "看好 AAPL 與 AMZN 等科技巨頭的應用層落地，同時佈局波音 (BA) 等轉機股。"
     },
     {
         name: "JC財經女孩 Jenny",
         style: "財報基本面 / 價值投資",
         viewpoint: "以系統性邏輯與財報數據判斷公司護城河，近期深度覆盤 COMPUTEX 展會與輝達、台積電的前景。",
-        stocks: ["NVDA", "TSM", "DELL", "QCOM", "MU"],
+        stocks: ["NVDA (輝達)", "TSM (台積電)", "DELL (戴爾)", "QCOM (高通)", "MU (美光)"],
         entryPoint: "依據最新季報與競爭優勢評估，不盲從市場追高，尋找具有長期護城河的優質科技股。"
     },
     {
@@ -94,21 +94,21 @@ const usInfluencersData = [
         name: "Unusual Whales",
         style: "數據武裝 / 宏觀追蹤",
         viewpoint: "打破數據不對稱。揭露前10%高淨值家庭財富集中對市場波動率的影響，並實時追蹤國會議員內線交易與暗池期權流動。",
-        stocks: ["國會議員追蹤標的", "高波動期權標的"],
+        stocks: ["NANC (民主黨ETF)", "KRUZ (共和黨ETF)", "VIX (恐慌指數)"],
         entryPoint: "透過即時追蹤 <span class='highlight'>政客交易紀錄與期權異常流動</span> 作為事件驅動的量化交易訊號（Alpha）。"
     },
     {
         name: "All-In Podcast (Chamath 等)",
         style: "矽谷擴音器 / 創投前沿",
         viewpoint: "主導 SaaS 軟體、創投一級市場與前沿科技的定價敘事。精準解構 SpaceX 估值模型與聯準會政策對軟體股的毀滅性打擊。",
-        stocks: ["SpaceX (未上市)", "Anthropic (未上市)", "SaaS 軟體股"],
+        stocks: ["DXYZ (未上市基金)", "TSLA (特斯拉)", "CRM (Salesforce)"],
         entryPoint: "作為一二級市場的敘事橋樑，為華爾街機構在評估新興獨角獸時提供 <span class='highlight'>強而有力的內部定價基準</span>。"
     },
     {
         name: "Mike Wilson (Morgan Stanley)",
         style: "首席策略師 / 總經預判",
         viewpoint: "從大空頭華麗轉身為超級多頭。認為市場已消化地緣風險，在「三重再平衡」與強勁 EPS 支撐下，將標普年底目標價大幅上調。",
-        stocks: ["S&P 500 (上看 8000)", "羅素 3000 落後補漲股"],
+        stocks: ["SPY (標普500)", "IWV (羅素3000)", "IWM (羅素2000)"],
         entryPoint: "強調在強勁企業定價能力下，美股 <span class='highlight'>不需依賴降息即可維持漲勢</span>，給予被動基金放膽買進的理論基礎。"
     },
     {
@@ -122,7 +122,7 @@ const usInfluencersData = [
         name: "Adam Kobeissi & Marko Kolanovic",
         style: "量化防禦 / 宏觀看空",
         viewpoint: "警告市場頂部集中風險。點出億萬富豪投資指數與標普比率創新低，且中東能源危機可能提早引發「五月賣出走人」魔咒。",
-        stocks: ["大盤避險", "白銀 (看空)"],
+        stocks: ["SH (做空標普)", "SLV (看空白銀)", "VIX (恐慌指數)"],
         entryPoint: "透過 <span class='highlight'>內部動能衰竭數據</span> 佐證科技股反彈逼近極限，提醒資金即將向中小型股流動或撤出。"
     },
     {
@@ -157,7 +157,7 @@ const usInfluencersData = [
         name: "Jensen Huang (黃仁勳)",
         style: "算力霸權 / 生態系綁定",
         viewpoint: "宣告進入「代理式 AI」時代。憑藉 60% CoWoS 產能壟斷與 50% 淨利率，其言論直接決定整個半導體產業鏈與那斯達克的生殺大權。",
-        stocks: ["NVDA (輝達)", "AI 工廠生態鏈"],
+        stocks: ["NVDA (輝達)", "TSM (台積電)", "SMCI (美超微)"],
         entryPoint: "一句「供應鏈產能無虞」即可瞬間消弭市場不確定性，其 <span class='highlight'>營收指引與產能宣示</span> 具備一錘定音的定價權。"
     }
 ];
@@ -167,28 +167,28 @@ const twInfluencersData = [
         name: "獅公 (李永年)",
         style: "資深分析 / 總體指標",
         viewpoint: "對於高檔走勢表示審慎，提出「是最後加碼還是最後減碼？」的疑問，提醒密切關注油價、美元及資金流向。",
-        stocks: ["低基期 AI 股", "主動式 ETF", "金融股"],
+        stocks: ["神達 (3706)", "00929 (科技優息)", "富邦金 (2881)"],
         entryPoint: "大盤技術性回檔是正常現象，建議選擇具靈活性的 <span class='highlight'>主動式 ETF</span> 搭配高息金融股防禦。"
     },
     {
         name: "杜金龍 (老先覺)",
         style: "波浪理論 / 數據精算",
         viewpoint: "市場已出現「短期過熱」訊號，預期大盤可能進入高達 4000~6000 點的震盪修正階段。",
-        stocks: ["台積電 (2330)", "台達電", "保留 50% 現金"],
+        stocks: ["台積電 (2330)", "台達電 (2308)", "現金部位 (50%)"],
         entryPoint: "精算台積電合理價在 1960~2000 元，建議 <span class='highlight'>拉回至 2135 以下</span> 再加碼。大盤操作建議買黑不買紅，留五成現金。"
     },
     {
         name: "郭哲榮 (摩爾投顧 - 折折)",
         style: "話題性高 / 權值股波段",
         viewpoint: "極度看好台股與鴻海的後市，認為外資空單僅是鎖定正價差的套利。呼籲把握股東會行情，但切忌使用融資。",
-        stocks: ["鴻海 (2317)", "台積電 (2330)", "AI 供應鏈"],
+        stocks: ["鴻海 (2317)", "台積電 (2330)", "廣達 (2382)"],
         entryPoint: "強烈看好鴻海「每年賺兩個股本」目標，在 20 倍本益比預期下，認為目標價上看 <span class='highlight'>400 元</span>，已進入噴出臨界點。"
     },
     {
         name: "老王 (老王愛說笑)",
         style: "技術分析 / 嚴格紀律",
         viewpoint: "AI 供應鏈仍是多頭主旋律，但在萬點高位操作中，最看重「紀律」與「停損停利機制」。",
-        stocks: ["廣達 (2382)", "緯創 (3231)", "聯電 (2303)", "記憶體"],
+        stocks: ["廣達 (2382)", "緯創 (3231)", "聯電 (2303)", "南亞科 (2408)"],
         entryPoint: "建議設定買進當日收盤價 <span class='highlight'>跌破 5% 即減碼</span>，或跌破 5 日線減碼一半。強調查確認收盤價跌破後再動作。"
     },
     {
@@ -202,28 +202,28 @@ const twInfluencersData = [
         name: "權證小哥",
         style: "籌碼分析 / 雙刀戰法",
         viewpoint: "大盤屢創新高且強勢股全面亮燈，已進入「瘋子盤」。提醒千萬不能盲目追高，必須看懂主力動向與資金流向。",
-        stocks: ["處置股觀察", "除權息行情股", "高籌碼集中股"],
+        stocks: ["陽明 (2609)", "長榮 (2603)", "世芯-KY (3661)"],
         entryPoint: "即將進入除權息旺季，建議利用 <span class='highlight'>雙刀戰法</span> (多空對鎖) 在波動中賺取領息與價差。利用籌碼軟體追蹤分點券商動作。"
     },
     {
         name: "阮慕驊",
         style: "總體經濟 / 穩健配置",
         viewpoint: "台股 2026 狂飆，個人選擇在 5 月底進行適度的「獲利了結」，確保流動性，應對可能的高位震盪。",
-        stocks: ["國泰金 (2882)", "高股息 ETF", "保留現金"],
+        stocks: ["國泰金 (2882)", "0056 (高股息)", "現金部位 (30%)"],
         entryPoint: "已賣出約 <span class='highlight'>1/3 漲多持股變現</span>；但對於長線看好的 ETF，利用收回的現金反而提高定期定額扣款額度。"
     },
     {
         name: "塗敏峰 (超越巔峰)",
         style: "技術型態 / 中小型股",
         viewpoint: "強調投資人不應僅憑大盤指數進行交易，而應根據個股的未來趨勢與技術面（如 KD 指標）進行「順勢而為」的佈局。",
-        stocks: ["鴻海 (2317)", "群創 (3481)", "南亞科 (2408)", "金居"],
+        stocks: ["鴻海 (2317)", "群創 (3481)", "南亞科 (2408)", "金居 (8358)"],
         entryPoint: "不看大盤，專注於中小型股的輪動機會，利用 <span class='highlight'>型態學與 KD 指標</span> 判讀短線支撐與壓力，靈活進出。"
     },
     {
         name: "股癌 Gooaye (謝孟恭)",
         style: "產業趨勢 / 散戶指標",
         viewpoint: "台股資金正在進行板塊輪動，從漲多的硬體代工外溢尋找落後補漲標的。強烈警告融資開槓桿過熱，隨時有修正風險。",
-        stocks: ["光通訊板塊", "國巨 (2327)", "精誠 (6214)"],
+        stocks: ["上詮 (3363)", "國巨 (2327)", "精誠 (6214)"],
         entryPoint: "建議緊盯 <span class='highlight'>光通訊與軟體</span> 的訂單復甦動態。提醒投資人預留現金，防範台股大盤可能出現的健康回調。"
     },
     {
@@ -237,14 +237,14 @@ const twInfluencersData = [
         name: "股魚 (不看盤投資)",
         style: "價值投資 / ETF 存股",
         viewpoint: "警告目前台股處於高基期，「100% 押注股票的風險極高」。建議投資人務必重新檢視股債配置，降低投資組合波動度。",
-        stocks: ["股債平衡", "市值型 ETF", "非投資等級債"],
+        stocks: ["0050 (台灣50)", "00679B (美債20年)", "00724B (投資級債)"],
         entryPoint: "提倡不看盤投資法。建議透過 <span class='highlight'>主動式與市值型 ETF</span> 的搭配來分散風險，並透過紀律性定期定額掌握長線機會。"
     },
     {
         name: "朱家泓 (K線大師)",
         style: "技術分析 / 嚴格紀律",
         viewpoint: "選股重於大盤，無論大盤位階如何，市場上總有機會。強調透過技術線圖判斷均線位階（如 5/10/20MA）與量能進出。",
-        stocks: ["多空鎖股清單", "底部暖身股", "主升起跑股"],
+        stocks: ["中興電 (1513)", "華城 (1519)", "士電 (1503)"],
         entryPoint: "不提供具體明牌，強調「選線圖，不是選公司」。建議建立自己的交易 SOP，設定好目標獲利點與 <span class='highlight'>風險停損點</span> 並嚴格執行。"
     },
     {
@@ -279,14 +279,14 @@ const twInfluencersData = [
         name: "陳嘉偉 (股市總司令)",
         style: "趨勢轉折 / 運通財經",
         viewpoint: "以「精準研判趨勢轉折」聞名，近期對 6 月台股走勢持極度謹慎態度，屢次警告崩盤風險。",
-        stocks: ["高空反轉股", "均線扣抵位置"],
+        stocks: ["創意 (3443)", "智原 (3035)"],
         entryPoint: "強烈提醒留意大盤波動與崩盤風險。建議透過 <span class='highlight'>均線與扣抵位置</span> 尋找空點或避開過熱標的，作風犀利兩極。"
     },
     {
         name: "股海老船長 (王軒中)",
         style: "系統指標 / 光通訊",
         viewpoint: "主打「王冠AI頂級智能指標系統」，強調減少人性情緒干擾。近期極度看好 CPO 光通訊族群，喊出「CPO非漲不可」。",
-        stocks: ["上詮 (3363)", "CPO 概念股"],
+        stocks: ["上詮 (3363)", "聯鈞 (3450)", "光聖 (6442)"],
         entryPoint: "利用專屬的 <span class='highlight'>智能指標系統</span> 輔助辨識多空趨勢，近期對上詮 (3363) 的法說與營收抱持強烈樂觀態度。"
     },
     {
@@ -300,35 +300,35 @@ const twInfluencersData = [
         name: "菲比斯 (菲神)",
         style: "籌碼定價 / 價值投機",
         viewpoint: "提倡「獲利金三角」：從宏觀事件驅動尋找實體經濟供需失衡，並結合股權籌碼結構的流動性溢價進行投機避險。",
-        stocks: ["營收高成長股", "低股價淨值比標的"],
+        stocks: ["長榮航 (2618)", "華航 (2610)", "群創 (3481)"],
         entryPoint: "極度重視營收年增率大於 10% 且具備低本益比優勢。利用 <span class='highlight'>籌碼供給稀缺性</span> (如小股本或興櫃) 預判價格擠壓效應。"
     },
     {
         name: "巨人傑",
         style: "高頻當沖 / 微觀流動性",
         viewpoint: "將台股當沖推向物理極限（月交易量800億）。操作邏輯脫離主觀預測，更接近造市商與統計套利。",
-        stocks: ["高波動熱門股", "極端周轉率標的"],
+        stocks: ["迎廣 (6117)", "所羅門 (2359)", "昆盈 (2365)"],
         entryPoint: "不提供具體買點。以極高勝率在訂單簿中博殺，展示了短線交易在 <span class='highlight'>高昂摩擦成本</span> 下所能達到的資本周轉極限。"
     },
     {
         name: "葛瀚中 (Mgk)",
         style: "短線周轉 / 投機社會學",
         viewpoint: "主張「富人靠報酬率，窮人靠周轉率」。將投機交易昇華為年輕世代打破階級固化的實質抗爭途徑。",
-        stocks: ["強勢動能股"],
+        stocks: ["士電 (1503)", "奇鋐 (3017)"],
         entryPoint: "強烈提倡不盲求統一盤感，必須建立屬於個人的 <span class='highlight'>「觀察、驗證、執行、記錄」</span> 適性策略與嚴格紀律。"
     },
     {
         name: "谷月涵 (Peter Kurz)",
         style: "總經外資 / 大國博弈",
         viewpoint: "預警台美股市估值逼近極限。指出亞洲貨幣（日圓/人民幣）競貶壓力將是引爆全球資金洗牌的關鍵宏觀指標。",
-        stocks: ["避險資產", "傳產金融", "匯率貶值受惠股"],
+        stocks: ["富邦金 (2881)", "統一 (1216)", "台泥 (1101)"],
         entryPoint: "建議機構法人在 AI 泡沫隱憂下，準備資金流向 <span class='highlight'>防禦型與具實質獲利</span> 的板塊。關注 Fed 降息與大選週期的疊加效應。"
     },
     {
         name: "陸行之",
         style: "半導體權威 / 產業戰略",
         viewpoint: "直指台積電赴美設廠的高成本隱憂與政治妥協。但同時高度肯定 AI 晶片的底層變革與長線霸權。",
-        stocks: ["台積電 (2330)", "AI 晶片供應鏈"],
+        stocks: ["台積電 (2330)", "世芯-KY (3661)", "創意 (3443)"],
         entryPoint: "傳授「登山高手」心法：長線持有，絕不擇時殺進殺出，且 <span class='highlight'>台積電部位必須超過投資組合 50%</span> 才能穿越多空牛熊。"
     },
     {
