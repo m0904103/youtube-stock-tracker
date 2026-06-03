@@ -243,7 +243,7 @@ footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-siz
 #modal-title { color: #fff; text-align: center; margin-bottom: 30px; font-size: 1.8rem; font-weight: 800; letter-spacing: -0.5px; }
 
 .top-item {
-    display: flex; justify-content: space-between; align-items: center;
+    display: flex; flex-direction: column; align-items: flex-start;
     background: rgba(255, 255, 255, 0.03);
     margin-bottom: 12px; padding: 16px 24px;
     border-radius: 16px; font-weight: 700;
@@ -251,9 +251,29 @@ footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-siz
     transition: transform 0.2s, background 0.2s;
 }
 .top-item:hover { transform: translateX(5px); background: rgba(255, 255, 255, 0.06); }
-.top-item .rank { font-size: 1.4rem; color: var(--accent-1); width: 40px; }
-.top-item .stock { flex: 1; color: #fff; font-size: 1.1rem; }
+.top-item-header { display: flex; justify-content: space-between; width: 100%; align-items: center; }
+.top-item .rank { font-size: 1.4rem; color: var(--accent-1); width: 40px; display: inline-block; }
+.top-item .stock { color: #fff; font-size: 1.1rem; }
 .top-item .count { background: var(--accent-hot); color: #fff; padding: 6px 14px; border-radius: 30px; font-size: 0.95rem; font-weight: 800; box-shadow: 0 4px 10px rgba(244, 63, 94, 0.3); }
+
+/* Quote Styles */
+.quote-container {
+    display: flex; gap: 15px; align-items: center; margin-top: 10px; font-size: 0.95rem;
+    background: rgba(0, 0, 0, 0.3); padding: 10px 15px; border-radius: 10px; width: 100%;
+}
+.quote-price { font-weight: 800; font-size: 1.2rem; }
+.quote-up { color: #f43f5e; }
+.quote-down { color: #10b981; }
+.quote-vol { color: #cbd5e1; font-weight: 600; display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.vol-fire { background: rgba(244, 63, 94, 0.2); border: 1px solid rgba(244, 63, 94, 0.4); color: #f43f5e; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
+
+.refresh-btn {
+    background: transparent; border: 1px solid rgba(255, 255, 255, 0.2); color: #fff;
+    padding: 4px 10px; border-radius: 8px; font-size: 0.85rem; cursor: pointer; transition: 0.3s;
+    float: right; margin-right: 10px; font-weight: 600;
+}
+.refresh-btn:hover { background: rgba(255, 255, 255, 0.1); }
 
 /* Guide Modal Styles */
 .guide-modal-content { max-width: 650px; padding: 30px 40px; max-height: 85vh; overflow-y: auto; }

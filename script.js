@@ -445,6 +445,57 @@ function calculateTopStocks(data, filterFn = null) {
         .sort((a, b) => b[1] - a[1]);
 }
 
+// 異步抓取 Yahoo API
+async function fetchRealTimeQuote(stockStr) {
+    const match = stockStr.match(/\((\d{4})\)/);
+    if (!match) return null;
+    const ticker = match[1];
+    try {
+        const url = `https://query1.finance.yahoo.com/v8/finance/chart/${ticker}.TW`;
+        const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+        const response = await fetch(proxyUrl);
+        const json = await response.json();
+        const data = JSON.parse(json.contents);
+        const meta = data.chart.result[0].meta;
+        return {
+            price: meta.regularMarketPrice.toFixed(2),
+            changePercent: (((meta.regularMarketPrice - meta.chartPreviousClose) / meta.chartPreviousClose) * 100).toFixed(2),
+            volume: meta.regularMarketVolume || 0
+        };
+    } catch (e) {
+        console.error("API Error", e);
+        return null;
+    }
+}
+
+async function renderQuotes(topDayTrade) {
+    for (let i = 0; i < topDayTrade.length; i++) {
+        const item = topDayTrade[i];
+        const quoteDiv = document.getElementById(`quote-${i}`);
+        if (!quoteDiv) continue;
+        quoteDiv.innerHTML = '<span style="color:#94a3b8; font-size:0.85rem;">連線抓取即時報價中...</span>';
+        
+        const quote = await fetchRealTimeQuote(item[0]);
+        if (quote) {
+            const isUp = quote.changePercent > 0;
+            const colorClass = isUp ? 'quote-up' : (quote.changePercent < 0 ? 'quote-down' : '');
+            const sign = isUp ? '+' : '';
+            const isHot = quote.volume > 15000; // 超過1萬5千張視為爆量
+            
+            quoteDiv.innerHTML = `
+                <span class="quote-price ${colorClass}">${quote.price}</span>
+                <span class="quote-change ${colorClass}">${sign}${quote.changePercent}%</span>
+                <span class="quote-vol">
+                    量: ${(quote.volume / 1000).toFixed(1)}K
+                    ${isHot ? '<span class="vol-fire">🔥 爆量</span>' : ''}
+                </span>
+            `;
+        } else {
+            quoteDiv.innerHTML = '<span style="color:#f43f5e; font-size:0.85rem;">休市或報價讀取失敗</span>';
+        }
+    }
+}
+
 function showTopStocks() {
     const isUS = document.getElementById('btn-us').classList.contains('active');
     const data = isUS ? usInfluencersData : twInfluencersData;
@@ -463,16 +514,28 @@ function showTopStocks() {
         html += `<h3 style="color: #38bdf8; font-size: 1.1rem; margin: 0 0 10px; padding-bottom: 5px; border-bottom: 1px solid rgba(56, 189, 248, 0.3); text-align: left;">
                     ⚡ 當沖/短線巨鯨 鎖定標的 Top 3
                     <button class="guide-btn" onclick="showGuideModal()">📖 當沖心法</button>
+                    <button class="refresh-btn" onclick="refreshQuotes()">🔄 更新報價</button>
                  </h3>`;
         topDayTrade.forEach((item, index) => {
             html += `
                 <div class="top-item" style="border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.05); padding: 10px 20px;">
-                    <span class="rank" style="color: #38bdf8; font-size: 1.2rem;">${index + 1}</span>
-                    <span class="stock" style="font-size: 1rem;">${item[0]}</span>
-                    <span class="count" style="background: #0284c7; padding: 4px 10px; font-size: 0.85rem;">${item[1]} 票</span>
+                    <div class="top-item-header">
+                        <div>
+                            <span class="rank" style="color: #38bdf8; font-size: 1.2rem;">${index + 1}</span>
+                            <span class="stock" style="font-size: 1rem;">${item[0]}</span>
+                        </div>
+                        <span class="count" style="background: #0284c7; padding: 4px 10px; font-size: 0.85rem;">${item[1]} 票</span>
+                    </div>
+                    <div id="quote-${index}" class="quote-container">
+                        <span style="color:#94a3b8; font-size:0.85rem;">等待報價...</span>
+                    </div>
                 </div>
             `;
         });
+        
+        window.currentDayTradeData = topDayTrade;
+        setTimeout(() => renderQuotes(topDayTrade), 100);
+
         html += `<h3 style="color: #f43f5e; font-size: 1.1rem; margin: 25px 0 10px; padding-bottom: 5px; border-bottom: 1px solid rgba(244, 63, 94, 0.3); text-align: left;">🔥 綜合市場 熱議 Top 5</h3>`;
     }
 
@@ -481,15 +544,25 @@ function showTopStocks() {
         let medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`;
         html += `
             <div class="top-item">
-                <span class="rank">${medal}</span>
-                <span class="stock">${item[0]}</span>
-                <span class="count">${item[1]} 票</span>
+                <div class="top-item-header">
+                    <div>
+                        <span class="rank">${medal}</span>
+                        <span class="stock">${item[0]}</span>
+                    </div>
+                    <span class="count">${item[1]} 票</span>
+                </div>
             </div>
         `;
     });
     
     tbody.innerHTML = html;
     document.getElementById('top-modal').style.display = 'block';
+}
+
+function refreshQuotes() {
+    if(window.currentDayTradeData) {
+        renderQuotes(window.currentDayTradeData);
+    }
 }
 
 function closeModal() {
