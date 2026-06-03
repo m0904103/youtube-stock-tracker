@@ -403,13 +403,13 @@ function switchTab(tabId) {
 
     document.getElementById('btn-' + tabId).classList.add('active');
 
-    // 動態更改標題
+    // 動態更改標題與敘述
     if(tabId === 'us') {
-        document.getElementById('page-title').textContent = "US Stocks Tracker";
-        document.getElementById('page-desc').textContent = "追蹤您最愛的美股 YouTuber 最新觀點與佈局策略";
+        document.getElementById('page-title').textContent = "拾人牙慧 👁️ 美股輿情監控";
+        document.getElementById('page-desc').textContent = "US Market Sentiment Radar - 匯聚傳奇巨鯨與華爾街權威的第一手洞察";
     } else {
-        document.getElementById('page-title').textContent = "Taiwan Stocks Tracker";
-        document.getElementById('page-desc').textContent = "追蹤最具指標性的台股分析師與名嘴佈局策略";
+        document.getElementById('page-title').textContent = "拾人牙慧 👁️ 台股輿情監控";
+        document.getElementById('page-desc').textContent = "TW Market Sentiment Radar - 追蹤最具指標性的台股大老與草根散戶佈局";
     }
 }
 
@@ -478,3 +478,14 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+
+// Hover Glow Effect for premium cards
+document.addEventListener('mousemove', e => {
+    for(const card of document.querySelectorAll('.card')) {
+        const rect = card.getBoundingClientRect(),
+              x = e.clientX - rect.left,
+              y = e.clientY - rect.top;
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+    }
+});
