@@ -2,9 +2,9 @@ const usInfluencersData = [
     {
         name: "小左美股第一视角",
         style: "價格行為 / 技術分析",
-        viewpoint: "市場處於「二次探底」博弈期，科技巨頭可能面臨「王權交替」。提醒警惕泡沫，注重順勢交易與宏觀數據（利率/通膨）影響。",
-        stocks: ["NVDA (輝達)", "TSLA (特斯拉)", "MU (美光)", "PLTR (Palantir)", "ARM (安謀)", "DELL (戴爾)"],
-        entryPoint: "看重技術支撐阻力位與趨勢線。建議不盲目追高，等待關鍵支撐位確認有效後再分批建倉。"
+        viewpoint: "最新更新：黃仁勳欽點 MRVL 為下一家兆元企業，帶動光通訊板塊爆發。持續關注 AI 基礎設施行情，同時提醒留意總經通膨數據干擾。",
+        stocks: ["NVDA (輝達)", "MRVL (邁威爾)", "TSLA (特斯拉)", "MU (美光)", "INTC (英特爾)"],
+        entryPoint: "利用價格行為分析尋找強勢股的回調支撐位。建議在 <span class='highlight'>放量突破或回測不破</span> 時分批建倉，嚴格遵守停損紀律。"
     },
     {
         name: "老李玩钱 (Your Favorite ⭐️)",
