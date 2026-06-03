@@ -156,8 +156,8 @@ const usInfluencersData = [
     {
         name: "Jensen Huang (黃仁勳)",
         style: "算力霸權 / 生態系綁定",
-        viewpoint: "宣告進入「代理式 AI」時代。憑藉 60% CoWoS 產能壟斷與 50% 淨利率，其言論直接決定整個半導體產業鏈與那斯達克的生殺大權。",
-        stocks: ["NVDA (輝達)", "TSM (台積電)", "SMCI (美超微)"],
+        viewpoint: "在 COMPUTEX 2026 宣告進入「代理式 AI」時代並首度亮相 Vera Rubin 架構。除了台廠供應鏈，特別點名邁威爾 (Marvell) 將是下一家具備潛力的兆美元巨頭。",
+        stocks: ["NVDA (輝達)", "TSM (台積電)", "SMCI (美超微)", "MRVL (邁威爾)"],
         entryPoint: "一句「供應鏈產能無虞」即可瞬間消弭市場不確定性，其 <span class='highlight'>營收指引與產能宣示</span> 具備一錘定音的定價權。"
     }
 ];
