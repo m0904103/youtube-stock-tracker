@@ -417,4 +417,14 @@ function switchTab(tabId) {
 document.addEventListener('DOMContentLoaded', () => {
     renderGrid('influencers-grid-us', usInfluencersData);
     renderGrid('influencers-grid-tw', twInfluencersData);
+
+    // 根據當前時間自動切換市場標籤 (台灣時間)
+    // 08:00 ~ 13:59 預設顯示台股
+    // 14:00 ~ 07:59 (包含晚上美股開盤) 預設顯示美股
+    const currentHour = new Date().getHours();
+    if (currentHour >= 8 && currentHour < 14) {
+        switchTab('tw');
+    } else {
+        switchTab('us');
+    }
 });
