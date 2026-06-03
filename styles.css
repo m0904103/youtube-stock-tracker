@@ -256,7 +256,12 @@ footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-siz
 .top-item .stock { color: #fff; font-size: 1.1rem; }
 .top-item .count { background: var(--accent-hot); color: #fff; padding: 6px 14px; border-radius: 30px; font-size: 0.95rem; font-weight: 800; box-shadow: 0 4px 10px rgba(244, 63, 94, 0.3); }
 
-/* Quote Styles */
+/* Modal Tabs */
+.modal-tabs { display: flex; gap: 8px; margin-bottom: 20px; background: rgba(0, 0, 0, 0.2); padding: 6px; border-radius: 12px; }
+.modal-tab-btn { flex: 1; background: transparent; border: none; color: #94a3b8; padding: 10px 0; font-size: 1rem; font-weight: 700; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+.modal-tab-btn.active { background: rgba(255, 255, 255, 0.1); color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+
+/* Guide Modal Styles */
 .quote-container {
     display: flex; gap: 15px; align-items: center; margin-top: 10px; font-size: 0.95rem;
     background: rgba(0, 0, 0, 0.3); padding: 10px 15px; border-radius: 10px; width: 100%;

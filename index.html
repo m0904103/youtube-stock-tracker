@@ -158,14 +158,19 @@
         <p>&copy; 2026 股市網紅觀點追蹤. 資料僅供參考，不構成投資建議。</p>
     </footer>
 
-    <!-- Top 5 Modal -->
+    <!-- 戰情雷達 Modal -->
     <div id="top-modal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content top-modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2 id="modal-title" style="color: #ff3366; text-align: center; margin-bottom: 20px;">🔥 今日最熱議 Top 5</h2>
-            <div id="modal-body" class="top-list-container">
-                <!-- JS will inject top 5 here -->
+            <h2 id="modal-title">🔥 戰情雷達</h2>
+            
+            <div class="modal-tabs">
+                <button id="modal-tab-hot" class="modal-tab-btn active" onclick="switchModalTab('hot')">🔥 綜合熱議</button>
+                <button id="modal-tab-daytrade" class="modal-tab-btn" onclick="switchModalTab('daytrade')">⚡ 短線當沖</button>
             </div>
+
+            <div id="modal-body-hot" class="modal-body-section"></div>
+            <div id="modal-body-daytrade" class="modal-body-section" style="display: none;"></div>
         </div>
     </div>
 
@@ -220,6 +225,6 @@
     <!-- Floating Action Button -->
     <button id="fab-top" class="fab" onclick="showTopStocks()">🏆</button>
 
-    <script src="script.js?v=10"></script>
+    <script src="script.js?v=11"></script>
 </body>
 </html>

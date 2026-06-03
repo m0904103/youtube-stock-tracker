@@ -445,6 +445,23 @@ function calculateTopStocks(data, filterFn = null) {
         .sort((a, b) => b[1] - a[1]);
 }
 
+let currentModalTab = 'hot';
+
+function switchModalTab(tab) {
+    currentModalTab = tab;
+    if (tab === 'hot') {
+        document.getElementById('modal-tab-hot').classList.add('active');
+        document.getElementById('modal-tab-daytrade').classList.remove('active');
+        document.getElementById('modal-body-hot').style.display = 'block';
+        document.getElementById('modal-body-daytrade').style.display = 'none';
+    } else {
+        document.getElementById('modal-tab-hot').classList.remove('active');
+        document.getElementById('modal-tab-daytrade').classList.add('active');
+        document.getElementById('modal-body-hot').style.display = 'none';
+        document.getElementById('modal-body-daytrade').style.display = 'block';
+    }
+}
+
 function showTopStocks() {
     const isUS = document.getElementById('btn-us').classList.contains('active');
     const data = isUS ? usInfluencersData : twInfluencersData;
@@ -454,34 +471,19 @@ function showTopStocks() {
     const topDayTrade = calculateTopStocks(data, inf => inf.isDayTrader).slice(0, 3);
     
     document.getElementById('modal-title').innerHTML = `🔥 ${marketName} 戰情雷達`;
-    const tbody = document.getElementById('modal-body');
     
-    let html = '';
-    
-    // 當沖/短線巨鯨特別區塊
-    if (topDayTrade.length > 0) {
-        html += `<div style="display: flex; justify-content: space-between; align-items: center; margin: 0 0 12px 0; padding-bottom: 8px; border-bottom: 1px solid rgba(56, 189, 248, 0.3);">
-                    <h3 style="color: #38bdf8; font-size: 1.05rem; margin: 0; line-height: 1.4; flex: 1;">
-                        ⚡ 當沖/短線巨鯨<br/>鎖定標的 Top 3
-                    </h3>
-                    <button class="guide-btn" onclick="showGuideModal()" style="flex-shrink: 0; margin-left: 10px;">📖 當沖心法</button>
-                 </div>`;
-        topDayTrade.forEach((item, index) => {
-            html += `
-                <div class="top-item" style="border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.05); padding: 16px 24px; flex-direction: row; align-items: center;">
-                    <span class="rank" style="color: #38bdf8; font-size: 1.2rem;">${index + 1}</span>
-                    <span class="stock" style="font-size: 1.1rem;">${item[0]}</span>
-                </div>
-            `;
-        });
-        
-        html += `<h3 style="color: #f43f5e; font-size: 1.1rem; margin: 25px 0 10px; padding-bottom: 5px; border-bottom: 1px solid rgba(244, 63, 94, 0.3); text-align: left;">🔥 綜合市場 熱議 Top 5</h3>`;
+    if (topDayTrade.length === 0) {
+        document.getElementById('modal-tab-daytrade').style.display = 'none';
+        switchModalTab('hot');
+    } else {
+        document.getElementById('modal-tab-daytrade').style.display = 'block';
     }
-
-    // 綜合 Top 5
+    
+    // 渲染 Hot Tab
+    let hotHtml = '';
     topStocks.forEach((item, index) => {
         let medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`;
-        html += `
+        hotHtml += `
             <div class="top-item" style="flex-direction: row; align-items: center;">
                 <span class="rank">${medal}</span>
                 <span class="stock">${item[0]}</span>
@@ -489,8 +491,27 @@ function showTopStocks() {
             </div>
         `;
     });
+    document.getElementById('modal-body-hot').innerHTML = hotHtml;
+
+    // 渲染 Daytrade Tab
+    if (topDayTrade.length > 0) {
+        let dayHtml = `<div style="display: flex; justify-content: space-between; align-items: center; margin: 0 0 12px 0; padding-bottom: 8px; border-bottom: 1px solid rgba(56, 189, 248, 0.3);">
+                    <h3 style="color: #38bdf8; font-size: 1.05rem; margin: 0; line-height: 1.4; flex: 1;">
+                        巨鯨鎖定 Top 3
+                    </h3>
+                    <button class="guide-btn" onclick="showGuideModal()" style="flex-shrink: 0; margin-left: 10px;">📖 當沖心法</button>
+                 </div>`;
+        topDayTrade.forEach((item, index) => {
+            dayHtml += `
+                <div class="top-item" style="border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.05); padding: 16px 24px; flex-direction: row; align-items: center;">
+                    <span class="rank" style="color: #38bdf8; font-size: 1.2rem;">${index + 1}</span>
+                    <span class="stock" style="font-size: 1.1rem;">${item[0]}</span>
+                </div>
+            `;
+        });
+        document.getElementById('modal-body-daytrade').innerHTML = dayHtml;
+    }
     
-    tbody.innerHTML = html;
     document.getElementById('top-modal').style.display = 'block';
 }
 
