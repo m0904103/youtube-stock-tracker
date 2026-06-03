@@ -85,7 +85,6 @@ const usInfluencersData = [
     },
     {
         name: "Keith Gill (Roaring Kitty)",
-        isDayTrader: true,
         style: "草根巨鯨 / 事件驅動",
         viewpoint: "以深度的價值分析與強大的社群迷因號召力，策動散戶資金與華爾街空頭對作。展現出跨板塊的事件驅動與演算法前置交易效應。",
         stocks: ["GME (遊戲驛站)", "CHWY (Chewy)"],
@@ -201,7 +200,6 @@ const twInfluencersData = [
     },
     {
         name: "權證小哥",
-        isDayTrader: true,
         style: "籌碼分析 / 雙刀戰法",
         viewpoint: "大盤屢創新高且強勢股全面亮燈，已進入「瘋子盤」。提醒千萬不能盲目追高，必須看懂主力動向與資金流向。",
         stocks: ["陽明 (2609)", "長榮 (2603)", "世芯-KY (3661)"],
@@ -293,7 +291,6 @@ const twInfluencersData = [
     },
     {
         name: "張濬安 (航海王)",
-        isDayTrader: true,
         style: "散戶巨鯨 / 極致槓桿",
         viewpoint: "打破法人階級壁壘的傳奇。精準預判總經趨勢與黑天鵝事件，利用全市場、全工具（個股期、墊丙）進行極端槓桿押注。",
         stocks: ["長榮 (2603)", "陽明 (2609)", "萬海 (2615)"],
@@ -301,7 +298,6 @@ const twInfluencersData = [
     },
     {
         name: "菲比斯 (菲神)",
-        isDayTrader: true,
         style: "籌碼定價 / 價值投機",
         viewpoint: "提倡「獲利金三角」：從宏觀事件驅動尋找實體經濟供需失衡，並結合股權籌碼結構的流動性溢價進行投機避險。",
         stocks: ["長榮航 (2618)", "華航 (2610)", "群創 (3481)"],
