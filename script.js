@@ -419,12 +419,62 @@ document.addEventListener('DOMContentLoaded', () => {
     renderGrid('influencers-grid-tw', twInfluencersData);
 
     // 根據當前時間自動切換市場標籤 (台灣時間)
-    // 08:00 ~ 13:59 預設顯示台股
-    // 14:00 ~ 07:59 (包含晚上美股開盤) 預設顯示美股
     const currentHour = new Date().getHours();
     if (currentHour >= 8 && currentHour < 14) {
         switchTab('tw');
     } else {
         switchTab('us');
     }
+
+    // 延遲一秒後自動彈出 Top 5 熱議警示視窗
+    setTimeout(showTopStocks, 1000);
 });
+
+// 計算排行邏輯
+function calculateTopStocks(data) {
+    const counts = {};
+    data.forEach(inf => {
+        inf.stocks.forEach(stock => {
+            counts[stock] = (counts[stock] || 0) + 1;
+        });
+    });
+    return Object.entries(counts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 5);
+}
+
+function showTopStocks() {
+    const isUS = document.getElementById('btn-us').classList.contains('active');
+    const data = isUS ? usInfluencersData : twInfluencersData;
+    const marketName = isUS ? "🇺🇸 美股" : "🇹🇼 台股";
+    
+    const topStocks = calculateTopStocks(data);
+    document.getElementById('modal-title').innerHTML = `🔥 今日 ${marketName} 最熱議 Top 5`;
+    const tbody = document.getElementById('modal-body');
+    
+    let html = '';
+    topStocks.forEach((item, index) => {
+        let medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`;
+        html += `
+            <div class="top-item">
+                <span class="rank">${medal}</span>
+                <span class="stock">${item[0]}</span>
+                <span class="count">${item[1]} 票</span>
+            </div>
+        `;
+    });
+    
+    tbody.innerHTML = html;
+    document.getElementById('top-modal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('top-modal').style.display = 'none';
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('top-modal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
