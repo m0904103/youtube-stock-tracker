@@ -460,7 +460,10 @@ function showTopStocks() {
     
     // 當沖/短線巨鯨特別區塊
     if (topDayTrade.length > 0) {
-        html += `<h3 style="color: #38bdf8; font-size: 1.1rem; margin: 0 0 10px; padding-bottom: 5px; border-bottom: 1px solid rgba(56, 189, 248, 0.3); text-align: left;">⚡ 當沖/短線巨鯨 鎖定標的 Top 3</h3>`;
+        html += `<h3 style="color: #38bdf8; font-size: 1.1rem; margin: 0 0 10px; padding-bottom: 5px; border-bottom: 1px solid rgba(56, 189, 248, 0.3); text-align: left;">
+                    ⚡ 當沖/短線巨鯨 鎖定標的 Top 3
+                    <button class="guide-btn" onclick="showGuideModal()">📖 當沖心法</button>
+                 </h3>`;
         topDayTrade.forEach((item, index) => {
             html += `
                 <div class="top-item" style="border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.05); padding: 10px 20px;">
@@ -493,10 +496,22 @@ function closeModal() {
     document.getElementById('top-modal').style.display = 'none';
 }
 
+function showGuideModal() {
+    document.getElementById('guide-modal').style.display = 'block';
+}
+
+function closeGuideModal() {
+    document.getElementById('guide-modal').style.display = 'none';
+}
+
 window.onclick = function(event) {
-    const modal = document.getElementById('top-modal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
+    const topModal = document.getElementById('top-modal');
+    const guideModal = document.getElementById('guide-modal');
+    if (event.target == topModal) {
+        topModal.style.display = 'none';
+    }
+    if (event.target == guideModal) {
+        guideModal.style.display = 'none';
     }
 }
 
