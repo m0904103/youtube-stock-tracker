@@ -9,8 +9,8 @@ const usInfluencersData = [
     {
         name: "老李玩钱 (Your Favorite ⭐️)",
         style: "理性長線 / 帳戶實盤",
-        viewpoint: "最新更新：發布了「6月必買3支股票」策略，並深度剖析 SpaceX 即將上市對特斯拉的連動影響。針對 NVDA 財報後給出低位加倉點位。",
-        stocks: ["NVDA (輝達)", "TSLA (特斯拉)", "MU (美光)", "INTC (英特爾)", "PLTR (Palantir)"],
+        viewpoint: "【2026.06 最新覆核】發布了「6月必買3支股票」策略。除了深剖 SpaceX 對特斯拉的連動影響與 NVDA 財報加倉點位外，明確點出微軟 (MSFT) 的長線價值與優步 (UBER) 的平台獲利潛力。",
+        stocks: ["NVDA (輝達)", "MSFT (微軟)", "UBER (優步)", "TSLA (特斯拉)", "PLTR (Palantir)"],
         entryPoint: "建議逢低佈局。具體買入價格與加倉點位通常在會員頻道展示，強調在波動中做好倉位控管。"
     },
     {
