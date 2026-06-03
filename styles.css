@@ -316,10 +316,10 @@ h1 {
     line-height: 1.5;
 }
 
-.tags {
+.tags, .stock-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
 .tag {
