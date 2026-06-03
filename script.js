@@ -460,10 +460,12 @@ function showTopStocks() {
     
     // 當沖/短線巨鯨特別區塊
     if (topDayTrade.length > 0) {
-        html += `<h3 style="color: #38bdf8; font-size: 1.1rem; margin: 0 0 10px; padding-bottom: 5px; border-bottom: 1px solid rgba(56, 189, 248, 0.3); text-align: left;">
-                    ⚡ 當沖/短線巨鯨 鎖定標的 Top 3
-                    <button class="guide-btn" onclick="showGuideModal()">📖 當沖心法</button>
-                 </h3>`;
+        html += `<div style="display: flex; justify-content: space-between; align-items: center; margin: 0 0 12px 0; padding-bottom: 8px; border-bottom: 1px solid rgba(56, 189, 248, 0.3);">
+                    <h3 style="color: #38bdf8; font-size: 1.05rem; margin: 0; line-height: 1.4; flex: 1;">
+                        ⚡ 當沖/短線巨鯨<br/>鎖定標的 Top 3
+                    </h3>
+                    <button class="guide-btn" onclick="showGuideModal()" style="flex-shrink: 0; margin-left: 10px;">📖 當沖心法</button>
+                 </div>`;
         topDayTrade.forEach((item, index) => {
             html += `
                 <div class="top-item" style="border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.05); padding: 16px 24px; flex-direction: row; align-items: center;">
