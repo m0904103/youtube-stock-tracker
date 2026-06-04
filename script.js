@@ -63,13 +63,6 @@ const usInfluencersData = [
         entryPoint: "其推薦往往出現 <span class='highlight'>拉升後迅速回落</span> 的現象，儘管反向 ETF 已清算，但他仍是散戶測試市場水溫的最佳反指標。"
     },
     {
-        name: "股癌 Gooaye (謝孟恭)",
-        style: "產業趨勢 / 散戶第一指標",
-        viewpoint: "【2026.06 最新覆核】堅持不直接報牌，但透過產業鏈推導資金流向。近期重點觀察軟體 SaaS 族群的復甦，以及光通訊與被動元件的訂單動態。",
-        stocks: ["CRM (Salesforce)", "NOW (ServiceNow)", "SNOW (Snowflake)", "OKTA (Okta)", "LITE (Lumentum)"],
-        entryPoint: "觀察到資金正在輪動至跌深的軟體股 <span class='highlight'>(如 Salesforce, ServiceNow, Snowflake)</span>，提醒留意大盤融資過高的修正風險。"
-    },
-    {
         name: "Dan Niles (華爾街頂級科技投資人)",
         style: "科技股分析 / 宏觀避險",
         viewpoint: "【2026.06 最新覆核】看好 Agentic AI (代理型AI) 應用端，但預警 2027 年初 AI 泡沫可能迎來 30%-50% 的破裂與重置。",
@@ -186,10 +179,10 @@ const twInfluencersData = [
     },
     {
         name: "郭哲榮 (摩爾投顧 - 折折)",
-        style: "話題性高 / 權值股波段",
-        viewpoint: "最新觀點：強打「股東會行情」，預測鴻海與台積電資本支出概念股在股東會前後有噴出機會。提醒目前是淘金時代但需居高思維，避免使用融資。",
-        stocks: ["鴻海 (2317)", "台積電 (2330)", "精材 (3374)", "帆宣 (6196)"],
-        entryPoint: "看好鴻海「每年賺兩個股本」目標，認為目標價上看 <span class='highlight'>400 元</span>；同時點名資本支出概念股有補漲輪動機會。"
+        style: "極度張狂 / 散戶反指標(時準時不準)",
+        viewpoint: "【2026.06 盤後更新】針對6月初大盤震盪，定調為多頭市場的「緩漲急跌」，強調「拉回就是買」！持續看好股東會行情與台積電資本支出受惠股，並點名聯發科與群聯的後市潛力。",
+        stocks: ["2317 (鴻海)", "2330 (台積電)", "3374 (精材)", "6196 (帆宣)", "2454 (聯發科)", "8299 (群聯)"],
+        entryPoint: "總是喊出「哲哲帶你飛」並在高點買進，常在崩盤時呼籲加碼（著名的「千點萬點哲哲買點」）。"
     },
     {
         name: "老王 (老王愛說笑)",
