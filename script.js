@@ -159,6 +159,13 @@ const usInfluencersData = [
         viewpoint: "在 COMPUTEX 2026 宣告進入「代理式 AI」時代並首度亮相 Vera Rubin 架構。除了台廠供應鏈，特別點名邁威爾 (Marvell) 將是下一家具備潛力的兆美元巨頭。",
         stocks: ["NVDA (輝達)", "TSM (台積電)", "SMCI (美超微)", "MRVL (邁威爾)"],
         entryPoint: "一句「供應鏈產能無虞」即可瞬間消弭市場不確定性，其 <span class='highlight'>營收指引與產能宣示</span> 具備一錘定音的定價權。"
+    },
+    {
+        name: "霍比特小灰 (UponlyTech)",
+        style: "宏觀深度 / 產業鏈解構",
+        viewpoint: "【2026.06 最新覆核】深度解讀華爾街大老觀點，剖析 K 型經濟下的美股結構。看好 AI 產業鏈與大數據軟體的長線應用，並警示地緣政治對宏觀通膨的干擾。",
+        stocks: ["PLTR (Palantir)", "TSLA (特斯拉)", "NVDA (輝達)", "BTC (比特幣)"],
+        entryPoint: "建議透過解析宏觀政策與產業鏈邏輯，尋找 <span class='highlight'>被市場錯殺或具備長期顛覆性</span> 的優質資產，不盲從短期情緒。"
     }
 ];
 
