@@ -501,3 +501,55 @@ document.addEventListener('mousemove', e => {
         card.style.setProperty("--mouse-y", `${y}px`);
     }
 });
+
+// TV PIP Logic
+let tvVisible = false;
+function toggleTV() {
+    const pip = document.getElementById('tv-pip');
+    const iframe = document.getElementById('tv-iframe');
+    tvVisible = !tvVisible;
+    if(tvVisible) {
+        pip.style.display = 'block';
+        iframe.src = "https://www.youtube.com/embed/live_stream?channel=UCbZ1l-G5-sF_JkH8eQyZ_oQ&autoplay=1&mute=1";
+    } else {
+        pip.style.display = 'none';
+        iframe.src = ""; // Stop playing
+    }
+}
+
+// Make TV PIP draggable
+let isDragging = false, currentX, currentY, initialX, initialY, xOffset = 0, yOffset = 0;
+const pipContainer = document.getElementById('tv-pip');
+const pipHeader = document.querySelector('.tv-pip-header');
+
+if (pipHeader) {
+    pipHeader.addEventListener('mousedown', dragStart);
+    document.addEventListener('mouseup', dragEnd);
+    document.addEventListener('mousemove', drag);
+}
+
+function dragStart(e) {
+    initialX = e.clientX - xOffset;
+    initialY = e.clientY - yOffset;
+    if (e.target === pipHeader || e.target.parentNode === pipHeader) {
+        isDragging = true;
+    }
+}
+function dragEnd(e) {
+    initialX = currentX;
+    initialY = currentY;
+    isDragging = false;
+}
+function drag(e) {
+    if (isDragging) {
+        e.preventDefault();
+        currentX = e.clientX - initialX;
+        currentY = e.clientY - initialY;
+        xOffset = currentX;
+        yOffset = currentY;
+        setTranslate(currentX, currentY, pipContainer);
+    }
+}
+function setTranslate(xPos, yPos, el) {
+    el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0)`;
+}

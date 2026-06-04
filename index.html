@@ -171,9 +171,23 @@
 
 
 
-    <!-- Floating Action Button -->
-    <button id="fab-top" class="fab" onclick="showTopStocks()">🏆</button>
+    <!-- TV Live Stream Modal / PIP -->
+    <div id="tv-pip" class="tv-pip-container">
+        <div class="tv-pip-header">
+            <span style="font-size: 0.9rem; font-weight: 700; color: #fff;">📺 東森財經新聞 LIVE</span>
+            <span class="close-pip" onclick="toggleTV()">&times;</span>
+        </div>
+        <div class="tv-pip-body">
+            <iframe id="tv-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 
-    <script src="script.js?v=19"></script>
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <button id="fab-tv" class="fab fab-tv" onclick="toggleTV()" title="看盤不中斷 (東森財經)">📺</button>
+        <button id="fab-top" class="fab" onclick="showTopStocks()" title="戰情雷達">🏆</button>
+    </div>
+
+    <script src="script.js?v=20"></script>
 </body>
 </html>
