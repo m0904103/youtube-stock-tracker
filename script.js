@@ -418,6 +418,17 @@ function switchTab(tabId) {
         document.getElementById('page-title').textContent = "拾人牙慧 👁️ 量化情報中樞";
         document.getElementById('page-desc').textContent = "Global Quant Intelligence - 追蹤暗池資金流、造市商曝險與另類數據前瞻";
     }
+
+    // 動態變更 FAB 圖示
+    const fab = document.getElementById('fab-top');
+    if(fab) {
+        if(tabId === 'quant') {
+            fab.innerHTML = '💡';
+        } else {
+            fab.innerHTML = '🏆';
+        }
+    }
+
 }
 
 // 獲取並渲染另類數據
@@ -425,6 +436,7 @@ async function fetchAltData() {
     try {
         const response = await fetch('alt_data.json?v=' + new Date().getTime());
         const data = await response.json();
+        window.altData = data;
         
         document.getElementById('alt-last-updated').textContent = `更新時間: ${data.last_updated}`;
         
@@ -511,7 +523,72 @@ function calculateTopStocks(data, filterFn = null) {
         .sort((a, b) => b[1] - a[1]);
 }
 
+
+function showFabAction() {
+    const isQuant = document.getElementById('btn-quant').classList.contains('active');
+    if (isQuant) {
+        showQuantSummary();
+    } else {
+        showTopStocks();
+    }
+}
+
+function showQuantSummary() {
+    document.getElementById('modal-title').innerHTML = `💡 量化綜合評估 (Quant Summary)`;
+    const tbody = document.getElementById('modal-body');
+    
+    if (!window.altData) {
+        tbody.innerHTML = `<p style="color: #ccc; text-align: center; padding: 20px;">資料載入中，請稍候...</p>`;
+        document.getElementById('top-modal').style.display = 'block';
+        return;
+    }
+
+    const dix = window.altData.derivatives.dix.value;
+    const gex = window.altData.derivatives.gex.value;
+    
+    let signalText = "";
+    let color = "";
+    let desc = "";
+
+    if (dix >= 45 && gex > 0) {
+        signalText = "【積極買進 / 續抱】";
+        color = "#2ecc71";
+        desc = "大戶狂買且波動收斂，大盤有強大支撐，逢低大膽加碼。";
+    } else if (dix <= 40 && gex < 0) {
+        signalText = "【高危險 / 減碼】";
+        color = "#e74c3c";
+        desc = "流動性枯竭且波動放大，無人護盤，強烈建議降低持股。";
+    } else if (dix <= 40 && gex > 0) {
+        signalText = "【逢高減碼 / 觀望】";
+        color = "#f39c12";
+        desc = "大戶縮手但莊家撐盤，上漲動能耗盡，建議獲利了結。";
+    } else if (dix >= 45 && gex < 0) {
+        signalText = "【暴力 V 轉潛力】";
+        color = "#e67e22";
+        desc = "大戶吸籌但盤面波動劇烈，可能伴隨恐慌下殺後的暴力反彈。";
+    } else {
+        signalText = "【中性 / 依紀律操作】";
+        color = "#3498db";
+        desc = "無極端數據，回歸個股基本面與均線操作。";
+    }
+
+    const html = `
+        <div style="padding: 15px; text-align: center;">
+            <h3 style="color: ${color}; font-size: 1.5rem; margin-bottom: 10px;">${signalText}</h3>
+            <p style="color: #f8fafc; font-size: 1.1rem; line-height: 1.6;">${desc}</p>
+            <div style="margin-top: 20px; text-align: left; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                <p><strong>DIX 暗池買盤:</strong> ${dix}%</p>
+                <p><strong>GEX 莊家曝險:</strong> $ ${gex} B</p>
+            </div>
+        </div>
+    `;
+
+    tbody.innerHTML = html;
+    document.getElementById('top-modal').style.display = 'block';
+}
+
 function showTopStocks() {
+
     const isUS = document.getElementById('btn-us').classList.contains('active');
     const data = isUS ? usInfluencersData : twInfluencersData;
     const marketName = isUS ? "🇺🇸 美股" : "🇹🇼 台股";
