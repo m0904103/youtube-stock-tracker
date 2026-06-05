@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>?�人?�慧 ??�??��?輿�???��系統</title>
+    <title>拾人牙慧 👁️ 股市輿情監控系統</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=4">
 </head>
@@ -15,65 +15,65 @@
     </div>
     
     <nav class="top-nav">
-        <button id="btn-us" class="nav-btn active" onclick="switchTab('us')">?��?�� 美股觀�?/button>
-        <button id="btn-tw" class="nav-btn" onclick="switchTab('tw')">?��?�� ?�股觀�?/button>
-        <button id="btn-quant" class="nav-btn" onclick="switchTab('quant')">?? ?��??�另類數??/button>
+        <button id="btn-us" class="nav-btn active" onclick="switchTab('us')">🇺🇸 美股觀點</button>
+        <button id="btn-tw" class="nav-btn" onclick="switchTab('tw')">🇹🇼 台股觀點</button>
+        <button id="btn-quant" class="nav-btn" onclick="switchTab('quant')">🧠 量化與另類數據</button>
     </nav>
 
     <header>
         <div class="container">
-            <h1 id="page-title">?�人?�慧 ??�??��?輿�???��系統</h1>
+            <h1 id="page-title">拾人牙慧 👁️ 股市輿情監控系統</h1>
             <p class="subtitle">
                 2026.06
                 <span id="last-updated" style="display:inline-block; margin-left:15px; font-size:0.85rem; color:#00f0ff; background: rgba(0, 240, 255, 0.1); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(0, 240, 255, 0.3); vertical-align: middle;">
-                    ?? ?�後自?�更?? 2026-06-05 08:05
+                    🕒 最後自動更新: 2026-06-05 08:05
                 </span>
             </p>
-            <p id="page-desc">US Market Sentiment Radar - ?��??��?巨鯨?�華?��?權�??�第一?��?�?/p>
+            <p id="page-desc">US Market Sentiment Radar - 匯聚傳奇巨鯨與華爾街權威的第一手洞察</p>
         </div>
     </header>
 
-    <!-- ================= 美股?��?(US) ================= -->
+    <!-- ================= 美股區塊 (US) ================= -->
     <div id="section-us" class="tab-content active">
         <main class="container">
             <section class="consensus-section">
                 <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    ?�� 美股：�??�推?�買?�總�?(Ultimate Consensus)
+                    🔥 美股：綜合推薦買入總表 (Ultimate Consensus)
                 </h2>
                 <div class="table-container">
                     <table class="consensus-table">
                         <thead>
                             <tr>
-                                <th>影響?�陣??/ 主�?</th>
-                                <th>?��?巨頭?��?�?/th>
-                                <th>?��?標�??��?作�???/th>
+                                <th>影響力陣營 / 主題</th>
+                                <th>指標巨頭與機構</th>
+                                <th>核心標的與操作策略</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label="影響?�陣?? class="ticker-cell">?�爾街�?級�??��? AI 衍�??��?</td>
-                                <td data-label="?��?巨頭"><span class="mentions hot">Mike Wilson, Tom Lee, Dan Ives</span></td>
-                                <td data-label="?��??��?"><strong style="color: #ff3366;">大盤上�? 8000 點�?</strong>?��??�息?��?，�??�強??EPS 足以?��?漲勢?��?好微軟、�??�、特?��??�Palantir 等具?�「AI 乘數?��??��?衍�??��??��?/td>
+                                <td data-label="影響力陣營" class="ticker-cell">華爾街超級多頭與 AI 衍生生態</td>
+                                <td data-label="指標巨頭"><span class="mentions hot">Mike Wilson, Tom Lee, Dan Ives</span></td>
+                                <td data-label="核心操作"><strong style="color: #ff3366;">大盤上看 8000 點：</strong>無視降息預期，認為強勁 EPS 足以支撐漲勢。看好微軟、蘋果、特斯拉、Palantir 等具備「AI 乘數效應」的衍生受益者。</td>
                             </tr>
                             <tr>
-                                <td data-label="影響?�陣?? class="ticker-cell">?��??�險巨鯨 (?��?漂移)</td>
-                                <td data-label="?��?巨頭"><span class="mentions hot">Bill Ackman, S. Druckenmiller</span></td>
-                                <td data-label="?��??��?"><strong style="color: #ff3366;">?�殺?��??��??�基建�?</strong>Ackman 趁微軟季度�?檔大?�建?��?Druckenmiller ?��??��???NVDA，�??��??��??�、英?�爾??ARM 等解決�??�瓶?��?業�?/td>
+                                <td data-label="影響力陣營" class="ticker-cell">傳奇避險巨鯨 (板塊漂移)</td>
+                                <td data-label="指標巨頭"><span class="mentions hot">Bill Ackman, S. Druckenmiller</span></td>
+                                <td data-label="核心操作"><strong style="color: #ff3366;">錯殺抄底與算力基建：</strong>Ackman 趁微軟季度回檔大舉建倉；Druckenmiller 則提早清倉 NVDA，資金轉進博通、英特爾與 ARM 等解決算力瓶頸企業。</td>
                             </tr>
                             <tr>
-                                <td data-label="影響?�陣?? class="ticker-cell">科�??��??�破壞性創?�信�?/td>
-                                <td data-label="?��?巨頭"><span class="mentions high">Jensen Huang, Elon Musk, Cathie Wood</span></td>
-                                <td data-label="?��??��?"><strong style="color: #ff3366;">壟斷定價?��??�系綁�?�?/strong>黃�??�主導代?��? AI；Musk ?��??��?企業?��??�併；木?��??�懼波�?大買 Palantir，並?�出比特�?75 ?��??��?/td>
+                                <td data-label="影響力陣營" class="ticker-cell">科技霸權與破壞性創新信仰</td>
+                                <td data-label="指標巨頭"><span class="mentions high">Jensen Huang, Elon Musk, Cathie Wood</span></td>
+                                <td data-label="核心操作"><strong style="color: #ff3366;">壟斷定價與生態系綁定：</strong>黃仁勳主導代理式 AI；Musk 推動旗下企業兆元合併；木頭姐無懼波動大買 Palantir，並喊出比特幣 75 萬美元。</td>
                             </tr>
                             <tr>
-                                <td data-label="影響?�陣?? class="ticker-cell">?�根迷�??�潮?��?權異??/td>
-                                <td data-label="?��?巨頭"><span class="mentions high">Roaring Kitty, Unusual Whales, All-In</span></td>
-                                <td data-label="?��??��?"><strong style="color: #ff3366;">極端流�??��?壓�?</strong>?��??��??��?池數?��??�散?��?演�?法�??�追??(�?GME, CHWY)?�利?�政客內線�??��? Gamma ?��??��??��???/td>
+                                <td data-label="影響力陣營" class="ticker-cell">草根迷因狂潮與期權異動</td>
+                                <td data-label="指標巨頭"><span class="mentions high">Roaring Kitty, Unusual Whales, All-In</span></td>
+                                <td data-label="核心操作"><strong style="color: #ff3366;">極端流動性擠壓：</strong>透過推文或暗池數據引發散戶與演算法瘋狂追價 (如 GME, CHWY)。利用政客內線與期權 Gamma 進行短線狙擊。</td>
                             </tr>
                             <tr>
-                                <td data-label="影響?�陣?? class="ticker-cell">宏�??�禦?��??��?標警??/td>
-                                <td data-label="?��?巨頭"><span class="mentions">Ray Dalio, A. Kobeissi, Jim Cramer</span></td>
-                                <td data-label="?��??��?"><strong style="color: #ff3366;">極端?�險?��??�警?��?</strong>Dalio ?�離中�?轉進�???(NEM) ??TIPS；空?�警?��??��??��?中風?��???Cramer 仍是?��???��?��??��??��???/td>
+                                <td data-label="影響力陣營" class="ticker-cell">宏觀防禦與反向指標警戒</td>
+                                <td data-label="指標巨頭"><span class="mentions">Ray Dalio, A. Kobeissi, Jim Cramer</span></td>
+                                <td data-label="核心操作"><strong style="color: #ff3366;">極端避險與頂部警告：</strong>Dalio 撤離中國轉進黃金 (NEM) 與 TIPS；空頭警告市場頂部集中風險；而 Cramer 仍是短線散戶熱點的反指標。</td>
                             </tr>
                         </tbody>
                     </table>
@@ -82,65 +82,65 @@
             
             <section class="influencers-section">
                 <div class="grid" id="influencers-grid-us">
-                    <!-- JS ?��?注入 -->
+                    <!-- JS 自動注入 -->
                 </div>
             </section>
         </main>
     </div>
 
-    <!-- ================= ?�股?��?(TW) ================= -->
+    <!-- ================= 台股區塊 (TW) ================= -->
     <div id="section-tw" class="tab-content" style="display: none;">
         <main class="container">
             <section class="consensus-section">
                 <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    ?�� ?�股：�??�推?�買?�總�?(Ultimate Consensus)
+                    🔥 台股：綜合推薦買入總表 (Ultimate Consensus)
                 </h2>
                 <div class="table-container">
                     <table class="consensus-table">
                         <thead>
                             <tr>
-                                <th>?�票 / ?��?</th>
-                                <th>?�注�?(?��?次數)</th>
-                                <th>?��?網�? / 專家</th>
-                                <th>?��?買入點�??�核心�???/th>
+                                <th>股票 / 板塊</th>
+                                <th>關注度 (提及次數)</th>
+                                <th>支持網紅 / 專家</th>
+                                <th>具體買入點位與核心理由</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label="?�票 / ?��?" class="ticker-cell">黃�??��??�宴??AI 算�?<br><small>(�??, 緯創, 機器�?</small></td>
-                                <td data-label="?�注�?><span class="mentions hot">絕�??��???/span></td>
-                                <td data-label="?��?網�? / 專家">黃�???(外部?��?), ?��??? ?��??��???/td>
-                                <td data-label="?��?買入點�??�核心�???><strong>算�??�物主�?</strong>?��?被�?仁勳點�??��?作�??�價?�遭?�史詩�??��? (Re-rating)?�電視台?�嘴亦全?��???COMPUTEX ?��??�散?��??�傳輸�?/td>
+                                <td data-label="股票 / 板塊" class="ticker-cell">黃仁勳兆元宴與 AI 算力<br><small>(廣達, 緯創, 機器人)</small></td>
+                                <td data-label="關注度"><span class="mentions hot">絕對牽引力</span></td>
+                                <td data-label="支持網紅 / 專家">黃仁勳 (外部霸權), 李兆華, 錢線百分百</td>
+                                <td data-label="具體買入點位與核心理由"><strong>算力造物主：</strong>只要被黃仁勳點名或合作，股價即遭遇史詩級重塑 (Re-rating)。電視台名嘴亦全面跟進 COMPUTEX 效應與散熱高速傳輸。</td>
                             </tr>
                             <tr>
-                                <td data-label="?�票 / ?��?" class="ticker-cell">護�?神山?��?導�??��?<br><small>(?��???2330)</small></td>
-                                <td data-label="?�注�?><span class="mentions hot">極度?�好</span></td>
-                                <td data-label="?��?網�? / 專家">?��?�? 楊�?�? ?��?�? ?�哲�?/td>
-                                <td data-label="?��?買入點�??�核心�???><strong>?�山高�?心�?�?/strong>?��?之�??�台積電?��?必�?超�??��?組�? 50% 且長線�??��??��?龍精算�??�價 <strong>1960~2000??/strong>?��?楊�?超�??�其?��?談判弱勢??/td>
+                                <td data-label="股票 / 板塊" class="ticker-cell">護國神山與半導體長線<br><small>(台積電 2330)</small></td>
+                                <td data-label="關注度"><span class="mentions hot">極度看好</span></td>
+                                <td data-label="支持網紅 / 專家">陸行之, 楊應超, 杜金龍, 郭哲榮</td>
+                                <td data-label="具體買入點位與核心理由"><strong>登山高手心法：</strong>陸行之指出台積電部位必須超過投資組合 50% 且長線持有；杜金龍精算合理價 <strong>1960~2000元</strong>。但楊應超提醒其國際談判弱勢。</td>
                             </tr>
                             <tr>
-                                <td data-label="?�票 / ?��?" class="ticker-cell">?��??��??��??�值股<br><small>(?�榮海�?, ?�收?�發??</small></td>
-                                <td data-label="?�注�?><span class="mentions high">巨鯨?��?</span></td>
-                                <td data-label="?��?網�? / 專家">?�海??(張濬�?, ?��???(?��?)</td>
-                                <td data-label="?��?買入點�??�核心�???><strong>極端流�??��?供�?失衡�?/strong>?�海?��??��??��??��?貸賣節稅�??��??��?定�??�年�?> 10% 且具?��??�性�?壓�??��?標�???/td>
+                                <td data-label="股票 / 板塊" class="ticker-cell">航運與低基期價值股<br><small>(長榮海運, 營收爆發股)</small></td>
+                                <td data-label="關注度"><span class="mentions high">巨鯨共識</span></td>
+                                <td data-label="支持網紅 / 專家">航海王 (張濬安), 菲比斯 (菲神)</td>
+                                <td data-label="具體買入點位與核心理由"><strong>極端流動性與供需失衡：</strong>航海王轉向資本套利與貸賣節稅；菲神則鎖定營收年增 > 10% 且具備流動性擠壓效應的標的。</td>
                             </tr>
                             <tr>
-                                <td data-label="?�票 / ?��?" class="ticker-cell">資�?外溢?�矽?��?<br><small>(?�發�? ?��??? CPO)</small></td>
-                                <td data-label="?�注�?><span class="mentions high">高度?�注</span></td>
-                                <td data-label="?��?網�? / 專家">?��?�? ?�船?? 財報??/td>
-                                <td data-label="?��?買入點�??�核心�???><strong>AI ?��?建設補漲�?/strong>?�總點�?資�?從台積電外溢?�聯?��???CPO ?��?子�??�船?�強?��?好�?詮�?財報?��??��???DRAM ?��?導�?設�??�價齊漲??/td>
+                                <td data-label="股票 / 板塊" class="ticker-cell">資金外溢與矽光子<br><small>(聯發科, 台達電, CPO)</small></td>
+                                <td data-label="關注度"><span class="mentions high">高度關注</span></td>
+                                <td data-label="支持網紅 / 專家">蔡明彰, 老船長, 財報狗</td>
+                                <td data-label="具體買入點位與核心理由"><strong>AI 基礎建設補漲：</strong>蔡總點名資金從台積電外溢至聯發科與 CPO 矽光子；老船長強烈看好上詮；財報狗預期先進 DRAM 與半導體設備量價齊漲。</td>
                             </tr>
                             <tr>
-                                <td data-label="?�票 / ?��?" class="ticker-cell">微�??��??��??�周�?/td>
-                                <td data-label="?�注�?><span class="mentions">極速周�?/span></td>
-                                <td data-label="?��?網�? / 專家">巨人?? ?�瀚中 (Mgk)</td>
-                                <td data-label="?��?買入點�??�核心�???><strong>?�貧?�維?�物?�極?��?</strong>不�?測大?��?專注訂單簿�?殺�?極端?��??�。強調建立�?�?SOP ?�嚴?��?律�?富人?�報?��?，窮人�??��??��?/td>
+                                <td data-label="股票 / 板塊" class="ticker-cell">微觀當沖與動能周轉</td>
+                                <td data-label="關注度"><span class="mentions">極速周轉</span></td>
+                                <td data-label="支持網紅 / 專家">巨人傑, 葛瀚中 (Mgk)</td>
+                                <td data-label="具體買入點位與核心理由"><strong>脫貧思維與物理極限：</strong>不預測大盤，專注訂單簿博殺與極端周轉率。強調建立專屬 SOP 與嚴格紀律，富人靠報酬率，窮人靠周轉率。</td>
                             </tr>
                             <tr>
-                                <td data-label="?�票 / ?��?" class="ticker-cell">大盤宏�??�險?��??�循??/td>
-                                <td data-label="?�注�?><span class="mentions hot">?�高共識�?</span></td>
-                                <td data-label="?��?網�? / 專家">谷�?�? ?��??? ?��?, ?�家�? ?��?�?/td>
-                                <td data-label="?��?買入點�??�核心�???><strong>?��?泡沫?��??�現?��?</strong>谷�?涵警?��??�股市逼�?極�?，�??��?流�??�禦?��??��??��??�警?�崩?��??��??��?位大師強?�建議利?�股?�平衡�? ETF ?��??��??�風?��?/td>
+                                <td data-label="股票 / 板塊" class="ticker-cell">大盤宏觀避險與降息循環</td>
+                                <td data-label="關注度"><span class="mentions hot">最高共識！</span></td>
+                                <td data-label="支持網紅 / 專家">谷月涵, 陳嘉偉, 股魚, 朱家泓, 阮慕驊</td>
+                                <td data-label="具體買入點位與核心理由"><strong>防範泡沫與保留現金：</strong>谷月涵警告美台股市逼近極限，資金將流向防禦與金融；陳嘉偉警告崩盤；股魚與多位大師強烈建議利用股債平衡與 ETF 降低單一股風險。</td>
                             </tr>
                         </tbody>
                     </table>
@@ -149,36 +149,36 @@
             
             <section class="influencers-section">
                 <div class="grid" id="influencers-grid-tw">
-                    <!-- JS ?��?注入 -->
+                    <!-- JS 自動注入 -->
                 </div>
             </section>
         </main>
     </div>
 
-    <!-- ================= ?��??��?(Quant) ================= -->
+    <!-- ================= 量化區塊 (Quant) ================= -->
     <div id="section-quant" class="tab-content" style="display: none;">
         <main class="container">
             <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px;">
-                ?? ?��??��??�報中�? (Global Quant Intelligence)
+                🧠 全球量化情報中樞 (Global Quant Intelligence)
                 <span id="alt-last-updated" style="font-size:0.85rem; color:#00f0ff; background: rgba(0, 240, 255, 0.1); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(0, 240, 255, 0.3); vertical-align: middle; margin-left: 10px;">
-                    載入�?..
+                    載入中...
                 </span>
             </h2>
 
             <div class="quant-dashboard">
-                <!-- ?��??��?衍�??��??��?-->
+                <!-- 造市商與衍生品流動性 -->
                 <div class="quant-card">
-                    <h3>?�� 衍�??�造�??��??��?(Dealer Exposure)</h3>
-                    <p class="quant-desc">追蹤 SqueezeMetrics ?��??�伽馬�??��??�判機�??��?資�?流�?/p>
+                    <h3>🏦 衍生品造市商流動性 (Dealer Exposure)</h3>
+                    <p class="quant-desc">追蹤 SqueezeMetrics 暗池與伽馬曝險，預判機構隱藏資金流。</p>
                     <div class="quant-metric">
-                        <span class="metric-label">DIX (?��?買盤?�數)</span>
+                        <span class="metric-label">DIX (暗池買盤指數)</span>
                         <div class="metric-value-container">
                             <span class="metric-value" id="q-dix-val">--%</span>
                             <span class="metric-status" id="q-dix-status">--</span>
                         </div>
                     </div>
                     <div class="quant-metric">
-                        <span class="metric-label">GEX (伽馬?�險, Billions)</span>
+                        <span class="metric-label">GEX (伽馬曝險, Billions)</span>
                         <div class="metric-value-container">
                             <span class="metric-value" id="q-gex-val">$ --</span>
                             <span class="metric-status" id="q-gex-status">--</span>
@@ -186,15 +186,15 @@
                     </div>
                 </div>
 
-                <!-- ?��?壓�?�?-->
+                <!-- 情緒壓力表 -->
                 <div class="quant-card">
-                    <h3>?���?多空?��?壓�?�?(Bull/Bear Gauge)</h3>
-                    <p class="quant-desc">NLP 深度�??論�??��??��?觀信�?，�??�散?��??��??��???/p>
+                    <h3>🌡️ 多空情緒壓力表 (Bull/Bear Gauge)</h3>
+                    <p class="quant-desc">NLP 深度解析論壇情緒與宏觀信心，捕捉散戶從眾背離點。</p>
                     <div id="q-nlp-container">
-                        <!-- ?��??�入 NLP ?��???-->
+                        <!-- 動態插入 NLP 情緒列 -->
                     </div>
                     <div class="quant-metric" style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                        <span class="metric-label">宏�?經�?信�?調查</span>
+                        <span class="metric-label">宏觀經濟信心調查</span>
                         <div class="metric-value-container">
                             <span class="metric-value" id="q-macro-val">--</span>
                             <span class="metric-status" id="q-macro-status" style="color: #3498db;">--</span>
@@ -203,23 +203,23 @@
                 </div>
             </div>
 
-            <!-- ?��??�本?��?�?-->
+            <!-- 另類基本面預警 -->
             <section class="alt-fundamentals-section" style="margin-top: 30px;">
                 <h3 style="color: #fff; border-bottom: 1px solid rgba(0, 240, 255, 0.3); padding-bottom: 10px; margin-bottom: 15px;">
-                    ?�� ?��??�本?��?置雷??(Alternative Data Pulse)
+                    📡 另類基本面前置雷達 (Alternative Data Pulse)
                 </h3>
                 <div class="table-container">
                     <table class="consensus-table">
                         <thead>
                             <tr>
-                                <th>??��標�? / ?��?</th>
-                                <th>?��??��?訊�?</th>
-                                <th>財報?��?機�?</th>
-                                <th>底層?�輯?�解??/th>
+                                <th>監控標的 / 板塊</th>
+                                <th>另類數據訊號</th>
+                                <th>財報異動機率</th>
+                                <th>底層邏輯與解析</th>
                             </tr>
                         </thead>
                         <tbody id="q-alt-tbody">
-                            <!-- ?��??�入 -->
+                            <!-- 動態插入 -->
                         </tbody>
                     </table>
                 </div>
@@ -228,14 +228,14 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 ?��?網�?觀點追�? 資�??��??�考�?不�??��?資建議�?/p>
+        <p>&copy; 2026 股市網紅觀點追蹤. 資料僅供參考，不構成投資建議。</p>
     </footer>
 
-    <!-- ?��??��? Modal -->
+    <!-- 戰情雷達 Modal -->
     <div id="top-modal" class="modal">
         <div class="modal-content top-modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2 id="modal-title">?�� ?��??��?</h2>
+            <h2 id="modal-title">🔥 戰情雷達</h2>
             <div id="modal-body" class="top-list-container">
                 <!-- JS will inject top 5 here -->
             </div>
@@ -245,8 +245,8 @@
 
 
     <!-- Floating Action Button -->
-    <button id="fab-top" class="fab" onclick="showTopStocks()">??</button>
+    <button id="fab-top" class="fab" onclick="showTopStocks()">🏆</button>
 
-    <script src="script.js?v=26"></script>
+    <script src="script.js?v=27"></script>
 </body>
 </html>
