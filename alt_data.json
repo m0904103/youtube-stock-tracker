@@ -1,0 +1,65 @@
+{
+    "last_updated": "2026-06-05 08:58:48",
+    "derivatives": {
+        "date": "2026-06-04",
+        "dix": {
+            "value": 43.7,
+            "status": "中性 (Neutral)",
+            "color": "#f39c12"
+        },
+        "gex": {
+            "value": 7.72,
+            "status": "波動收斂 (Dealer Long Gamma)",
+            "color": "#2ecc71"
+        }
+    },
+    "nlp_sentiment": {
+        "retail_forums": [
+            {
+                "name": "PTT Stock (台股)",
+                "score": 82,
+                "label": "極度樂觀 (AI 信仰)",
+                "color": "#2ecc71"
+            },
+            {
+                "name": "Reddit r/stocks (美股)",
+                "score": 45,
+                "label": "觀望焦慮 (CapEx 擔憂)",
+                "color": "#f39c12"
+            },
+            {
+                "name": "Xueqiu (中概股)",
+                "score": 30,
+                "label": "悲觀 (宏觀疲軟)",
+                "color": "#e74c3c"
+            }
+        ],
+        "macro_confidence": {
+            "score": 68,
+            "label": "溫和擴張"
+        }
+    },
+    "alt_fundamentals": [
+        {
+            "ticker": "MSFT",
+            "sector": "雲端與 AI 軟體",
+            "signal": "Similarweb 企業流量躍升",
+            "probability": "高",
+            "description": "Copilot 企業版登入流量在 5 月底出現顯著峰值，預估 SaaS 訂閱超預期。"
+        },
+        {
+            "ticker": "SBUX",
+            "sector": "非必需消費",
+            "signal": "Earnest 信用卡消費衰退",
+            "probability": "高",
+            "description": "MCC 5812 (餐飲) 數據顯示美國低端客群消費頻次持續下滑，面臨財報下修風險。"
+        },
+        {
+            "ticker": "2382.TW (廣達)",
+            "sector": "AI 伺服器組裝",
+            "signal": "Placer.ai 供應鏈足跡熱度",
+            "probability": "中",
+            "description": "林口與特定擴建廠區的員工手機定位停留時長暴增，反映產能利用率滿載。"
+        }
+    ]
+}

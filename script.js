@@ -386,17 +386,17 @@ function renderGrid(containerId, data) {
 }
 
 function switchTab(tabId) {
-    // 隱藏所有內容
-    document.getElementById('section-us').style.display = 'none';
-    document.getElementById('section-tw').style.display = 'none';
-    document.getElementById('section-us').classList.remove('active');
-    document.getElementById('section-tw').classList.remove('active');
-    
-    // 取消所有按鈕的 active 狀態
-    document.getElementById('btn-us').classList.remove('active');
-    document.getElementById('btn-tw').classList.remove('active');
+    const tabs = ['us', 'tw', 'quant'];
+    tabs.forEach(id => {
+        const section = document.getElementById('section-' + id);
+        const btn = document.getElementById('btn-' + id);
+        if (section) {
+            section.style.display = 'none';
+            section.classList.remove('active');
+        }
+        if (btn) btn.classList.remove('active');
+    });
 
-    // 顯示被點擊的內容
     const targetSection = document.getElementById('section-' + tabId);
     targetSection.style.display = 'block';
     // 強制重繪以觸發動畫
@@ -409,9 +409,71 @@ function switchTab(tabId) {
     if(tabId === 'us') {
         document.getElementById('page-title').textContent = "拾人牙慧 👁️ 美股輿情監控";
         document.getElementById('page-desc').textContent = "US Market Sentiment Radar - 匯聚傳奇巨鯨與華爾街權威的第一手洞察";
-    } else {
+    } else if(tabId === 'tw') {
         document.getElementById('page-title').textContent = "拾人牙慧 👁️ 台股輿情監控";
         document.getElementById('page-desc').textContent = "TW Market Sentiment Radar - 追蹤最具指標性的台股大老與草根散戶佈局";
+    } else if(tabId === 'quant') {
+        document.getElementById('page-title').textContent = "拾人牙慧 👁️ 量化情報中樞";
+        document.getElementById('page-desc').textContent = "Global Quant Intelligence - 追蹤暗池資金流、造市商曝險與另類數據前瞻";
+    }
+}
+
+// 獲取並渲染另類數據
+async function fetchAltData() {
+    try {
+        const response = await fetch('alt_data.json?v=' + new Date().getTime());
+        const data = await response.json();
+        
+        document.getElementById('alt-last-updated').textContent = `更新時間: ${data.last_updated}`;
+        
+        // 渲染 DIX & GEX
+        document.getElementById('q-dix-val').textContent = data.derivatives.dix.value + '%';
+        document.getElementById('q-dix-status').textContent = data.derivatives.dix.status;
+        document.getElementById('q-dix-status').style.color = data.derivatives.dix.color;
+        
+        document.getElementById('q-gex-val').textContent = '$ ' + data.derivatives.gex.value + ' B';
+        document.getElementById('q-gex-status').textContent = data.derivatives.gex.status;
+        document.getElementById('q-gex-status').style.color = data.derivatives.gex.color;
+
+        // 渲染 NLP
+        const nlpContainer = document.getElementById('q-nlp-container');
+        let nlpHTML = '';
+        data.nlp_sentiment.retail_forums.forEach(f => {
+            nlpHTML += `
+                <div class="nlp-row">
+                    <span class="nlp-name">${f.name}</span>
+                    <div class="nlp-bar-container">
+                        <div class="nlp-bar-fill" style="width: ${f.score}%; background: ${f.color};"></div>
+                    </div>
+                    <span class="nlp-score-label" style="color: ${f.color}">${f.label} (${f.score})</span>
+                </div>
+            `;
+        });
+        nlpContainer.innerHTML = nlpHTML;
+        
+        // 渲染 Macro
+        document.getElementById('q-macro-val').textContent = data.nlp_sentiment.macro_confidence.score;
+        document.getElementById('q-macro-status').textContent = data.nlp_sentiment.macro_confidence.label;
+
+        // 渲染 Alt Fundamentals
+        const altTbody = document.getElementById('q-alt-tbody');
+        let altHTML = '';
+        data.alt_fundamentals.forEach(item => {
+            let probColor = item.probability === '高' ? '#e74c3c' : '#f39c12';
+            altHTML += `
+                <tr>
+                    <td data-label="監控標的" class="ticker-cell">${item.ticker}<br><small>${item.sector}</small></td>
+                    <td data-label="另類數據訊號"><span class="mentions hot">${item.signal}</span></td>
+                    <td data-label="財報異動機率"><strong style="color: ${probColor};">${item.probability}</strong></td>
+                    <td data-label="底層邏輯">${item.description}</td>
+                </tr>
+            `;
+        });
+        altTbody.innerHTML = altHTML;
+
+    } catch (e) {
+        console.error("Failed to fetch alt data", e);
+        document.getElementById('alt-last-updated').textContent = "資料載入失敗";
     }
 }
 
@@ -419,6 +481,7 @@ function switchTab(tabId) {
 document.addEventListener('DOMContentLoaded', () => {
     renderGrid('influencers-grid-us', usInfluencersData);
     renderGrid('influencers-grid-tw', twInfluencersData);
+    fetchAltData();
 
     // 根據當前時間自動切換市場標籤 (台灣時間)
     const currentHour = new Date().getHours();
