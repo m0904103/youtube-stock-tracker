@@ -1,0 +1,42 @@
+name: Auto Update Quant Data
+
+on:
+  schedule:
+    # 🌅 台股盤前: TW 08:30 -> UTC 00:30
+    - cron: '30 0 * * 1-5'
+    # 🌇 台股盤後: TW 14:00 -> UTC 06:00
+    - cron: '0 6 * * 1-5'
+    # 🌙 美股盤前: TW 20:30 -> UTC 12:30
+    - cron: '30 12 * * 1-5'
+    # 🌟 美股盤後: TW 05:00 -> UTC 21:00 (前一天的美股盤後)
+    - cron: '0 21 * * 1-5'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Python script
+        run: python fetch_alt_data.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add alt_data.json
+          git commit -m "Auto-update quant data" || echo "No changes to commit"
+          git push
