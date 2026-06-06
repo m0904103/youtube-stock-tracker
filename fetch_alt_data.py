@@ -4,18 +4,22 @@ import json
 import os
 from datetime import datetime
 
-def fetch_vix():
-    url = "https://query2.finance.yahoo.com/v8/finance/chart/%5EVIX"
+def fetch_yahoo_data(ticker):
+    url = f"https://query2.finance.yahoo.com/v8/finance/chart/{ticker}"
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read().decode('utf-8'))
-            vix_val = data['chart']['result'][0]['meta']['regularMarketPrice']
-            return float(vix_val)
+            meta = data['chart']['result'][0]['meta']
+            current_price = meta.get('regularMarketPrice')
+            prev_close = meta.get('chartPreviousClose')
+            pct_change = 0
+            if current_price and prev_close:
+                pct_change = ((current_price / prev_close) - 1) * 100
+            return current_price, pct_change
     except Exception as e:
-        print(f"Error fetching VIX: {e}")
-        # Default fallback corresponding to a crash if it fails during a crash context
-        return 22.5 
+        print(f"Error fetching {ticker}: {e}")
+        return None, 0
 
 def fetch_squeezemetrics():
     url = "https://squeezemetrics.com/monitor/static/DIX.csv"
@@ -30,10 +34,8 @@ def fetch_squeezemetrics():
             return None
         
         latest = rows[-1]
-        
-        # Convert values to float safely
-        dix = float(latest.get('dix', 0)) * 100 # Convert to percentage
-        gex = float(latest.get('gex', 0)) / 1e9 # Convert to billions for readability
+        dix = float(latest.get('dix', 0)) * 100
+        gex = float(latest.get('gex', 0)) / 1e9
         date = latest.get('date', '')
         
         return {
@@ -45,11 +47,12 @@ def fetch_squeezemetrics():
         print(f"Error fetching SqueezeMetrics: {e}")
         return {
             "date": datetime.now().strftime("%Y-%m-%d"),
-            "dix": 43.2, # Fallback mock
+            "dix": 43.2,
             "gex_billions": 3.78
         }
 
-def calculate_nlp_scores(vix):
+def calculate_nlp_scores(vix, qqq_change, adr_premium):
+    # Base mapping from VIX
     if vix >= 18:
         ptt_score = max(10, int(82 - (vix - 12) * 6)) 
         ptt_label = f"夜盤恐慌 (VIX飆升 {vix:.1f})"
@@ -87,6 +90,29 @@ def calculate_nlp_scores(vix):
         macro_score = 55
         macro_label = "軟著陸預期"
         
+    # --- Advanced Adjustments ---
+    
+    # 1. QQQ Drop Adjustment
+    if qqq_change <= -4.0:
+        reddit_score = max(5, reddit_score - 15)
+        reddit_label = "史詩級崩盤拋售 (QQQ 大跌)"
+    elif qqq_change <= -2.0:
+        reddit_score = max(10, reddit_score - 8)
+        reddit_label += " (實體黑K懲罰)"
+
+    # 2. TSM ADR Premium Adjustment for PTT
+    if adr_premium is not None:
+        if adr_premium >= 15.0:
+            ptt_score = min(95, ptt_score + 10)
+            ptt_label += " | ADR溢價護體"
+            ptt_color = "#2ecc71" if ptt_score >= 50 else "#f39c12"
+        elif adr_premium <= 5.0:
+            ptt_score = max(5, ptt_score - 10)
+            ptt_label += " | 外資撤退警報"
+            ptt_color = "#e74c3c"
+        else:
+            ptt_label += f" | 溢價 {adr_premium:.1f}%"
+
     return {
         "retail_forums": [
             {"name": "PTT Stock (台股)", "score": ptt_score, "label": ptt_label, "color": ptt_color},
@@ -101,7 +127,25 @@ def calculate_nlp_scores(vix):
 
 def generate_alt_data():
     sm_data = fetch_squeezemetrics()
-    vix_val = fetch_vix()
+    vix_val, _ = fetch_yahoo_data("%5EVIX")
+    if vix_val is None:
+        vix_val = 22.5
+
+    # Fetch QQQ change
+    _, qqq_change = fetch_yahoo_data("QQQ")
+    
+    # Fetch ADR premium data
+    tsm_price, _ = fetch_yahoo_data("TSM")
+    tw_price, _ = fetch_yahoo_data("2330.TW")
+    usd_twd, _ = fetch_yahoo_data("TWD=X")
+    
+    adr_premium = None
+    if tsm_price and tw_price and usd_twd:
+        # ADR is 5 common shares
+        adr_twd_value = tsm_price * usd_twd / 5
+        adr_premium = ((adr_twd_value / tw_price) - 1) * 100
+        
+    print(f"VIX: {vix_val:.2f}, QQQ: {qqq_change:.2f}%, ADR Premium: {adr_premium}%")
     
     # Analyze DIX
     dix_status = "中性 (Neutral)"
@@ -120,7 +164,7 @@ def generate_alt_data():
         gex_status = "波動爆發警報 (Dealer Short Gamma - Vanna Risk)"
         gex_color = "#e74c3c"
 
-    nlp_sentiment_data = calculate_nlp_scores(vix_val)
+    nlp_sentiment_data = calculate_nlp_scores(vix_val, qqq_change, adr_premium)
 
     # Assemble JSON payload
     payload = {
@@ -192,12 +236,11 @@ def generate_alt_data():
         ]
     }
     
-    # Write to current directory
     target_path = os.path.join(os.path.dirname(__file__), 'alt_data.json')
     with open(target_path, 'w', encoding='utf-8') as f:
         json.dump(payload, f, ensure_ascii=False, indent=4)
         
-    print(f"Successfully generated {target_path} with VIX: {vix_val}")
+    print(f"Successfully generated {target_path}")
 
 if __name__ == "__main__":
     generate_alt_data()

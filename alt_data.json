@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-06 11:25:52",
+    "last_updated": "2026-06-06 11:30:29",
     "derivatives": {
         "date": "2026-06-05",
         "dix": {
@@ -18,13 +18,13 @@
             {
                 "name": "PTT Stock (台股)",
                 "score": 24,
-                "label": "夜盤恐慌 (VIX飆升 21.5)",
+                "label": "夜盤恐慌 (VIX飆升 21.5) | 溢價 10.9%",
                 "color": "#e74c3c"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 10,
-                "label": "極度悲觀 (恐慌拋售)",
+                "score": 5,
+                "label": "史詩級崩盤拋售 (QQQ 大跌)",
                 "color": "#e74c3c"
             },
             {
