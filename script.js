@@ -534,11 +534,11 @@ function showFabAction() {
 }
 
 function showQuantSummary() {
-    document.getElementById('modal-title').innerHTML = `💡 量化綜合評估 (Quant Summary)`;
+        document.getElementById('modal-title').innerHTML = `👴 阿村伯的量化解盤`;
     const tbody = document.getElementById('modal-body');
     
     if (!window.altData) {
-        tbody.innerHTML = `<p style="color: #ccc; text-align: center; padding: 20px;">資料載入中，請稍候...</p>`;
+        tbody.innerHTML = `<p style="color: #ccc; text-align: center; padding: 20px;">資料載入中，阿村伯正在戴老花眼鏡...</p>`;
         document.getElementById('top-modal').style.display = 'block';
         return;
     }
@@ -551,25 +551,25 @@ function showQuantSummary() {
     let desc = "";
 
     if (dix >= 45 && gex > 0) {
-        signalText = "【積極買進 / 續抱】";
+        signalText = "【阿村伯開示：大力買進 / 抱緊處理】";
         color = "#2ecc71";
-        desc = "大戶狂買且波動收斂，大盤有強大支撐，逢低大膽加碼。";
+        desc = "少年仔！暗池大戶都在偷買啦！加上莊家在壓制波動，現在大盤有鐵板護體，跌不下去的，逢低勇敢加碼就對了！";
     } else if (dix <= 40 && gex < 0) {
-        signalText = "【高危險 / 減碼】";
+        signalText = "【阿村伯開示：塊陶啊 / 現金為王】";
         color = "#e74c3c";
-        desc = "流動性枯竭且波動放大，無人護盤，強烈建議降低持股。";
+        desc = "夭壽喔！大戶早就腳底抹油溜了，莊家也放手不管，現在盤面跟紙糊的一樣，隨時會崩，趕快減碼保命！";
     } else if (dix <= 40 && gex > 0) {
-        signalText = "【逢高減碼 / 觀望】";
+        signalText = "【阿村伯開示：逢高賣出 / 準備收網】";
         color = "#f39c12";
-        desc = "大戶縮手但莊家撐盤，上漲動能耗盡，建議獲利了結。";
+        desc = "注意啦！雖然大盤看起來還穩穩的，但大戶已經沒在買了。這叫『外強中乾』，有賺的股票記得先落袋為安，不要太貪心。";
     } else if (dix >= 45 && gex < 0) {
-        signalText = "【暴力 V 轉潛力】";
+        signalText = "【阿村伯開示：大怒神啟動 / 暴跌暴漲】";
         color = "#e67e22";
-        desc = "大戶吸籌但盤面波動劇烈，可能伴隨恐慌下殺後的暴力反彈。";
+        desc = "刺激了！大戶在偷偷吸籌碼，但莊家沒在控盤，接下來會像大怒神一樣暴洗盤！心臟不好的先綁好安全帶，等恐慌殺出再撿便宜。";
     } else {
-        signalText = "【中性 / 依紀律操作】";
+        signalText = "【阿村伯開示：看戲就好 / 照紀律來】";
         color = "#3498db";
-        desc = "無極端數據，回歸個股基本面與均線操作。";
+        desc = "目前水溫剛好，大戶跟莊家都沒什麼大動作。大盤會跟著個股基本面走，你手上的好股票就續抱，不要隨便被洗出場。";
     }
 
     const html = `
