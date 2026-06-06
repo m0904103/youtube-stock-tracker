@@ -83,27 +83,55 @@ def generate_alt_data():
                 "label": "溫和擴張"
             }
         },
-        "alt_fundamentals": [
+                "alt_fundamentals": [
             {
                 "ticker": "MSFT",
                 "sector": "雲端與 AI 軟體",
-                "signal": "Similarweb 企業流量躍升",
+                "signal": "Similarweb 網頁流量 (Web Traffic)",
                 "probability": "高",
-                "description": "Copilot 企業版登入流量在 5 月底出現顯著峰值，預估 SaaS 訂閱超預期。"
+                "description": "Copilot 企業版登入頁面在 5 月出現顯著峰值，預估 SaaS 訂閱超乎預期。"
             },
             {
-                "ticker": "SBUX",
+                "ticker": "SBUX / Retail",
                 "sector": "非必需消費",
-                "signal": "Earnest 信用卡消費衰退",
+                "signal": "Earnest 信用卡消費 (CC Data)",
                 "probability": "高",
-                "description": "MCC 5812 (餐飲) 數據顯示美國低端客群消費頻次持續下滑，面臨財報下修風險。"
+                "description": "MCC 5812 (餐飲) 數據顯示美國低端客群消費頻次急劇下降，面臨財測下修風險。"
             },
             {
-                "ticker": "2382.TW (廣達)",
-                "sector": "AI 伺服器組裝",
-                "signal": "Placer.ai 供應鏈足跡熱度",
+                "ticker": "WMT / TGT",
+                "sector": "零售百貨",
+                "signal": "Planet Labs 衛星車流 (Satellite)",
                 "probability": "中",
-                "description": "林口與特定擴建廠區的員工手機定位停留時長暴增，反映產能利用率滿載。"
+                "description": "衛星影像顯示全美前百大零售商週末停車場車流量年減 -4.2%，消費降級警示。"
+            },
+            {
+                "ticker": "NVDA / SMCI",
+                "sector": "AI 伺服器硬體",
+                "signal": "Panjiva 海關提單 (Bill of Lading)",
+                "probability": "高",
+                "description": "台廠 ODM 運往北美之 AI 伺服器貨櫃總噸數月增 +35%，財報前瞻看多。"
+            },
+            {
+                "ticker": "Cybersecurity",
+                "sector": "資安板塊",
+                "signal": "ADS-B 私人飛機航跡 (Jet Tracking)",
+                "probability": "中",
+                "description": "科技巨頭 CEO 專機異常頻繁降落於某中型資安公司總部附近，併購事件潛在發生。"
+            },
+            {
+                "ticker": "SaaS Cloud",
+                "sector": "軟體即服務",
+                "signal": "Thinknum 職缺爬蟲 (Job Postings)",
+                "probability": "高",
+                "description": "SaaS 軟體產業活躍職缺數急凍 -22%，基本面衰退前兆。"
+            },
+            {
+                "ticker": "HOOD / COIN",
+                "sector": "數位金融 / 券商",
+                "signal": "Sensor Tower 榜單 (App Intelligence)",
+                "probability": "高",
+                "description": "美國區免費財經 App 下載榜：Robinhood 跌出前 50，散戶退潮訊號明確。"
             }
         ]
     }
