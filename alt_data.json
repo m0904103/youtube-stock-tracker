@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-06 08:13:21",
+    "last_updated": "2026-06-06 11:21:55",
     "derivatives": {
         "date": "2026-06-05",
         "dix": {
@@ -17,15 +17,15 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 82,
-                "label": "極度樂觀 (AI 信仰)",
-                "color": "#2ecc71"
+                "score": 38,
+                "label": "夜盤恐慌 (多殺多踩踏)",
+                "color": "#e74c3c"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 45,
-                "label": "觀望焦慮 (CapEx 擔憂)",
-                "color": "#f39c12"
+                "score": 25,
+                "label": "極度悲觀 (CapEx 擔憂)",
+                "color": "#e74c3c"
             },
             {
                 "name": "Xueqiu (中概股)",
@@ -35,8 +35,8 @@
             }
         ],
         "macro_confidence": {
-            "score": 68,
-            "label": "溫和擴張"
+            "score": 45,
+            "label": "避險情緒升溫"
         }
     },
     "alt_fundamentals": [

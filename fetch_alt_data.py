@@ -72,15 +72,15 @@ def generate_alt_data():
                 "color": gex_color
             }
         },
-        "nlp_sentiment": {
+                "nlp_sentiment": {
             "retail_forums": [
-                {"name": "PTT Stock (台股)", "score": 82, "label": "極度樂觀 (AI 信仰)", "color": "#2ecc71"},
-                {"name": "Reddit r/stocks (美股)", "score": 45, "label": "觀望焦慮 (CapEx 擔憂)", "color": "#f39c12"},
+                {"name": "PTT Stock (台股)", "score": 38, "label": "夜盤恐慌 (多殺多踩踏)", "color": "#e74c3c"},
+                {"name": "Reddit r/stocks (美股)", "score": 25, "label": "極度悲觀 (CapEx 擔憂)", "color": "#e74c3c"},
                 {"name": "Xueqiu (中概股)", "score": 30, "label": "悲觀 (宏觀疲軟)", "color": "#e74c3c"}
             ],
             "macro_confidence": {
-                "score": 68,
-                "label": "溫和擴張"
+                "score": 45,
+                "label": "避險情緒升溫"
             }
         },
                 "alt_fundamentals": [
