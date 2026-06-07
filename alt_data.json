@@ -1,15 +1,15 @@
 {
-    "last_updated": "2026-06-06 11:30:29",
+    "last_updated": "2026-06-07 12:00:00",
     "derivatives": {
         "date": "2026-06-05",
         "dix": {
-            "value": 43.2,
-            "status": "中性 (Neutral)",
-            "color": "#f39c12"
+            "value": 45.2,
+            "status": "暗池買盤進駐 (大戶吸籌)",
+            "color": "#2ecc71"
         },
         "gex": {
-            "value": 3.78,
-            "status": "波動收斂 (Dealer Long Gamma)",
+            "value": 1.2,
+            "status": "正向曝險 (波動收斂)",
             "color": "#2ecc71"
         }
     },
