@@ -1,14 +1,14 @@
 {
-    "last_updated": "2026-06-09 05:00:00",
+    "last_updated": "2026-06-08 22:40:12",
     "derivatives": {
-        "date": "2026-06-05",
+        "date": "2026-06-08",
         "dix": {
-            "value": 43.2,
+            "value": 42.7,
             "status": "中性 (Neutral)",
             "color": "#f39c12"
         },
         "gex": {
-            "value": 3.78,
+            "value": 4.12,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -17,13 +17,13 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 54,
-                "label": "夜盤恐慌 (VIX飆升 18.2) | ADR溢價護體",
+                "score": 50,
+                "label": "夜盤恐慌 (VIX飆升 18.9) | ADR溢價護體",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 20,
+                "score": 17,
                 "label": "極度悲觀 (恐慌拋售)",
                 "color": "#e74c3c"
             },
@@ -35,7 +35,7 @@
             }
         ],
         "macro_confidence": {
-            "score": 36,
+            "score": 33,
             "label": "避險情緒急升"
         }
     },
