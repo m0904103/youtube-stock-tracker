@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-08 05:14:21",
+    "last_updated": "2026-06-08 11:02:42",
     "derivatives": {
         "date": "2026-06-05",
         "dix": {
@@ -17,8 +17,8 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 24,
-                "label": "夜盤恐慌 (VIX飆升 21.5) | 溢價 13.6%",
+                "score": 36,
+                "label": "夜盤恐慌 (VIX飆升 19.6) | 溢價 14.0%",
                 "color": "#e74c3c"
             },
             {
@@ -35,7 +35,7 @@
             }
         ],
         "macro_confidence": {
-            "score": 20,
+            "score": 30,
             "label": "避險情緒急升"
         }
     },
