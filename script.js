@@ -426,12 +426,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // 計算排行邏輯 (支援過濾)
+function normalizeStock(stock) {
+    // 去除價格標註，例如 "MSFT (微軟 ~$410)" → "MSFT (微軟)"
+    // 也處理 "NVDA (~$208)" → "NVDA"
+    return stock
+        .replace(/\s*~\$[\d,\.]+/g, '')  // 移除 ~$xxx
+        .replace(/\s*\(~\$[\d,\.]+\)/g, '') // 移除 (~$xxx)
+        .replace(/\s+/g, ' ')             // 壓縮多餘空格
+        .replace(/\s+\)/g, ')')           // 清理括號前空格
+        .trim();
+}
+
 function calculateTopStocks(data, filterFn = null) {
     const counts = {};
     const filteredData = filterFn ? data.filter(filterFn) : data;
     filteredData.forEach(inf => {
         inf.stocks.forEach(stock => {
-            counts[stock] = (counts[stock] || 0) + 1;
+            const key = normalizeStock(stock);
+            counts[key] = (counts[key] || 0) + 1;
         });
     });
     return Object.entries(counts)
