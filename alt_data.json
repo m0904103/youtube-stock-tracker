@@ -1,42 +1,42 @@
 {
-    "last_updated": "2026-06-10 05:00:30",
+    "last_updated": "2026-06-10 16:45:00",
     "derivatives": {
         "date": "2026-06-09",
         "dix": {
-            "value": 43.9,
-            "status": "中性 (Neutral)",
-            "color": "#f39c12"
+            "value": 38.9,
+            "status": "極度偏空 (Strong Bearish)",
+            "color": "#e74c3c"
         },
         "gex": {
-            "value": 3.13,
-            "status": "波動收斂 (Dealer Long Gamma)",
-            "color": "#2ecc71"
+            "value": 0.89,
+            "status": "波動爆炸風險 (Dealer Short Gamma)",
+            "color": "#e74c3c"
         }
     },
     "nlp_sentiment": {
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 44,
-                "label": "夜盤恐慌 (VIX飆升 19.9) | ADR溢價護體",
-                "color": "#f39c12"
+                "score": 12,
+                "label": "史詩崩潰 (台股-1479點+外資空單6.2萬口)",
+                "color": "#e74c3c"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 13,
-                "label": "極度悲觀 (恐慌拋售)",
+                "score": 8,
+                "label": "末日情緒 (CPI+伊朗+SpaceX三重壓力)",
                 "color": "#e74c3c"
             },
             {
                 "name": "Xueqiu (中概股)",
-                "score": 25,
-                "label": "恐慌蔓延",
+                "score": 10,
+                "label": "極度悲觀 (去槓桿+四貸同堂危機)",
                 "color": "#e74c3c"
             }
         ],
         "macro_confidence": {
-            "score": 28,
-            "label": "避險情緒急升"
+            "score": 10,
+            "label": "史詩級恐慌 (外資空單6.2萬口+CPI4.2%)"
         }
     },
     "alt_fundamentals": [
