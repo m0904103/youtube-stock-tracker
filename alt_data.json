@@ -1,30 +1,30 @@
 {
-    "last_updated": "2026-06-11 06:10:00",
+    "last_updated": "2026-06-10 22:51:07",
     "derivatives": {
-        "date": "2026-06-09",
+        "date": "2026-06-10",
         "dix": {
-            "value": 35.8,
-            "status": "極度偏空 (S&P -1.62% / 費半 -3.57% / SMCI -28%)",
-            "color": "#e74c3c"
+            "value": 46.7,
+            "status": "機構暗買 (Bullish - Short is Long)",
+            "color": "#2ecc71"
         },
         "gex": {
-            "value": -1.24,
-            "status": "波動爆炸 (VIX 21.71 / 道瓊跌953點)",
-            "color": "#e74c3c"
+            "value": 2.48,
+            "status": "波動收斂 (Dealer Long Gamma)",
+            "color": "#2ecc71"
         }
     },
     "nlp_sentiment": {
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 6,
-                "label": "史詩崩跌！費半-3.57% / SMCI-28% / NVDA $205",
+                "score": 20,
+                "label": "夜盤恐慌 (VIX飆升 22.2) | 溢價 14.6%",
                 "color": "#e74c3c"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 5,
-                "label": "極度悲觀 (高盛撤除2026全年降息預期！)",
+                "score": 10,
+                "label": "極度悲觀 (恐慌拋售)",
                 "color": "#e74c3c"
             },
             {
@@ -35,8 +35,8 @@
             }
         ],
         "macro_confidence": {
-            "score": 6,
-            "label": "10Y債4.55% / 美元DXY≈100 / VIX21.71"
+            "score": 16,
+            "label": "避險情緒急升"
         }
     },
     "alt_fundamentals": [
