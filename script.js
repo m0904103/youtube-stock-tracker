@@ -4,21 +4,21 @@ const usInfluencersData = [
         style: "堅定看多",
         viewpoint: "【2026.06 週三盤後更新】CPI 確認 4.2%，符合預期但創 2023 年以來新高。台股 -1,479 點正是我說的「第二階段震盪期」！CPI 沒有超預期反而是「利空出盡」的正面訊號。我對年底標普 7,700 點目標毫不動搖，此時逢低布局才是真正的聰明錢！",
         stocks: ["IWM (羅素2000)", "QQQ (納斯達克100)", "SPY (標普500)"],
-        entryPoint: "【盤後操作】CPI 符合預期，今晚美股若跌幅小於1%可視為利空出盡！分批布局 QQQ，目標持有至年底反彈。"
+        entryPoint: "【盤後操作】CPI 符合預期，今晚美股若跌幅小於1%可視為利空出盡！分批布局 QQQ，目標持有至年底反彈。標普現價約 7,347，目標年底 7,700。"
     },
     {
         name: "Mike Wilson (Morgan Stanley)",
         style: "務實轉多",
         viewpoint: "【2026.06 週三盤後更新】CPI 4.2% 落地、台股大跌 1,479 點收 43,225——市場正在進行痛苦但必要的估值重置。聯準會 6/17 FOMC 幾乎確定維持利率不動，鷹派措辭將繼續壓制情緒。短期需更多時間消化通膨與地緣政治雙重風險，等待明確轉折訊號後再大舉進場。",
-        stocks: ["MSFT (微軟)", "AAPL (蘋果)", "GOOGL (Alphabet)"],
-        entryPoint: "【盤後操作】等待 FOMC（6/17）確認後才是真正布局時機。標普跌至 7,100 以下小量累積 MSFT、AAPL。"
+        stocks: ["MSFT (微軟 ~$410)", "AAPL (蘋果 ~$291)", "GOOGL (Alphabet)"],
+        entryPoint: "【盤後操作】等待 FOMC（6/17）確認後才是真正布局時機。標普現價 7,347，跌至 7,100 以下小量累積 MSFT（$410）、AAPL（$291）。"
     },
     {
         name: "Bill Ackman (Pershing Square)",
         style: "價值成長",
         viewpoint: "【2026.06 週三盤後更新】CPI 4.2% 確認，通膨頑固，聯準會陷入「不升息等於失職，升息等於衰退」的兩難。台股 -1,479 點、美伊衝突持續讓我繼續維持高現金部位。MSFT、AMZN 核心持倉依然在手，但不在此時加碼。等待地緣政治轉折點出現，才是重新大舉進場的時機。",
-        stocks: ["MSFT (微軟)", "META (Meta)", "AMZN (亞馬遜)"],
-        entryPoint: "【盤後操作】維持高現金。等待地緣政治轉折（停火訊號）或 FOMC 釋出鴿派訊號，才考慮加碼 MSFT 與 AMZN。"
+        stocks: ["MSFT (微軟 ~$410)", "META (Meta ~$585)", "AMZN (亞馬遜)"],
+        entryPoint: "【盤後操作】維持高現金。等待地緣政治轉折（停火訊號）或 FOMC 釋出鴿派訊號，才考慮加碼 MSFT（$410）與 AMZN。"
     },
     {
         name: "Ray Dalio (Bridgewater)",
@@ -38,22 +38,22 @@ const usInfluencersData = [
         name: "Adam Kobeissi",
         style: "數據波段",
         viewpoint: "【2026.06 週三盤後更新】CPI 4.2% 確認，完全符合我的預測！台股 -1,479 點、美伊衝突、SpaceX 吸金三重壓力如約而至。根據數據模型，FOMC 結果出爐（6/17）前美股不具備大幅反彈條件。最佳策略：持有現金，等待 FOMC 後方向確認，再分批進場 TSMC ADR 與 AVGO。",
-        stocks: ["TSMC (台積電)", "AMD (超微)", "AVGO (博通)"],
-        entryPoint: "【盤後操作】CPI 落地，FOMC 前維持觀望。標普若跌逾 2%，明日逢低試單 TSM（台積電 ADR）與 AVGO。"
+        stocks: ["TSM (台積電ADR ~$414)", "AMD (超微)", "AVGO (博通 ~$371)"],
+        entryPoint: "【盤後操作】CPI 落地，FOMC 前維持觀望。標普若跌逾 2% 至 7,200 以下，明日逢低試單 TSM（$414）與 AVGO（$371）。"
     },
     {
         name: "Jensen Huang (黃仁勳)",
         style: "供應鏈狂人",
         viewpoint: "【2026.06 週三盤後更新】CPI 數字、美伊衝突這些都影響不了 AI 基礎建設的長期需求！台積電今日雖然下跌，但其 CoWoS 封裝技術的供應滿足率仍不到需求的 60%。我們的 Blackwell 平台訂單已排到 2027 年底。短期市場波動對我們的商業計劃毫無影響，AI 的算力革命才正要開始。",
-        stocks: ["NVDA", "TSM", "ARM"],
-        entryPoint: "【盤後操作】NVDA 下跌是買點！繼續長線持有。若 NVDA 跌至 90 美元以下，是非常有吸引力的長線加碼機會。"
+        stocks: ["NVDA (~$208)", "TSM (~$414)", "ARM"],
+        entryPoint: "【盤後操作】NVDA 目前 $208，長線持有不動搖。若 NVDA 進一步跌至 $190 以下，是非常有吸引力的長線加碼機會，目標支撐 $200。"
     },
     {
         name: "Elon Musk",
         style: "顛覆破壞派",
         viewpoint: "【2026.06 週三盤後更新】SpaceX 後天（6/12）就要上市了！全球市場的動盪反而更顯示出「舊世界」金融體系的脆弱。特斯拉的 FSD 今日在德國的許可通過，Optimus 機器人預計在 2026 年底開始量產交付。忽略市場雜訊，投資改變未來的公司。",
-        stocks: ["TSLA", "GOOGL", "ASTS"],
-        entryPoint: "【盤後操作】等待 SpaceX（SPCX）6/12 的歷史性上市！這才是本週最重要的事情。"
+        stocks: ["TSLA (~$397)", "GOOGL", "ASTS"],
+        entryPoint: "【盤後操作】等待 SpaceX（SPCX）6/12 的歷史性上市！TSLA 目前 $397，FSD 德國獲批是短線催化劑。"
     },
     {
         name: "Cathie Wood (ARK木頭姐)",
@@ -66,15 +66,15 @@ const usInfluencersData = [
         name: "Dan Ives (Wedbush)",
         style: "科技巨頭死忠",
         viewpoint: "【2026.06 週三盤後更新】CPI 4.2% 落地符合預期，市場可以稍微喘口氣！最重要的是蘋果 WWDC 就在這週（6/9~13），AI on iPhone 的消費端落地故事即將正式揭幕，這是科技牛市下一波的核心催化劑。市場對 CPI 的恐慌是短暫的，抓住 AAPL 在下跌中建倉的機會，才是正確的做法。",
-        stocks: ["AAPL", "MSFT", "AVGO"],
-        entryPoint: "【盤後操作】WWDC 本週登場！若今日 AAPL 因市場恐慌跌逾 3%，可開始分批建倉，目標持有至 AI 功能全面落地。"
+        stocks: ["AAPL (~$291)", "MSFT (~$410)", "AVGO (~$371)"],
+        entryPoint: "【盤後操作】WWDC 本週登場！AAPL 今日已下跌逾 3% 至 $291，可開始小量分批建倉，目標持有至 AI on iPhone 全面落地。"
     },
     {
         name: "Keith Gill (Roaring Kitty)",
         style: "迷因價值派",
         viewpoint: "【2026.06 週三盤後更新】市場越跌，我越興奮！CPI 4.2%、台股崩盤、美伊衝突——這種極度恐慌的市場，往往是迷因股最大行情的前夜。散戶的心態已經崩潰，但真正的 Diamond Hands 知道：恐慌底部正是財富重分配的時刻。繼續持有，等待逆轉。",
-        stocks: ["GME", "CHWY", "KOSS"],
-        entryPoint: "【盤後操作】市場極度恐慌往往是迷因股大爆發的前哨。密切觀察 GME 成交量異動，等待社群情緒的再度聚焦。"
+        stocks: ["GME (~$22)", "CHWY", "KOSS"],
+        entryPoint: "【盤後操作】GME 目前約 $22，市場極度恐慌往往是迷因股大爆發的前哨。密切觀察 GME 成交量異動，等待社群情緒的再度聚焦。"
     },
     {
         name: "Jim Cramer (瘋狂錢坑)",
