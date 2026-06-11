@@ -58,16 +58,16 @@ const usInfluencersData = [
     {
         name: "Cathie Wood (ARK木頭姐)",
         style: "破壞性創新",
-        viewpoint: "【2026.06 收盤盤後】S&P -1.62%，NASDAQ -1.98%！ARK 今日繼續逢低加碼——這正是我等待的時機！SMCI -27.98% 的崩跌反而說明 AI 硬體投機性泡沫在破裂，而真正的 AI 應用（自動駕駛、加密金融）更值得長期持有。技術通縮必然長期壓制通膨，CPI 4.2% 是化石能源造成的過渡現象。繼續加碼 PONY AI 與 COIN！",
+        viewpoint: "【2026.06 盤後更新】TSLA 盤中反彈逾 4.5%（歐洲 FSD 核准）！ARK 維持對 TSLA 的極度樂觀與「逢低買進」策略。TSLA 正轉型為實體 AI（Physical AI）與 Robotaxi 壟斷平台。明日 SpaceX IPO 是重磅利多：馬斯克集團生態系（Starlink 聯網 + TSLA 自駕）將產生強大協同效應。SpaceX 掛牌的 $1.77 兆市值將徹底印證馬斯克願景的變現能力，為 TSLA 帶來連帶的估值信心支撐！",
         stocks: ["COIN", "PONY", "KDK", "BEAM"],
-        entryPoint: "【收盤操作】繼續逢低加碼 PONY 與 COIN。NVDA $205 以下試探性布局。恐慌時買，繁榮時賣，ARK 核心哲學不變。"
+        entryPoint: "【盤後操作】繼續加碼 TSLA！SpaceX 掛牌成功將帶動集團連動行情，TSLA 目前股價被極度低估，ARK 核心哲學不變。"
     },
     {
         name: "Dan Ives (Wedbush)",
         style: "科技巨頭死忠",
-        viewpoint: "【2026.06 收盤盤後】S&P -1.62%，但 AI 超級週期最重磅消息到來：OpenAI 已秘密提交 IPO 申請！這是「AI 時代分水嶺時刻」，更多 AI 獨角獸即將公開上市。AVGO -5.12% 是短暫的 AI 指引保守措辭，非基本面問題。AAPL $289.57，WWDC 催化劑未結束，AI on iPhone 故事仍在揭幕。台積電 5 月月營收史上最高（4,170 億台幣）是 AI 超級週期最強驗證！",
+        viewpoint: "【2026.06 盤後更新】TSLA 的「AI 篇章」才剛開始！我看好 TSLA 具備挑戰 3 兆美元市值的潛力。明日 SpaceX 以 $135 定價、$1.77 兆市值掛牌，這極可能是未來與 Tesla 進行世紀合併的「前奏」！我大膽預估兩家公司在 2027 年合併的機率高達 80% 以上！屆時 TSLA 將與 SpaceX 共享資本與頂尖 AI 技術，這將徹底重塑 TSLA 的估值天花板，無視短期逆風！",
         stocks: ["AAPL (~$291)", "MSFT (~$410)", "AVGO (~$371)"],
-        entryPoint: "【收盤操作】維持超配 AI 基建：MSFT（$397）、PLTR（$132）、Oracle 逢低加碼。AAPL $289 是 WWDC 買點，目標 AI 功能全面落地。"
+        entryPoint: "【盤後操作】維持 TSLA 「跑贏大盤」評級。買入 TSLA 就是在買未來的「馬斯克終極帝國」。SpaceX 掛牌是 TSLA 的隱藏催化劑！"
     },
     {
         name: "Keith Gill (Roaring Kitty)",
@@ -86,9 +86,9 @@ const usInfluencersData = [
     {
         name: "美股小左",
         style: "第一視角",
-        viewpoint: "【2026.06 盤後更新】SpaceX IPO 抽血效應確認：NVDA 跌至 $201（-3.39%），幾乎觸及 $200 關鍵支撐！機構為籌措 SpaceX 認購資金拋售 AI 股，這是費半連跌的真正原因。明日（6/12）SPCX 正式掛牌（定價 $135，市值 $1.77 兆），若高開高走、站穩 $140 以上，代表市場風險偏好仍強，屆時 NVDA 和 TSM ADR 有望反彈。外資台指期空單暴增至 63,168 口，台股空方壓力極大！FOMC（6/17）Warsh 首秀＋點陣圖是本週最大未知數。",
+        viewpoint: "【2026.06 盤後更新】SpaceX IPO 抽血效應確認：NVDA 跌至 $201，機構正拋售 AI 股籌資！明日 SPCX 掛牌（$135，市值 $1.77 兆）。針對 TSLA：市場正為其「高資本支出燒錢」與「實體 AI 敘事」進行激烈多空辯論。需留意兩點：①SpaceX 資金狂熱是否對 TSLA 產生短期資金排擠；②即便有集團光環，TSLA 仍需面對 Robotaxi 落地時間點的嚴格檢視。FOMC（6/17）前市場高波動風險極大！",
         stocks: ["NVDA (輝達 ~$208)", "MSFT (微軟)", "META (Meta)"],
-        entryPoint: "【盤後操作】觀察 SPCX 首日收盤是否站穩 $140+，是則加碼 QQQ/SOXX。NVDA $200 守住才進場，跌破則等 $185。"
+        entryPoint: "【盤後操作】觀察 SPCX 首日收盤是否站穩 $140+。NVDA $200 守住才進場。TSLA 短線不追高，留意資金排擠與基本面落地風險！"
     },
     {
         name: "霍比特小灰",
@@ -236,9 +236,9 @@ const twInfluencersData = [
     {
         name: "股癌 (Gooaye)",
         style: "主觀長期投資",
-        viewpoint: "【2026.06 盤後更新】市場瘋狂時最需要保持紀律！今日台股盤中殺至 42,006 點，外資空單暴增至 63,168 口（+1,219 口），但長線趨勢未改！記憶體（南亞科、群聯）與 AI 基礎設施趨勢看法不變。SpaceX（$135 定價）是歷史性時刻，但不要被 IPO 炒作分心。FOMC（6/17）Warsh 首秀點陣圖是最大變數——若偏鷹，科技股估值需重新評估。長線投資者繼續定期定額，不因短線恐慌改變策略！",
+        viewpoint: "【2026.06 盤後更新】市場恐慌時最需保持紀律！外資空單 63,168 口壓境。但別忽視明日 SpaceX 的巨無霸 IPO！全球太空經濟爆發，馬斯克集團的整體聲量提升將對 TSLA 投資人情緒產生潛在帶動作用。台股方面，記憶體（南亞科、群聯）與 AI 基礎設施長線看法不變。FOMC（6/17）Warsh 首秀點陣圖是最大變數——若偏鷹科技股需重新評估。長線繼續定期定額！",
         stocks: ["2330 (台積電)", "NVDA (輝達)", "VOO (標普500ETF)"],
-        entryPoint: "【盤後操作】股癌式紀律：持股不超過七成，剩餘現金等 FOMC（6/17）後方向明確再決定加減碼。0050、台積電定期定額繼續！"
+        entryPoint: "【盤後操作】股癌式紀律：持股不超過七成，剩現金等 FOMC（6/17）。0050、台積電定期定額繼續！可留意 SpaceX 上市對 TSLA 的情緒帶動。"
     },
     {
         name: "財報狗 (StatementDog)",
