@@ -44,23 +44,23 @@ const usInfluencersData = [
     {
         name: "Jensen Huang (黃仁勳)",
         style: "供應鏈狂人",
-        viewpoint: "【2026.06.12 盤後更新】恭喜 Elon 與 SpaceX 團隊達成這個不可思議的里程碑！AI 與航太技術的結合將為人類帶來無限可能。輝達很榮幸能為 SpaceX 的星艦與衛星網路提供最強大的算力支持。昨晚輝達股價強彈至 $208，顯示市場對 AI 基礎設施的需求依然強勁。未來的太空探索將高度依賴數位孿生與自主導航技術！",
+        viewpoint: "【2026.06.13 週末突發】輝達週末釋出重磅消息！正式量產專為「代理式 AI（Agentic AI）」設計的獨立 CPU「Vera」，並積極佈局中國資料中心市場，預計 8 月交貨！同時，輝達與亞馬遜聯手注資德國機器人公司 Neura Robotics 高達 14 億美元。這標誌著 NVDA 正全面從數位算力跨足「實體 AI 與機器人」領域，算力霸權再升級！",
         stocks: ["NVDA (~$208)", "TSM (~$414)", "ARM"],
-        entryPoint: "【盤後操作】長期持有 NVDA 與 SPCX，AI 基礎建設是邁向多行星物種的核心動力。"
+        entryPoint: "【週末操作】Vera 晶片與實體 AI 佈局將開啟新一波營收動能，NVDA 是 AI 時代唯一核心，長線必抱。"
     },
     {
         name: "Elon Musk",
         style: "顛覆破壞派",
-        viewpoint: "【2026.06.13 週末結算】感謝所有相信人類多行星化願景的投資人。SPCX 的上市與首日表現，只是我們漫長旅程的第一步。籌集的 750 億美元將全數投入星艦的量產與火星基地的初期建設。這不是關乎短期的股價波動，而是人類文明的未來。下週我們將公布更多關於星艦發射的驚喜進展！",
+        viewpoint: "【2026.06.13 週末突發】隨著 SPCX 以 $2.1 兆美元的估值掛牌，馬斯克身價突破 $1.1 兆美元，正式成為人類史上首位「兆美元富豪（Trillionaire）」！更震撼的是，MSCI 宣布 SPCX 立即納入 MSCI World 與 ACWI 指數，這將引爆全球被動基金的強制買盤。籌集的資金將全數投入星艦量產與火星基地。這不是短期股價，而是人類文明未來！",
         stocks: ["TSLA (~$397)", "GOOGL", "ASTS"],
-        entryPoint: "【週末推演】長期持有 (Diamond Hands) SPCX 與 TSLA，不關注短期進出場點。"
+        entryPoint: "【週末推演】MSCI 強制買盤進駐，長線 (Diamond Hands) 抱緊 SPCX 與 TSLA。"
     },
     {
         name: "Cathie Wood (ARK木頭姐)",
         style: "破壞性創新",
-        viewpoint: "【2026.06.13 週末深度】ARK Invest 的 Cathie Wood 在 SPCX 上市首日即透過 ARKK、ARKQ、ARKW、ARKX 四支 ETF 合計買入超過 329 萬股（約 4.44 億美元），直接用真金白銀表態！她認為首日長上影線（高 $176.52、收 $160.95）是市場給長線投資者的「禮物」——未來 Starlink 的全球覆蓋率與 AI 算力整合將重新定義太空經濟。她同期持續增持 NVDA，AI 主線的高度確信不動搖。",
+        viewpoint: "【2026.06.13 週末突發】ARK 週末報告點出兩大核彈級催化劑：第一，SPCX 閃電納入 MSCI 指數，被動資金的湧入將進一步鎖死流通籌碼；第二，輝達新推「Vera」CPU 並注資 Neura Robotics，這完美印證了 ARK 關於「實體 AI 與機器人」將成為下個兆元賽道的預測！這就是我們重倉 SPCX、NVDA 與 TSLA 的原因，顛覆性創新正在加速爆發！",
         stocks: ["COIN", "PONY", "KDK", "BEAM"],
-        entryPoint: "【週末操作】ARK 示範操作即最佳參考：SPCX 首日高點不追，逢回至 $155-$160 分批買入；NVDA 繼續持有。"
+        entryPoint: "【週末操作】實體 AI 時代降臨！緊抱 SPCX、TSLA 與 NVDA，逢回就是加碼買點。"
     },
     {
         name: "Dan Ives (Wedbush)",
