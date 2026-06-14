@@ -272,6 +272,7 @@ const twInfluencersData = [
     name: "Alan Chen",
     style: "具身智能與量化交易",
     viewpoint: "【2026.06.14 週日兵推】SPCX 納入 MSCI 將驅動百億美元被動資金重置；NVDA 發布 Vera 晶片並戰略投資 Neura Robotics，標誌算力正式跨入 Agentic AI 與具身智能領域，這是變現模式的典範轉移。總經擾動不改產業巨輪方向。",
+    stocks: ["2330 (台積電)", "低軌衛星", "具身智能概念股"],
     entryPoint: "針對具身智能與低軌衛星供應鏈進行 Alpha 策略配置，無視 Beta 震盪。"
   }
 ];
