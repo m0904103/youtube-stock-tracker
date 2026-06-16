@@ -110,7 +110,14 @@ const usInfluencersData = [
         viewpoint: "【2026.06.16 盤前備戰】哈囉大家！昨天科技股開高走低，顯示短線漲幅太驚人引發獲利了結。今晚要看Warsh在FOMC的態度，大家保持理智喔！",
         stocks: ["NVDA (輝達)", "MSFT (微軟)", "AAPL (蘋果)"],
         entryPoint: "挑選基本面好的AI二線股，等待輪動。"
-    }
+    },
+  {
+    name: "Alan Chen",
+    style: "裸K與量價分析",
+    viewpoint: "【2026.06.16 盤前備戰】從標普500的裸K來看，昨晚這根帶上影線的黑K，展現了高檔強大的獲利了結賣壓。配合今晚的FOMC不確定性，多頭動能已被破壞。明天若不能跳空開高，將確認M頭成型。",
+    stocks: ["SPY (標普500)", "QQQ (納斯達克100)", "VIX (恐慌指數)"],
+    entryPoint: "等待回測下檔支撐位再進場，嚴格設定停損。"
+  }
 ];
 
 const twInfluencersData = [
@@ -268,14 +275,6 @@ const twInfluencersData = [
         stocks: ["2330 (台積電)", "2454 (聯發科)", "MU (美光)", "2382 (廣達)"],
         entryPoint: "ALL IN 台積電，無腦買進。"
     },
-  {
-    name: "Alan Chen",
-    style: "具身智能與量化交易",
-    viewpoint: "【2026.06.16 盤後解析】從裸K來看，今天這根開低走高的紅K，展現了強大的下檔支撐。配合美伊和平利多，外資賣壓已被內資消化。明天若能跳空開高，將確認洗盤結束。",
-    stocks: ["2330 (台積電)", "低軌衛星", "具身智能概念股"],
-    entryPoint: "等待回測支撐位進場，嚴格設定停損。"
-  }
-,
     {
         name: "阿村伯",
         style: "存股與生活",
