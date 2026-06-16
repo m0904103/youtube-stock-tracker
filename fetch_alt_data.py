@@ -82,13 +82,13 @@ def calculate_nlp_scores(vix, qqq_change, adr_premium):
         ptt_label = f"審慎樂觀 (VIX震盪 {vix:.1f})"
         ptt_color = "#f39c12"
         reddit_score = 45
-        reddit_label = "觀望焦慮 (CapEx 擔憂)"
+        reddit_label = "觀望焦慮 (FOMC/Warsh 擔憂)"
         reddit_color = "#f39c12"
         xue_score = 30
-        xue_label = "悲觀 (宏觀疲軟)"
+        xue_label = "悲觀 (宏觀疲軟/資金外流)"
         xue_color = "#e74c3c"
         macro_score = 55
-        macro_label = "軟著陸預期"
+        macro_label = "通膨降溫預期 (等待Warsh)"
         
     # --- Advanced Adjustments ---
     
