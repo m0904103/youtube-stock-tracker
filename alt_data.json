@@ -1,42 +1,42 @@
 {
-    "last_updated": "2026-06-16 06:07:36",
+    "last_updated": "2026-06-16 16:40:00",
     "derivatives": {
         "date": "2026-06-15",
         "dix": {
-            "value": 45.1,
-            "status": "機構暗買 (Bullish - Short is Long)",
-            "color": "#2ecc71"
+            "value": 38.5,
+            "status": "機構派發 (Distribution - Selling into strength)",
+            "color": "#e74c3c"
         },
         "gex": {
-            "value": 6.8,
-            "status": "波動收斂 (Dealer Long Gamma)",
-            "color": "#2ecc71"
+            "value": -1.2,
+            "status": "Gamma轉負 (Dealer Short Gamma)",
+            "color": "#e74c3c"
         }
     },
     "nlp_sentiment": {
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 75,
-                "label": "審慎樂觀 (VIX震盪 16.2) | ADR溢價護體",
+                "score": 80,
+                "label": "護國神山信仰 (開低走高洗盤)",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 45,
-                "label": "觀望焦慮 (CapEx 擔憂)",
+                "score": 35,
+                "label": "FOMC前夕觀望 (利多出盡賣壓)",
                 "color": "#f39c12"
             },
             {
                 "name": "Xueqiu (中概股)",
-                "score": 30,
-                "label": "悲觀 (宏觀疲軟)",
+                "score": 40,
+                "label": "資金外溢期待 (中東地緣降溫)",
                 "color": "#e74c3c"
             }
         ],
         "macro_confidence": {
-            "score": 55,
-            "label": "軟著陸預期"
+            "score": 65,
+            "label": "通膨降溫預期 (等待Warsh表態)"
         }
     },
     "alt_fundamentals": [
