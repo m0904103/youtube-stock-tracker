@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-17 21:39:58",
+    "last_updated": "2026-06-17 16:10:33",
     "derivatives": {
         "date": "2026-06-16",
         "dix": {
@@ -18,7 +18,7 @@
             {
                 "name": "PTT Stock (台股)",
                 "score": 75,
-                "label": "審慎樂觀 (VIX震盪 16.1) | ADR溢價護體",
+                "label": "審慎樂觀 (VIX震盪 16.9) | ADR溢價護體",
                 "color": "#2ecc71"
             },
             {
