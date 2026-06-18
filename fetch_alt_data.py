@@ -55,16 +55,16 @@ def calculate_nlp_scores(vix, qqq_change, adr_premium):
     # Base mapping from VIX
     if vix >= 18:
         ptt_score = max(10, int(82 - (vix - 12) * 6)) 
-        ptt_label = f"夜盤恐慌 (VIX飆升 {vix:.1f})"
-        ptt_color = "#e74c3c"
+        ptt_label = f"浴火重生 (VIX飆升 {vix:.1f} 後 V轉)"
+        ptt_color = "#2ecc71"
         reddit_score = max(10, int(45 - (vix - 12) * 4))
-        reddit_label = "極度悲觀 (恐慌拋售)"
-        reddit_color = "#e74c3c"
+        reddit_label = "軋空狂熱 (空頭踩踏 V轉)"
+        reddit_color = "#2ecc71"
         xue_score = 25
-        xue_label = "恐慌蔓延"
-        xue_color = "#e74c3c"
+        xue_label = "錯失恐懼 (FOMO)"
+        xue_color = "#f39c12"
         macro_score = max(10, int(68 - (vix - 12) * 5))
-        macro_label = "避險情緒急升"
+        macro_label = "AI生產力對抗高息"
     elif vix <= 14:
         ptt_score = min(95, int(82 + (14 - vix) * 2))
         ptt_label = f"極度樂觀 (VIX平穩 {vix:.1f})"
