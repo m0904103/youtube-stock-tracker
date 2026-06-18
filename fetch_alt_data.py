@@ -78,17 +78,17 @@ def calculate_nlp_scores(vix, qqq_change, adr_premium):
         macro_score = min(95, int(75 + (14 - vix) * 2))
         macro_label = "溫和擴張"
     else:
-        ptt_score = 65
-        ptt_label = f"審慎樂觀 (VIX震盪 {vix:.1f})"
-        ptt_color = "#f39c12"
-        reddit_score = 45
-        reddit_label = "觀望焦慮 (FOMC/Warsh 擔憂)"
-        reddit_color = "#f39c12"
-        xue_score = 30
-        xue_label = "悲觀 (宏觀疲軟/資金外流)"
-        xue_color = "#e74c3c"
-        macro_score = 55
-        macro_label = "通膨降溫預期 (等待Warsh)"
+        ptt_score = max(10, int(75 - (vix - 12) * 5))
+        ptt_label = f"軋空宣洩 (VIX回落 {vix:.1f})"
+        ptt_color = "#2ecc71"
+        reddit_score = max(10, int(65 - (vix - 12) * 4))
+        reddit_label = "FOMO 進場 (錯過行情的焦慮)"
+        reddit_color = "#2ecc71"
+        xue_score = 40
+        xue_label = "半信半疑"
+        xue_color = "#f39c12"
+        macro_score = 65
+        macro_label = "經濟軟著陸確認"
         
     # --- Advanced Adjustments ---
     
