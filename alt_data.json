@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-22 05:41:52",
+    "last_updated": "2026-06-22 12:10:34",
     "derivatives": {
         "date": "2026-06-18",
         "dix": {
@@ -17,13 +17,13 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 61,
-                "label": "軋空宣洩 (VIX回落 16.8) | ADR溢價護體",
+                "score": 58,
+                "label": "軋空宣洩 (VIX回落 17.3) | ADR溢價護體",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 45,
+                "score": 43,
                 "label": "FOMO 進場 (錯過行情的焦慮)",
                 "color": "#2ecc71"
             },
