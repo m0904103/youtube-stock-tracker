@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-23 09:47:20",
+    "last_updated": "2026-06-23 15:30:05",
     "derivatives": {
         "date": "2026-06-22",
         "dix": {
@@ -17,14 +17,14 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 45,
-                "label": "浴火重生 (VIX飆升 19.8 後 V轉) | ADR溢價護體",
-                "color": "#f39c12"
+                "score": 37,
+                "label": "浴火重生 (VIX飆升 19.4 後 V轉) | 溢價 11.5%",
+                "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 13,
-                "label": "軋空狂熱 (空頭踩踏 V轉)",
+                "score": 10,
+                "label": "軋空狂熱 (空頭踩踏 V轉) (實體黑K懲罰)",
                 "color": "#2ecc71"
             },
             {
@@ -35,7 +35,7 @@
             }
         ],
         "macro_confidence": {
-            "score": 29,
+            "score": 30,
             "label": "AI生產力對抗高息"
         }
     },
