@@ -1,14 +1,14 @@
 {
-    "last_updated": "2026-06-25 15:22:23",
+    "last_updated": "2026-06-25 22:21:00",
     "derivatives": {
-        "date": "2026-06-24",
+        "date": "2026-06-25",
         "dix": {
-            "value": 40.8,
+            "value": 41.2,
             "status": "中性 (Neutral)",
             "color": "#f39c12"
         },
         "gex": {
-            "value": 0.47,
+            "value": 2.0,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
