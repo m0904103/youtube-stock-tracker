@@ -1,31 +1,31 @@
 {
-    "last_updated": "2026-06-27 02:00:00",
+    "last_updated": "2026-06-26 22:12:58",
     "derivatives": {
         "date": "2026-06-26",
         "dix": {
-            "value": 41.2,
+            "value": 43.8,
             "status": "中性 (Neutral)",
             "color": "#f39c12"
         },
         "gex": {
-            "value": 2.0,
-            "status": "波動收斂 (Dealer Long Gamma)",
-            "color": "#2ecc71"
+            "value": -4.68,
+            "status": "波動爆發警報 (Dealer Short Gamma - Vanna Risk)",
+            "color": "#e74c3c"
         }
     },
     "nlp_sentiment": {
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 40,
-                "label": "AI基建成本疑慮 (觀望)",
-                "color": "#f39c12"
+                "score": 53,
+                "label": "浴火重生 (VIX飆升 18.4 後 V轉) | ADR溢價護體",
+                "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 30,
-                "label": "科技股賣壓 (NVDA $194)",
-                "color": "#e74c3c"
+                "score": 19,
+                "label": "軋空狂熱 (空頭踩踏 V轉)",
+                "color": "#2ecc71"
             },
             {
                 "name": "Xueqiu (中概股)",
@@ -35,8 +35,8 @@
             }
         ],
         "macro_confidence": {
-            "score": 28,
-            "label": "AI資料中心成本擔憂引發獲利了結"
+            "score": 35,
+            "label": "AI生產力對抗高息"
         }
     },
     "alt_fundamentals": [
