@@ -1,7 +1,7 @@
 {
-    "last_updated": "2026-06-29 06:00:00",
+    "last_updated": "2026-06-29 05:12:47",
     "derivatives": {
-        "date": "2026-06-29 (Pre-market)",
+        "date": "2026-06-26",
         "dix": {
             "value": 43.8,
             "status": "中性 (Neutral)",
@@ -17,26 +17,26 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 15,
-                "label": "亞股血洗 (恐慌蔓延)",
-                "color": "#e74c3c"
+                "score": 53,
+                "label": "浴火重生 (VIX飆升 18.4 後 V轉) | ADR溢價護體",
+                "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 25,
-                "label": "Risk-Off (避險升溫)",
-                "color": "#e74c3c"
+                "score": 19,
+                "label": "軋空狂熱 (空頭踩踏 V轉)",
+                "color": "#2ecc71"
             },
             {
-                "name": "Crypto Twitter",
-                "score": 17,
-                "label": "極度恐懼 (Extreme Fear)",
-                "color": "#e74c3c"
+                "name": "Xueqiu (中概股)",
+                "score": 25,
+                "label": "錯失恐懼 (FOMO)",
+                "color": "#f39c12"
             }
         ],
         "macro_confidence": {
-            "score": 20,
-            "label": "科技股拋售潮與地緣政治(荷姆茲海峽)雙重打擊，黃金避險升溫"
+            "score": 35,
+            "label": "AI生產力對抗高息"
         }
     },
     "alt_fundamentals": [
