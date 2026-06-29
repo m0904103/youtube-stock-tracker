@@ -1,29 +1,29 @@
 {
-    "last_updated": "2026-06-29 16:22:54",
+    "last_updated": "2026-06-29 22:07:52",
     "derivatives": {
-        "date": "2026-06-26",
+        "date": "2026-06-29",
         "dix": {
-            "value": 43.8,
+            "value": 43.7,
             "status": "中性 (Neutral)",
             "color": "#f39c12"
         },
         "gex": {
-            "value": -4.68,
-            "status": "波動爆發警報 (Dealer Short Gamma - Vanna Risk)",
-            "color": "#e74c3c"
+            "value": 4.42,
+            "status": "波動收斂 (Dealer Long Gamma)",
+            "color": "#2ecc71"
         }
     },
     "nlp_sentiment": {
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 55,
-                "label": "軋空宣洩 (VIX回落 17.8) | ADR溢價護體",
+                "score": 56,
+                "label": "軋空宣洩 (VIX回落 17.6) | ADR溢價護體",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 41,
+                "score": 42,
                 "label": "FOMO 進場 (錯過行情的焦慮)",
                 "color": "#2ecc71"
             },
