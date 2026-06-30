@@ -1,14 +1,14 @@
 {
-    "last_updated": "2026-07-01 01:30:00",
+    "last_updated": "2026-06-30 22:14:48",
     "derivatives": {
-        "date": "2026-06-30 (Q2 Close)",
+        "date": "2026-06-30",
         "dix": {
-            "value": 43.7,
-            "status": "中性 (Neutral)",
-            "color": "#f39c12"
+            "value": 46.4,
+            "status": "機構暗買 (Bullish - Short is Long)",
+            "color": "#2ecc71"
         },
         "gex": {
-            "value": 4.42,
+            "value": 5.03,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -17,26 +17,26 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 45,
-                "label": "伊朗停火曙光 (反彈)",
-                "color": "#f39c12"
-            },
-            {
-                "name": "Reddit r/stocks (美股)",
-                "score": 65,
-                "label": "Q2 完美收官 (標普創六年最佳)",
+                "score": 62,
+                "label": "軋空宣洩 (VIX回落 16.4) | ADR溢價護體",
                 "color": "#2ecc71"
             },
             {
-                "name": "Crypto Twitter",
-                "score": 35,
-                "label": "情緒回穩 (逢低買盤)",
+                "name": "Reddit r/stocks (美股)",
+                "score": 47,
+                "label": "FOMO 進場 (錯過行情的焦慮)",
+                "color": "#2ecc71"
+            },
+            {
+                "name": "Xueqiu (中概股)",
+                "score": 40,
+                "label": "半信半疑",
                 "color": "#f39c12"
             }
         ],
         "macro_confidence": {
-            "score": 60,
-            "label": "伊朗初步停火協議傳出，AI科技股強勢反彈，標普500以上漲15%強勢收下Q2"
+            "score": 65,
+            "label": "經濟軟著陸確認"
         }
     },
     "alt_fundamentals": [
