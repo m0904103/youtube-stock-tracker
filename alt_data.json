@@ -1,7 +1,7 @@
 {
-    "last_updated": "2026-07-01 15:18:06",
+    "last_updated": "2026-07-02 00:20:00",
     "derivatives": {
-        "date": "2026-06-30",
+        "date": "2026-07-01 (美股盤中)",
         "dix": {
             "value": 46.4,
             "status": "機構暗買 (Bullish - Short is Long)",
@@ -16,27 +16,27 @@
     "nlp_sentiment": {
         "retail_forums": [
             {
-                "name": "PTT Stock (台股)",
-                "score": 53,
-                "label": "軋空宣洩 (VIX回落 16.3) | 溢價 14.7%",
-                "color": "#2ecc71"
-            },
-            {
                 "name": "Reddit r/stocks (美股)",
-                "score": 47,
-                "label": "FOMO 進場 (錯過行情的焦慮)",
-                "color": "#2ecc71"
+                "score": 35,
+                "label": "科技股回檔 (NVDA跌)",
+                "color": "#e74c3c"
             },
             {
-                "name": "Xueqiu (中概股)",
+                "name": "Macro News",
+                "score": 50,
+                "label": "就業降溫 (降息預期升)",
+                "color": "#f39c12"
+            },
+            {
+                "name": "PTT Stock (台股)",
                 "score": 40,
-                "label": "半信半疑",
+                "label": "觀望美股科技股殺盤",
                 "color": "#f39c12"
             }
         ],
         "macro_confidence": {
-            "score": 65,
-            "label": "經濟軟著陸確認"
+            "score": 40,
+            "label": "Q3首日盤中呈現板塊輪動，科技巨頭(NVDA/AMD)大跌逾2%，道瓊逆勢收紅，製造業與就業數據降溫推升降息預期"
         }
     },
     "alt_fundamentals": [
