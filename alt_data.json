@@ -1,7 +1,7 @@
 {
-    "last_updated": "2026-07-01 09:54:12",
+    "last_updated": "2026-07-01 18:50:00",
     "derivatives": {
-        "date": "2026-06-30",
+        "date": "2026-07-01 (Q3 開局盤前)",
         "dix": {
             "value": 46.4,
             "status": "機構暗買 (Bullish - Short is Long)",
@@ -17,26 +17,26 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 60,
-                "label": "軋空宣洩 (VIX回落 16.9) | ADR溢價護體",
-                "color": "#2ecc71"
+                "score": 35,
+                "label": "獲利了結 (居高思危)",
+                "color": "#f39c12"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 45,
-                "label": "FOMO 進場 (錯過行情的焦慮)",
-                "color": "#2ecc71"
+                "score": 40,
+                "label": "Q3 審慎開局 (科技股盤前偏弱)",
+                "color": "#f39c12"
             },
             {
-                "name": "Xueqiu (中概股)",
-                "score": 40,
-                "label": "半信半疑",
+                "name": "Macro News",
+                "score": 30,
+                "label": "靜待 Fed (Kevin Warsh) 談話",
                 "color": "#f39c12"
             }
         ],
         "macro_confidence": {
-            "score": 65,
-            "label": "經濟軟著陸確認"
+            "score": 45,
+            "label": "Q3 開局投資人轉趨謹慎，納指期貨盤前跌幅逾 0.5%，靜待製造業數據與 Fed 談話"
         }
     },
     "alt_fundamentals": [
