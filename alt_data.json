@@ -1,7 +1,7 @@
 {
-    "last_updated": "2026-07-02 00:20:00",
+    "last_updated": "2026-07-02 06:00:00",
     "derivatives": {
-        "date": "2026-07-01 (美股盤中)",
+        "date": "2026-07-01 (美股收盤)",
         "dix": {
             "value": 46.4,
             "status": "機構暗買 (Bullish - Short is Long)",
@@ -17,26 +17,26 @@
         "retail_forums": [
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 35,
-                "label": "科技股回檔 (NVDA跌)",
+                "score": 30,
+                "label": "AI硬體獲利了結",
                 "color": "#e74c3c"
             },
             {
                 "name": "Macro News",
-                "score": 50,
-                "label": "就業降溫 (降息預期升)",
+                "score": 55,
+                "label": "通膨風險緩解 (降息預期)",
                 "color": "#f39c12"
             },
             {
                 "name": "PTT Stock (台股)",
-                "score": 40,
-                "label": "觀望美股科技股殺盤",
-                "color": "#f39c12"
+                "score": 35,
+                "label": "擔憂台股電子股開低",
+                "color": "#e74c3c"
             }
         ],
         "macro_confidence": {
-            "score": 40,
-            "label": "Q3首日盤中呈現板塊輪動，科技巨頭(NVDA/AMD)大跌逾2%，道瓊逆勢收紅，製造業與就業數據降溫推升降息預期"
+            "score": 35,
+            "label": "Q3首日三大指數全數收黑(納指跌0.66%)，AI硬體與記憶體板塊承壓，但聯準會言論偏鴿與製造業降溫使非科技股展現抗跌韌性"
         }
     },
     "alt_fundamentals": [
