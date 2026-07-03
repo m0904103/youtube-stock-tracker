@@ -1,5 +1,12 @@
 const usInfluencersData = [
     {
+        name: "Jeremy Grantham (GMO)",
+        style: "極度悲觀 (看空)",
+        viewpoint: "【2026.07.03 最新解析】Jeremy Grantham 警告，當前由 AI 狂熱驅動的美股是美國史上最昂貴的泡沫。他視此為不可持續的投機，預警科技股恐面臨高達 70% 的崩盤，估值終將回歸歷史常態。",
+        stocks: ["SPY (標普500)", "QQQ (納斯達克100)", "TLT (長期國債)"],
+        entryPoint: "建議大幅降低美股曝險，轉向估值合理的國際市場，並增配債券與貴金屬防禦風險。"
+    },
+    {
         name: "Tom Lee (Fundstrat)",
         style: "堅定看多",
         viewpoint: "【2026.07.03 最新解析】Tom Lee 於 7/2 震撼宣佈將標普年底目標由 7000 上調至 8000 點！強調多頭格局不變，持續看好科技、金融、工業、小型股及能源原物料。",
