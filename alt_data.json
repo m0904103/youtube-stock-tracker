@@ -1,15 +1,15 @@
 {
-    "last_updated": "2026-07-03 09:23:21",
+    "last_updated": "2026-07-03 20:30 (美股盤前 / 非農之夜)",
     "derivatives": {
         "date": "2026-07-02",
         "dix": {
-            "value": 40.9,
-            "status": "中性 (Neutral)",
+            "value": 43.1,
+            "status": "中立偏保守 (非農前觀望)",
             "color": "#f39c12"
         },
         "gex": {
-            "value": 6.86,
-            "status": "波動收斂 (Dealer Long Gamma)",
+            "value": 3.2,
+            "status": "弱勢防禦",
             "color": "#2ecc71"
         }
     },
@@ -17,13 +17,13 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 55,
-                "label": "軋空宣洩 (VIX回落 16.0) | 溢價 13.3%",
+                "score": 54,
+                "label": "軋空宣洩 (VIX回落 16.1) | 溢價 12.5%",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 49,
+                "score": 48,
                 "label": "FOMO 進場 (錯過行情的焦慮)",
                 "color": "#2ecc71"
             },
@@ -35,8 +35,8 @@
             }
         ],
         "macro_confidence": {
-            "score": 65,
-            "label": "經濟軟著陸確認"
+            "score": "45 / 100",
+            "label": "非農前觀望與避險"
         }
     },
     "alt_fundamentals": [
