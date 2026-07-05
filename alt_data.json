@@ -4,13 +4,31 @@
         "date": "2026-07-02",
         "dix": {
             "value": 39.5,
-            "status": "塊陶啊 / 現金為王",
+            "status": "派發階段 (低暗池買盤)",
             "color": "#e74c3c"
         },
         "gex": {
             "value": -1.2,
-            "status": "塊陶啊 / 現金為王",
+            "status": "負值 (追漲殺跌/波動擴大)",
             "color": "#e74c3c"
+        },
+        "tail_risk": {
+            "skew": 150.02,
+            "vix": 16.15,
+            "status": "機構狂買 OTM Puts 避險",
+            "color": "#e74c3c"
+        },
+        "liquidity_levels": {
+            "current_spx": 7483.24,
+            "gamma_flip": 7471,
+            "cta_sell_trigger": 7250,
+            "status": "如履薄冰 (接近 Gamma 翻轉點)",
+            "color": "#f39c12"
+        },
+        "sector_rotation": {
+            "outflows": ["AI純軟體", "非必需消費"],
+            "inflows": ["半導體硬體", "醫療保健", "公用事業", "羅素2000 (IWM)"],
+            "status": "資金轉向實體與防禦板塊"
         }
     },
     "nlp_sentiment": {

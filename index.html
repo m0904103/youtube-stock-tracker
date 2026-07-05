@@ -201,6 +201,65 @@
                         </div>
                     </div>
                 </div>
+                <!-- 尾部風險定價 -->
+                <div class="quant-card">
+                    <h3>🌪️ 尾部風險定價 (Tail Risk)</h3>
+                    <p class="quant-desc">追蹤 SKEW 與 VIX 的背離，預判機構是否在偷買崩盤保險。</p>
+                    <div class="quant-metric">
+                        <span class="metric-label">SKEW (黑天鵝指數)</span>
+                        <div class="metric-value-container">
+                            <span class="metric-value" id="q-skew-val">--</span>
+                        </div>
+                    </div>
+                    <div class="quant-metric">
+                        <span class="metric-label">VIX (恐慌指數)</span>
+                        <div class="metric-value-container">
+                            <span class="metric-value" id="q-vix-val">--</span>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="q-tail-status" style="margin-top: 10px; text-align: center; font-weight: bold;">--</div>
+                </div>
+
+                <!-- 流動性防線生死線 -->
+                <div class="quant-card">
+                    <h3>⚠️ 流動性防線 (Liquidity Levels)</h3>
+                    <p class="quant-desc">當前標普與造市商 Gamma 翻轉點及 CTA 拋售閾值的距離。</p>
+                    <div style="margin: 15px 0;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #ccd6f6; margin-bottom: 5px;">
+                            <span>CTA 拋售 (7250)</span>
+                            <span>Gamma Flip (7471)</span>
+                            <span>目前位置</span>
+                        </div>
+                        <div class="progress-bar-bg" style="width: 100%; height: 12px; background: rgba(255, 255, 255, 0.1); border-radius: 6px; position: relative;">
+                            <div id="q-liq-fill" style="position: absolute; left: 0; top: 0; height: 100%; width: 0%; background: linear-gradient(90deg, #e74c3c, #f39c12, #2ecc71); border-radius: 6px; transition: width 1s;"></div>
+                            <div style="position: absolute; left: 20%; top: -4px; width: 2px; height: 20px; background: #e74c3c; box-shadow: 0 0 5px #e74c3c;"></div>
+                            <div style="position: absolute; left: 80%; top: -4px; width: 2px; height: 20px; background: #f39c12; box-shadow: 0 0 5px #f39c12;"></div>
+                        </div>
+                        <div style="text-align: right; font-size: 1.1rem; font-weight: bold; color: #fff; margin-top: 5px;" id="q-spx-val">SPX --</div>
+                    </div>
+                    <div class="metric-status" id="q-liq-status" style="text-align: center; font-weight: bold;">--</div>
+                </div>
+
+                <!-- 板塊輪動雷達 -->
+                <div class="quant-card" style="grid-column: 1 / -1;">
+                    <h3>🔄 聰明錢板塊輪動 (Sector Rotation)</h3>
+                    <p class="quant-desc">追蹤機構資金從哪些板塊撤出，並湧入哪些避風港。</p>
+                    <div style="display: flex; gap: 20px; margin-top: 15px; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 200px; background: rgba(231, 76, 60, 0.1); border: 1px solid rgba(231, 76, 60, 0.3); border-radius: 8px; padding: 15px;">
+                            <h4 style="color: #e74c3c; margin-bottom: 10px;">📉 逃離區 (Outflows)</h4>
+                            <div id="q-sec-out" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                <!-- JS Inject -->
+                            </div>
+                        </div>
+                        <div style="flex: 1; min-width: 200px; background: rgba(46, 204, 113, 0.1); border: 1px solid rgba(46, 204, 113, 0.3); border-radius: 8px; padding: 15px;">
+                            <h4 style="color: #2ecc71; margin-bottom: 10px;">📈 湧入區 (Inflows)</h4>
+                            <div id="q-sec-in" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                <!-- JS Inject -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="q-sec-status" style="margin-top: 15px; text-align: center; color: #3498db; font-weight: bold;">--</div>
+                </div>
             </div>
 
             <!-- 另類基本面預警 -->
@@ -244,6 +303,6 @@
     <!-- Floating Action Button -->
     <button id="fab-top" class="fab" onclick="showFabAction()">🏆</button>
 
-    <script src="script.js?v=134"></script>
+    <script src="script.js?v=135"></script>
 </body>
 </html>
