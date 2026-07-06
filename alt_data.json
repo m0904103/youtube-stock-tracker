@@ -1,29 +1,29 @@
 {
-    "last_updated": "2026-07-05 10:00 (週末非農後重估)",
+    "last_updated": "2026-07-06 04:52:29",
     "derivatives": {
         "date": "2026-07-02",
         "dix": {
-            "value": 39.5,
-            "status": "塊陶啊 / 現金為王",
-            "color": "#e74c3c"
+            "value": 40.9,
+            "status": "中性 (Neutral)",
+            "color": "#f39c12"
         },
         "gex": {
-            "value": -1.2,
-            "status": "塊陶啊 / 現金為王",
-            "color": "#e74c3c"
+            "value": 6.86,
+            "status": "波動收斂 (Dealer Long Gamma)",
+            "color": "#2ecc71"
         }
     },
     "nlp_sentiment": {
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 54,
-                "label": "軋空宣洩 (VIX回落 16.1) | 溢價 12.5%",
+                "score": 55,
+                "label": "軋空宣洩 (VIX回落 15.8) | 溢價 12.3%",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 48,
+                "score": 49,
                 "label": "FOMO 進場 (錯過行情的焦慮)",
                 "color": "#2ecc71"
             },
@@ -35,8 +35,8 @@
             }
         ],
         "macro_confidence": {
-            "score": "32 / 100",
-            "label": "極度悲觀 (非農爆冷恐慌)"
+            "score": 65,
+            "label": "經濟軟著陸確認"
         }
     },
     "alt_fundamentals": [
