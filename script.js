@@ -13,18 +13,18 @@ const usInfluencersData = [
         style: "堅定看多",
         institutionalMatch: 2,
         institutionalMatchDesc: "極度樂觀喊 8000 點，無視暗池派發與高檔 Gamma 翻轉風險。",
-        viewpoint: "【2026.07.08 最新解析】將標普500年底目標上調至8000點，看好7月財報季，但強烈警告8月至10月可能出現10-20%的劇烈回調。",
+        viewpoint: "【2026.07.08 盤前解析】維持看漲7月美股，標普500年底上看8000點，但明確警告投資者需防範8至10月間可能出現類似熊市的劇烈回調與地緣風險。",
         stocks: ["IWM (羅素2000)", "QQQ (納斯達克100)", "SPY (標普500)"],
-        entryPoint: "把握7月財報季行情，並為8月後的潛在波動做好防禦準備。"
+        entryPoint: "把握7月行情，但須為夏末秋初的潛在劇烈波動做好防禦。"
     },
     {
         name: "Mike Wilson (Morgan Stanley)",
         style: "務實轉多",
         institutionalMatch: 5,
         institutionalMatchDesc: "精準命中資金從高估值軟體輪動至價值與防禦板塊的趨勢。",
-        viewpoint: "【2026.07.08 最新解析】指出半導體板塊出現『白銀時刻』，獲利動能見頂，建議投資人將資金從半導體輪動至今年落後的AI雲端服務商（如微軟、亞馬遜）。",
+        viewpoint: "【2026.07.08 盤前解析】近期警告半導體板塊存回調風險，建議降倉，並轉向關注落後但具AI生態價值的雲端服務商，認為市場回調屬正常輪動。",
         stocks: ["MSFT (微軟 ~$410)", "AAPL (蘋果 ~$291)", "GOOGL (Alphabet)"],
-        entryPoint: "適度減碼半導體，轉向佈局大型雲端巨頭。"
+        entryPoint: "留意半導體板塊回調風險，可適度佈局雲端服務龙头。"
     },
     {
         name: "Bill Ackman (Pershing Square)",
@@ -58,9 +58,9 @@ const usInfluencersData = [
         style: "數據波段",
         institutionalMatch: 5,
         institutionalMatchDesc: "點出半導體乖離過大並增配黃金，與法人避險操作高度吻合。",
-        viewpoint: "【2026.07.08 最新解析】看好標普500邁向8000點，指出外資正以創紀錄速度流入美股，但也提醒需留意夏日流動性與政府借貸帶來的潛在風險。",
+        viewpoint: "【2026.07.08 盤前解析】指出「特朗普通脹」風險上升，高通脹可能令聯準會按兵不動。提示大型資金正從Meta流出，英偉達等面臨資金輪動壓力。",
         stocks: ["TSM (台積電ADR ~$414)", "AMD (超微)", "AVGO (博通 ~$371)"],
-        entryPoint: "順勢操作，但需密切關注宏觀流動性風險。"
+        entryPoint: "密切關注通脹數據與降息預期變化，警惕高估值科技股回撤。"
     },
     {
         name: "Jensen Huang (黃仁勳)",
@@ -85,9 +85,9 @@ const usInfluencersData = [
         style: "破壞性創新",
         institutionalMatch: 1,
         institutionalMatchDesc: "【危險反指標】無視非農衰退訊號與法人派發，逆勢加碼高估值科技股。",
-        viewpoint: "【2026.07.08 最新解析】透過ARK ETF逢低加碼SpaceX與X-Energy，同時持續減持AMD及部分生技股，展現板塊輪動與堅定看好太空及新能源之策略。",
+        viewpoint: "【2026.07.08 盤前解析】旗下ARK基金近期大舉增持SpaceX、核能及醫藥股，持續減持AMD。繼續堅定擁抱AI、太空等科技，逢低吸納短期受壓創新企業。",
         stocks: ["COIN", "PONY", "KDK", "BEAM"],
-        entryPoint: "可關注太空探索與新能源領域的創新投資機會。"
+        entryPoint: "關注逢低佈局顛覆性創新科技與太空產業的機會。"
     },
     {
         name: "Dan Ives (Wedbush)",
@@ -112,9 +112,9 @@ const usInfluencersData = [
         style: "華爾街名嘴",
         institutionalMatch: 3,
         institutionalMatchDesc: "隨機點名，近期雖轉向硬體，但缺乏系統性量化依據。",
-        viewpoint: "【2026.07.08 最新解析】指出市場正經歷『殘酷的輪動』，提及GEV、CAT和INTC等個股大跌，但重申這些工業及科技股的長線看多邏輯不變。",
+        viewpoint: "【2026.07.08 盤前解析】認為板塊輪動是買入優質股良機，看好生技板塊併購潛力，推薦IBM、沃爾瑪等防禦股，對英偉達等核心AI股持長期看好。",
         stocks: ["PG", "JNJ", "WM"],
-        entryPoint: "不要被短期的板塊輪動洗出場，堅守優質基本面個股。"
+        entryPoint: "在市場輪動中尋找遭錯殺的優質防禦股與低估值AI概念股。"
     },
     {
         name: "美股小左",
@@ -130,18 +130,18 @@ const usInfluencersData = [
         style: "宏觀與底層邏輯",
         institutionalMatch: 4,
         institutionalMatchDesc: "關注 AI 雲端巨頭資本支出 (CapEx) 變現問題，符合法人疑慮。",
-        viewpoint: "【2026.07.05 週末最新解析】週末未針對 7 月非農發布專題，但近期持續探討 AI 雲端巨頭資本支出，提醒面對短期總經數據波動應保持冷靜，著眼長線。",
+        viewpoint: "【2026.07.08 盤前解析】近期探討AI巨頭資本開支與算力瓶頸，認為AI投資進入更現實階段。提醒留意市場高位波動與通脹衝擊。",
         stocks: ["TSLA (特斯拉)", "GOOGL (Alphabet)", "NVDA (輝達)"],
-        entryPoint: "避開盲目追高，重視 AI 企業真實獲利與技術面訊號，逢低長線佈局。"
+        entryPoint: "在AI主線中保持理性，留意算力產業鏈瓶頸與高位波動風險。"
     },
     {
         name: "美股研究社",
         style: "科技股基本面分析",
         institutionalMatch: 4,
         institutionalMatchDesc: "警告科技巨頭估值波動與市場分化，與避險基金縮表邏輯一致。",
-        viewpoint: "【2026.07.05 週末最新解析】週末無更新。總結其七月初觀點，主要聚焦特斯拉、亞馬遜等巨頭的 AI 佈局與估值重塑，以及市場流動性與 AI 板塊的分化效應。",
+        viewpoint: "【2026.07.08 盤前解析】近期關注半導體成熟製程的復甦信號，以及AI算力建設下沉至光通信、線纜等基礎設施環節的投資機會。",
         stocks: ["MSFT (微軟)", "AMZN (亞馬遜)", "CRWD (CrowdStrike)"],
-        entryPoint: "在降息預期升溫下，建議審視手中 AI 硬體與軟體股的配置，留意科技巨頭財報前的估值波動風險。"
+        entryPoint: "挖掘AI算力建設下沉至光通信與成熟製程環節的投資機會。"
     },
     {
         name: "NaNa說美股",
@@ -212,9 +212,9 @@ const twInfluencersData = [
         style: "宏觀警戒 / 貴金屬",
         institutionalMatch: 4,
         institutionalMatchDesc: "居高思危，佈局貴金屬與低基期傳產，具備極高防禦意識。",
-        viewpoint: "【2026.07.08 最新解析】盤後針對殺盤解析，指出台股漲幅大進入高風險區，加上韓國記憶體股大跌引發資金保守，特別提醒投資人注意法人獲利調節的動向。",
+        viewpoint: "【2026.07.08 盤後解析】今日盤後指出記憶體族群出現大跌，且市場有「利多不漲」的跡象，引發對市場高點是否已過的擔憂。",
         stocks: ["GLD (黃金)", "SLV (白銀)", "XLE (能源ETF)", "2330 (台積電)"],
-        entryPoint: "建議價差交易者在技術指標過熱時應逢高減碼，避免盲目追高。"
+        entryPoint: "需留意大盤高檔反轉風險，操作上應提高警覺。"
     },
     {
         name: "谷月涵",
@@ -239,9 +239,9 @@ const twInfluencersData = [
         style: "景氣循環",
         institutionalMatch: 4,
         institutionalMatchDesc: "不盲從非農數據，點出 AI 需看重實質獲利，符合法人對 CapEx 的質疑。",
-        viewpoint: "【2026.07.08 最新解析】早晨直播探討美光表現、中東局勢等國際事件，並關注盤中ABF載板族群因AI與HPC需求升溫而帶動的強勢資金回流現象。",
+        viewpoint: "【2026.07.08 盤後解析】今日晚間參與《股市現場》探討台股結構改變與法人勢力擴大，並示警AI泡沫風險；早晨亦有探討晶片股殺盤的節目。",
         stocks: ["0050 (元大台灣50)", "006208 (富邦台50)", "2330 (台積電)", "2382 (廣達)"],
-        entryPoint: "建議留意總經局勢變化以及具備資金回流動能的電子上游族群。"
+        entryPoint: "提防AI概念股的泡沫化及晶片股利多出盡的賣壓。"
     },
     {
         name: "楊應超",
@@ -257,18 +257,18 @@ const twInfluencersData = [
         style: "總經趨勢",
         institutionalMatch: 2,
         institutionalMatchDesc: "過度樂觀看好黃金五年，忽視短期造市商 Gamma 翻轉的暴跌風險。",
-        viewpoint: "【2026.07.08 最新解析】分析無人機產業受惠美國技術移轉將成新護國神山，並認為美國宏觀操作與油價打壓實為超級牛市佈局。",
+        viewpoint: "【2026.07.08 盤後解析】今日針對無人機產業提出深度分析，認為美國有望將相關產業鏈移轉來台，預期成為台灣下一座護國神山。",
         stocks: ["2330 (台積電)", "2454 (聯發科)", "2317 (鴻海)", "2603 (長榮)"],
-        entryPoint: "以長線視角把握AI產業革命的超級牛市，不必過度擔憂泡沫。"
+        entryPoint: "可長線關注無人機相關供應鏈所帶來的訂單受惠機會。"
     },
     {
         name: "杜金龍 (下班經濟學)",
         style: "波浪理論",
         institutionalMatch: 4,
         institutionalMatchDesc: "警告高檔爆量，呼籲轉入低基期銅板股，符合板塊輪動防禦邏輯。",
-        viewpoint: "【2026.07.07 最新解析】針對台股下跌千點，認為大盤雖有過熱警訊但仍有支撐，長線多頭格局不變，建議採取「急跌買、衝高賣」策略。",
+        viewpoint: "【2026.07.08 盤後解析】近期指出被動元件族群為資金輪動最後一棒，提醒勿盲目追高，預估此波多頭行情有望延續至2027年5月。",
         stocks: ["2330 (台積電)", "2454 (聯發科)", "2317 (鴻海)", "2408 (南亞科)"],
-        entryPoint: "面對回檔修正可視為加碼良機。"
+        entryPoint: "建議待被動元件股價拉回2成至3成後，再分批佈局。"
     },
     {
         name: "胡睿涵 (非凡)",
@@ -284,9 +284,9 @@ const twInfluencersData = [
         style: "資金輪動",
         institutionalMatch: 3,
         institutionalMatchDesc: "警告月線回測，但建議避開中小型股，與法人轉入羅素2000略有分歧。",
-        viewpoint: "【2026.07.08 最新解析】早報指出台股受美股與三星財報拖累回測支撐，45000點為多空關鍵。籌碼偏空且地緣風險升溫，市場擔憂AI供應鏈需求降溫。",
+        viewpoint: "【2026.07.08 盤後解析】今日分析指出美股因地緣避險與三星財報未達激勵效果，導致科技股賣壓擴大，並持續追蹤輝達出貨傳言影響。",
         stocks: ["1503 (士電)", "1519 (華城)", "2382 (廣達)", "3231 (緯創)"],
-        entryPoint: "建議嚴控部位，資金可轉向生技、機器人與軍工等具抗跌避險屬性的族群。"
+        entryPoint: "短期留意地緣政治風險，並關注籌碼流向較佳的避險族群。"
     },
     {
         name: "賴建承 (非凡)",
@@ -338,9 +338,9 @@ const twInfluencersData = [
         style: "趨勢動能",
         institutionalMatch: 2,
         institutionalMatchDesc: "無視外資高額空單與非農衰退隱憂，一路看多台積電，具極高回調風險。",
-        viewpoint: "【2026.07.08 最新解析】認為7日重挫是三星財報引發的情緒性賣壓，AI長線趨勢未變。將大跌比喻為百貨公司週年慶，強調恐慌中常孕育大行情，是撿便宜的良機。",
+        viewpoint: "【2026.07.08 盤後解析】今日發布直播「韓股正式破底台股受不了!」，認為台股震盪來自外資權重調整與期貨套利，強調7/16台積電法說會為挑戰五萬點關鍵。",
         stocks: ["2408 (南亞科)", "2344 (華邦電)", "3260 (威剛)", "2330 (台積電)"],
-        entryPoint: "建議趁錯殺時以自有資金現貨提前卡位績優股，嚴禁使用高槓桿與融資。"
+        entryPoint: "把握台股震盪期，耐心靜待台積電法說會帶動的後續行情。"
     },
     {
         name: "優課李霖",
@@ -374,9 +374,9 @@ const twInfluencersData = [
         style: "基本面與產業趨勢",
         institutionalMatch: 4,
         institutionalMatchDesc: "深入挖掘 CPO 光通訊實體硬體，符合法人逃離軟體轉向硬體的趨勢。",
-        viewpoint: "【2026.07.08 最新解析】更新上市櫃公司6月份營收排行數據，關注被動元件族群大跌表現與特斯拉Robotaxi進軍邁阿密動態。",
+        viewpoint: "【2026.07.08 盤後解析】今日發布南亞除息行情、記憶體族群表現及上市櫃6月營收資訊，並分析聯電近5年殖利率與填息機率。",
         stocks: ["2382 (廣達)", "2317 (鴻海)", "2454 (聯發科)"],
-        entryPoint: "可利用最新發布的6月營收數據來篩選基本面強勢股。"
+        entryPoint: "可善用最新發布的除息數據與6月營收表現來檢視手中持股。"
     },
     {
         name: "鈔錢部署 (盧燕俐 ft. 杜金龍)",
@@ -401,9 +401,9 @@ const twInfluencersData = [
         style: "飆股操作 / 主流輪動",
         institutionalMatch: 3,
         institutionalMatchDesc: "跟隨主流，但需留意飆股在高檔流動性陷阱中的回撤風險。",
-        viewpoint: "【2026.07.08 最新解析】針對台股千點急殺，認為是新台幣貶值、韓股重挫等外部假利空引發的恐慌，直言是老天爺送錢的黃金買點。",
+        viewpoint: "【2026.07.08 盤後解析】針對近期台股千點跳水，認為是新台幣貶值等因素造成的假利空，台股基本面無虞，長線依舊看好。",
         stocks: ["2330 (台積電)", "2454 (聯發科)", "MU (美光)", "2382 (廣達)"],
-        entryPoint: "趁恐慌逢低加碼台積電、聯發科等具產業壟斷地位的績優權值股。"
+        entryPoint: "遇震盪可留意並逢低關注具壟斷地位的績優權值股（如台積電）。"
     },
     {
         name: "阿村伯",
