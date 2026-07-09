@@ -121,9 +121,9 @@ const usInfluencersData = [
         style: "第一視角",
         institutionalMatch: 4,
         institutionalMatchDesc: "精準點出半導體乖離率過高，呼籲避開盲目追高。",
-        viewpoint: "【2026.07.03 最新解析】7/1~7/2最新影片探討NVDA化身「AI央行」；提及Michael Burry警告半導體偏離均線65%，並分析MU記憶體短缺及多檔科技巨頭走勢。",
+        viewpoint: "【伊朗衝突突發應對】尚未針對美伊開打發布最新觀點。面對突發黑天鵝，市場避險情緒升溫，科技巨頭恐面臨短期壓力。",
         stocks: ["NVDA (輝達 ~$208)", "MSFT (微軟)", "META (Meta)"],
-        entryPoint: "留意半導體板塊乖離率過高的回調風險，AI概念股（如NVDA、MU）切勿盲目追高，應嚴設停利停損。"
+        entryPoint: "由於目前無最新觀點，建議暫時維持既有風險控管，等待明確的盤勢訊號。"
     },
     {
         name: "霍比特小灰",
@@ -148,9 +148,9 @@ const usInfluencersData = [
         style: "技術面 & 情緒分析",
         institutionalMatch: 4,
         institutionalMatchDesc: "捕捉到 AI 軟硬體板塊資金輪動與節前洗盤風險。",
-        viewpoint: "【2026.07.03 最新解析】7/1~7/2連續發布影片。探討Meta外賣算力事件及AI軟硬體板塊的資金輪動，並針對美國獨立日假期前夕的市場波動進行深度解析。",
+        viewpoint: "【伊朗衝突突發應對】尚未對此次衝突表態，但她近期已提醒半導體暴跌與板塊輪動風險。地緣政治往往加劇高估值科技股的修正壓力。",
         stocks: ["NVDA (輝達)", "MSFT (微軟)", "AAPL (蘋果)"],
-        entryPoint: "節前市場波動加劇且AI板塊輪動頻繁，建議投資人謹慎控管倉位以防禦風險。"
+        entryPoint: "建議先參考其近期對半導體回調的防禦策略，並靜待對美伊局勢的點評。"
     },
   {
     name: "Alan Chen",
