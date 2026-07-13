@@ -365,9 +365,9 @@ const twInfluencersData = [
         style: "主觀長期投資",
         institutionalMatch: 3,
         institutionalMatchDesc: "長期持有抗震，但缺乏主動的尾部風險 (Tail Risk) 對沖動作。",
-        viewpoint: "【2026.07.13 最新動態】今日沒有更新，建議靜待下期常規節目上架。",
+        viewpoint: "【2026.07.13 最新動態】輝達回測季線，資金正進行產業輪動。短期應關注具實質營收獲利的封裝、導線架與功率元件；記憶體營收雖佳但籌碼已擁擠。",
         stocks: ["2330 (台積電)", "NVDA (輝達)", "VOO (標普500ETF)"],
-        entryPoint: "可先回顧近期集數或關注其社群平台動態，靜候節目更新。"
+        entryPoint: "面對高檔震盪應汰弱留強，資金優先佈局具實質營收支撐的半導體零組件。"
     },
     {
         name: "財報狗 (StatementDog)",
