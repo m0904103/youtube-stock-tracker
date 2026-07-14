@@ -1,14 +1,14 @@
 {
-    "last_updated": "2026-07-13 21:56:04",
+    "last_updated": "2026-07-14 03:44:40",
     "derivatives": {
-        "date": "2026-07-10",
+        "date": "2026-07-13",
         "dix": {
-            "value": 45.3,
-            "status": "機構暗買 (Bullish - Short is Long)",
-            "color": "#2ecc71"
+            "value": 43.8,
+            "status": "中性 (Neutral)",
+            "color": "#f39c12"
         },
         "gex": {
-            "value": 8.99,
+            "value": 5.59,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -18,7 +18,7 @@
             {
                 "name": "PTT Stock (台股)",
                 "score": 49,
-                "label": "軋空宣洩 (VIX回落 17.2) | 溢價 11.2%",
+                "label": "軋空宣洩 (VIX回落 17.2) | 溢價 12.9%",
                 "color": "#2ecc71"
             },
             {
