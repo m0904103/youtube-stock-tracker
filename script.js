@@ -12,7 +12,6 @@ const usInfluencersData = [
         stocks: ["AVGO", "NVDA", "GOOG"],
         entryPoint: "重點關注其回歸後的最新持倉變動與實戰加減倉邏輯。",
         instMatch: 3
-    },
     {
         name: "Jeremy Grantham (GMO)",
         style: "極度悲觀 (看空)",
@@ -90,9 +89,9 @@ const usInfluencersData = [
         style: "顛覆破壞派",
         institutionalMatch: 2,
         institutionalMatchDesc: "專注自家產品，忽視整體宏觀流動性收緊與估值下修風險。",
-        viewpoint: "【2026.07.14 最新動態】特斯拉7月22日發布Q2財報。SpaceX已於6月完成IPO，近期走勢受市場高度關注。",
+        viewpoint: "【2026.07.14 盤中最新】旗下xAI數據中心因燃氣輪機引發環保爭議；在德州持續收購土地；SpaceX IPO後成為首位兆萬富翁。",
         stocks: ["TSLA (~$397)", "GOOGL", "ASTS"],
-        entryPoint: "緊盯特斯拉即將公布的Q2財報及SpaceX上市後的連鎖效應。"
+        entryPoint: "須留意馬斯克旗下企業擴張基礎建設時的監管與環保合規風險。"
     },
     {
         name: "Cathie Wood (ARK木頭姐)",
@@ -144,9 +143,9 @@ const usInfluencersData = [
         style: "宏觀與底層邏輯",
         institutionalMatch: 4,
         institutionalMatchDesc: "關注 AI 雲端巨頭資本支出 (CapEx) 變現問題，符合法人疑慮。",
-        viewpoint: "【2026.07.14 盤前解析】探討Tom Lee的回調預警，持續深挖AI算力與AI基礎設施板塊(如PLTR、美光)的資金流向。",
+        viewpoint: "【2026.07.14 盤中最新】發布新片解析重新關注比特幣的原因，分析美光與Palantir等個股，並探討華爾街對美股回調的警告。",
         stocks: ["TSLA (特斯拉)", "GOOGL (Alphabet)", "NVDA (輝達)"],
-        entryPoint: "參考其對AI基建的深度研究，同時提防短期保證金過高的風險。"
+        entryPoint: "可關注比特幣輪動機會，並做好防禦準備以應對美股潛在回調。"
     },
     {
         name: "美股研究社",
@@ -162,9 +161,9 @@ const usInfluencersData = [
         style: "技術面 & 情緒分析",
         institutionalMatch: 4,
         institutionalMatchDesc: "捕捉到 AI 軟硬體板塊資金輪動與節前洗盤風險。",
-        viewpoint: "【2026.07.14 最新動態】維持每日高頻更新，重點分析科技股與半導體板塊在市場劇烈波動下的技術面走勢，並提供實戰策略。",
+        viewpoint: "【2026.07.14 盤中最新】博主目前休假停更中。前次發文分析三星財報引發半導體洗盤，視輝達為宏觀避險工具。",
         stocks: ["NVDA (輝達)", "MSFT (微軟)", "AAPL (蘋果)"],
-        entryPoint: "可參考其每日盤後技術分析，靈活應對近期大盤的高波動。"
+        entryPoint: "避免盲目殺跌追高，關注企業定價能力並利用輝達作為對沖。"
     },
   {
     name: "Alan Chen",
