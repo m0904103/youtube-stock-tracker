@@ -12,6 +12,7 @@ const usInfluencersData = [
         stocks: ["AVGO", "NVDA", "GOOG"],
         entryPoint: "可參考其對熱門科技股的實盤操作計畫與倉位管理策略以優化自身交易。",
         instMatch: 3
+    },
     {
         name: "Jeremy Grantham (GMO)",
         style: "極度悲觀 (看空)",
