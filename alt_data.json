@@ -1,11 +1,37 @@
 {
-    "last_updated": "2026-07-22 22:02:59",
+    "last_updated": "2026-07-23 06:18:34",
     "derivatives": {
         "date": "2026-07-22",
         "dix": {
             "value": 49.0,
             "status": "機構暗買 (Bullish - Short is Long)",
             "color": "#2ecc71"
+        },
+        "tail_risk": {
+            "skew": 150.02,
+            "vix": 16.15,
+            "status": "機構大買 OTM Puts 避險",
+            "color": "#e74c3c"
+        },
+        "liquidity_levels": {
+            "current_spx": 7483.24,
+            "gamma_flip": 7471,
+            "cta_sell_trigger": 7250,
+            "status": "如履薄冰 (逼近 Gamma 翻轉點)",
+            "color": "#f39c12"
+        },
+        "sector_rotation": {
+            "outflows": [
+                "AI純硬體",
+                "非必需消費"
+            ],
+            "inflows": [
+                "半導體設備",
+                "醫療保健",
+                "公用事業",
+                "羅素2000 (IWM)"
+            ],
+            "status": "資金轉向實質與防禦板塊"
         },
         "gex": {
             "value": 9.0,

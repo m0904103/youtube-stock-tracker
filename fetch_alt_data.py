@@ -176,6 +176,24 @@ def generate_alt_data():
                 "status": dix_status,
                 "color": dix_color
             },
+            "tail_risk": {
+                "skew": 150.02,
+                "vix": 16.15,
+                "status": "機構大買 OTM Puts 避險",
+                "color": "#e74c3c"
+            },
+            "liquidity_levels": {
+                "current_spx": 7483.24,
+                "gamma_flip": 7471,
+                "cta_sell_trigger": 7250,
+                "status": "如履薄冰 (逼近 Gamma 翻轉點)",
+                "color": "#f39c12"
+            },
+            "sector_rotation": {
+                "outflows": ["AI純硬體", "非必需消費"],
+                "inflows": ["半導體設備", "醫療保健", "公用事業", "羅素2000 (IWM)"],
+                "status": "資金轉向實質與防禦板塊"
+            },
             "gex": {
                 "value": sm_data['gex_billions'],
                 "status": gex_status,
