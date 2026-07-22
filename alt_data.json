@@ -1,111 +1,93 @@
 {
-    "last_updated": "2026-07-22 03:57:38",
+    "last_updated": "2026-07-22 08:33:08",
     "derivatives": {
         "date": "2026-07-21",
         "dix": {
-            "value": 39.5,
-            "status": "派發階段 (暗池買盤低)",
-            "color": "#e74c3c"
+            "value": 45.2,
+            "status": "機構暗買 (Bullish - Short is Long)",
+            "color": "#2ecc71"
         },
         "gex": {
-            "value": -1.2,
-            "status": "負值 (追漲殺跌/波動擴大)",
-            "color": "#e74c3c"
-        },
-        "tail_risk": {
-            "skew": 150.02,
-            "vix": 16.15,
-            "status": "機構大買 OTM Puts 避險",
-            "color": "#e74c3c"
-        },
-        "liquidity_levels": {
-            "current_spx": 7483.24,
-            "gamma_flip": 7471,
-            "cta_sell_trigger": 7250,
-            "status": "如履薄冰 (逼近 Gamma 翻轉點)",
-            "color": "#f39c12"
-        },
-        "sector_rotation": {
-            "outflows": ["AI純硬體", "非必需消費"],
-            "inflows": ["半導體設備", "醫療保健", "公用事業", "羅素2000 (IWM)"],
-            "status": "資金轉向實質與防禦板塊"
+            "value": 4.77,
+            "status": "波動收斂 (Dealer Long Gamma)",
+            "color": "#2ecc71"
         }
     },
     "nlp_sentiment": {
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 49,
-                "label": "軋空心態 (VIX回落 17.1) | 溢價 14.4%",
+                "score": 47,
+                "label": "軋空宣洩 (VIX回落 17.5) | 溢價 14.6%",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 44,
-                "label": "FOMO 散戶 (大廠財報前焦慮)",
+                "score": 42,
+                "label": "FOMO 進場 (錯過行情的焦慮)",
                 "color": "#2ecc71"
             },
             {
                 "name": "Xueqiu (中概股)",
                 "score": 40,
-                "label": "低度信心",
+                "label": "半信半疑",
                 "color": "#f39c12"
             }
         ],
         "macro_confidence": {
             "score": 65,
-            "label": "經濟軟著陸預期明確"
+            "label": "經濟軟著陸確認"
         }
     },
     "alt_fundamentals": [
         {
             "ticker": "MSFT",
-            "sector": "雲端與AI軟體",
-            "signal": "Similarweb 網站流量 (Web Traffic)",
+            "sector": "雲端與 AI 軟體",
+            "signal": "Similarweb 網頁流量 (Web Traffic)",
             "probability": "高",
-            "description": "Copilot 企業版登入活躍度在 5 月出現顯著峰值，預估 SaaS 訂閱超預期。"
+            "description": "Copilot 企業版登入頁面在 5 月出現顯著峰值，預估 SaaS 訂閱超乎預期。"
         },
         {
             "ticker": "SBUX / Retail",
             "sector": "非必需消費",
-            "signal": "Earnest 信用卡刷卡 (CC Data)",
+            "signal": "Earnest 信用卡消費 (CC Data)",
             "probability": "高",
-            "description": "MCC 5812 (餐飲) 數據顯示美國低端客群消費頻次急劇下滑，面臨財測下修風險。"
+            "description": "MCC 5812 (餐飲) 數據顯示美國低端客群消費頻次急劇下降，面臨財測下修風險。"
         },
         {
             "ticker": "WMT / TGT",
             "sector": "零售百貨",
             "signal": "Planet Labs 衛星車流 (Satellite)",
             "probability": "中",
-            "description": "衛星影像顯示全美百大零售停車場週末車流年減 -4.2%，消費降級警示。"
+            "description": "衛星影像顯示全美前百大零售商週末停車場車流量年減 -4.2%，消費降級警示。"
         },
         {
             "ticker": "NVDA / SMCI",
             "sector": "AI 伺服器硬體",
             "signal": "Panjiva 海關提單 (Bill of Lading)",
             "probability": "高",
-            "description": "台灣 ODM 廠出口 AI 伺服器貨櫃總噸數年增 +35%，財報季前利多。"
+            "description": "台廠 ODM 運往北美之 AI 伺服器貨櫃總噸數月增 +35%，財報前瞻看多。"
         },
         {
             "ticker": "Cybersecurity",
             "sector": "資安板塊",
-            "signal": "ADS-B 私人飛機軌跡 (Jet Tracking)",
-            "probability": "低",
-            "description": "科技巨頭 CEO 專機異常頻繁降落於中型資安公司總部附近，併購案件醞釀發酵。"
+            "signal": "ADS-B 私人飛機航跡 (Jet Tracking)",
+            "probability": "中",
+            "description": "科技巨頭 CEO 專機異常頻繁降落於某中型資安公司總部附近，併購事件潛在發生。"
         },
         {
             "ticker": "SaaS Cloud",
             "sector": "軟體即服務",
             "signal": "Thinknum 職缺爬蟲 (Job Postings)",
-            "probability": "中",
-            "description": "SaaS 軟體企業活躍職缺數急降 -22%，基本面衰退徵兆。"
+            "probability": "高",
+            "description": "SaaS 軟體產業活躍職缺數急凍 -22%，基本面衰退前兆。"
         },
         {
             "ticker": "HOOD / COIN",
-            "sector": "加密貨幣 / 散戶",
+            "sector": "數位金融 / 券商",
             "signal": "Sensor Tower 榜單 (App Intelligence)",
-            "probability": "中",
-            "description": "美國免費財經 App 下載榜單 Robinhood 跌出前50，散戶退潮跡象明確。"
+            "probability": "高",
+            "description": "美國區免費財經 App 下載榜：Robinhood 跌出前 50，散戶退潮訊號明確。"
         }
     ]
 }
