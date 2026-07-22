@@ -18,7 +18,7 @@ const usInfluencersData = [
         style: "極度悲觀 (看空)",
         institutionalMatch: 4,
         institutionalMatchDesc: "看空科技股與泡沫，符合法人減碼趨勢，但過於悲觀。",
-        viewpoint: "【2026.07.03 最新解析】Jeremy Grantham 警告，當前由 AI 狂熱驅動的美股是美國史上最昂貴的泡沫。他視此為不可持續的投機，預警科技股恐面臨高達 70% 的崩盤，估值終將回歸歷史常態。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/3 以來尚無最新發言，維持先前看法：Jeremy Grantham 警告，當前由 AI 狂熱驅動的美股是美國史上最昂貴的泡沫。他視此為不可持續的投機，預警科技股恐面臨高達 70% 的崩盤，估值終將回歸歷史常態。",
         stocks: ["SPY (標普500)", "QQQ (納斯達克100)", "TLT (長期國債)"],
         entryPoint: "建議大幅降低美股曝險，轉向估值合理的國際市場，並增配債券與貴金屬防禦風險。"
     },
@@ -45,7 +45,7 @@ const usInfluencersData = [
         style: "價值成長",
         institutionalMatch: 4,
         institutionalMatchDesc: "避開擁擠交易，聚焦基建與現金流，符合聰明錢動向。",
-        viewpoint: "【2026.07.05 週末最新解析】本週末無針對非農數據的最新推文或言論。他近期發言主要是看好 AI 基礎設施巨頭並避開特斯拉。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/5 週末以來尚無最新發言，維持先前看法：本週末無針對非農數據的最新推文或言論。他近期發言主要是看好 AI 基礎設施巨頭並避開特斯拉。",
         stocks: ["MSFT (微軟 ~$410)", "META (Meta ~$585)", "AMZN (亞馬遜)"],
         entryPoint: "建議關注具備長期穩定現金流的 AI 大型科技股，逢低分批佈局。"
     },
@@ -54,7 +54,7 @@ const usInfluencersData = [
         style: "宏觀避險",
         institutionalMatch: 4,
         institutionalMatchDesc: "提早警告 AI 泡沫，保留現金防禦尾部風險。",
-        viewpoint: "【2026.07.05 週末最新解析】本週末無發布針對非農或 AI 的最新專訪。目前最新公開言論仍停留在六月初對 AI 泡沫風險的警告。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/5 週末以來尚無最新發言，維持先前看法：本週末無發布針對非農或 AI 的最新專訪。目前最新公開言論仍停留在六月初對 AI 泡沫風險的警告。",
         stocks: ["GLD (黃金)", "TLT (美國長期國債)", "VTI (全市場ETF)"],
         entryPoint: "在缺乏最新觀點指引下，建議暫勿盲目追高 AI 概念股，並保留現金應對不確定性。"
     },
@@ -63,7 +63,7 @@ const usInfluencersData = [
         style: "宏觀趨勢",
         institutionalMatch: 5,
         institutionalMatchDesc: "精準獲利了結擁擠的 AI 巨頭，輪動至實體硬體與次世代基建。",
-        viewpoint: "【2026.07.02 最新解析】市場披露 Druckenmiller 大幅調整 AI 佈局，減持 Alphabet 等巨頭，轉投 Nvidia 競爭對手 Etched 及 Broadcom，尋找次世代 AI 硬體潛力。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/2 以來尚無最新發言，維持先前看法：市場披露 Druckenmiller 大幅調整 AI 佈局，減持 Alphabet 等巨頭，轉投 Nvidia 競爭對手 Etched 及 Broadcom，尋找次世代 AI 硬體潛力。",
         stocks: ["NVDA (輝達)", "LLY (禮來)", "FCX (自由港麥克莫蘭)"],
         entryPoint: "建議適度獲利了結漲多之 AI 核心股，並關注資金輪動至次世代 AI 晶片或硬體基建標的之機會。"
     },
@@ -81,7 +81,7 @@ const usInfluencersData = [
         style: "供應鏈狂人",
         institutionalMatch: 3,
         institutionalMatchDesc: "供應鏈視角，偏向實體硬體，但缺乏宏觀資金流判斷。",
-        viewpoint: "【2026.07.03 最新解析】黃仁勳近期持續強調「物理 AI」與機器人為下個兆元商機，並擴張南韓工程團隊佈局，推動開放權重模型策略。此外媒體熱議其無免費午餐的節儉文化。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/3 以來尚無最新發言，維持先前看法：黃仁勳近期持續強調「物理 AI」與機器人為下個兆元商機，並擴張南韓工程團隊佈局，推動開放權重模型策略。此外媒體熱議其無免費午餐的節儉文化。",
         stocks: ["NVDA (~$208)", "TSM (~$414)", "ARM"],
         entryPoint: "建議持續追蹤輝達在機器人領域及南韓市場的實質擴張進度，以評估相關供應鏈機會。"
     },
@@ -117,7 +117,7 @@ const usInfluencersData = [
         style: "迷因價值派",
         institutionalMatch: 1,
         institutionalMatchDesc: "迷因炒作，與華爾街量化與基本面邏輯完全脫節。",
-        viewpoint: "【2026.07.02 最新解析】截至今日，Keith Gill 於 6月底至 7/1 期間並未發布任何實質持倉更新或新發言。近期論壇上的討論皆純屬散戶對股東大會等事件的猜測，並無官方動作。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/2 以來尚無最新發言，維持先前看法：截至今日，Keith Gill 於 6月底至 7/1 期間並未發布任何實質持倉更新或新發言。近期論壇上的討論皆純屬散戶對股東大會等事件的猜測，並無官方動作。",
         stocks: ["GME (~$22)", "CHWY", "KOSS"],
         entryPoint: "建議暫勿根據網路謠言盲目跟單相關迷因股，應保持觀望並等待其官方確切動態。"
     },
@@ -171,7 +171,7 @@ const usInfluencersData = [
     style: "裸K與量價分析",
     institutionalMatch: 3,
         institutionalMatchDesc: "技術面為主，無明顯宏觀與機構籌碼背離。",
-        viewpoint: "【2026.07.05 週末最新解析】週末期間無最新更新。近期最後更新為 7 月初關於蘋果、美光及科技股的相關討論。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/5 週末以來尚無最新發言，維持先前看法：週末期間無最新更新。近期最後更新為 7 月初關於蘋果、美光及科技股的相關討論。",
     stocks: ["SPY (標普500)", "QQQ (納斯達克100)", "VIX (恐慌指數)"],
     entryPoint: "適逢美國獨立紀念日連假休市，建議暫時觀望並留意下週一開盤的市場情緒變化。"
       },
@@ -182,7 +182,7 @@ const usInfluencersData = [
         avatar: "https://ui-avatars.com/api/?name=陽&background=f1c40f&color=fff",
         institutionalMatch: 3,
         institutionalMatchDesc: "無近期更新，維持中立。",
-        viewpoint: "【2026.07.05 週末最新解析】週末並未發布最新影片，分析停留在 7/2 探討美股與川普言論。因無新內容，請防範冒名詐騙。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/5 週末以來尚無最新發言，維持先前看法：週末並未發布最新影片，分析停留在 7/2 探討美股與川普言論。因無新內容，請防範冒名詐騙。",
         entryPoint: "因週末無最新盤勢分析更新，建議暫且觀望，靜待下週一開盤後的市場訊號再行操作。",
         stocks: ["SPY (標普500)", "QQQ (納斯達克100)"]
     },
@@ -193,7 +193,7 @@ const usInfluencersData = [
         avatar: "https://ui-avatars.com/api/?name=貝&background=e84393&color=fff",
         institutionalMatch: 4,
         institutionalMatchDesc: "察覺非農後的突襲式砸盤與流動性陷阱，呼籲嚴控倉位。",
-        viewpoint: "【2026.07.05 週末最新解析】7/3 發布最新影片「非農托底高開！盤中：驚雷砸盤！」。深度拆解非農數據引發的情緒波動，指出大盤雖高開卻遭遇突襲式洗盤大戲。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/5 週末以來尚無最新發言，維持先前看法：7/3 發布最新影片「非農托底高開！盤中：驚雷砸盤！」。深度拆解非農數據引發的情緒波動，指出大盤雖高開卻遭遇突襲式洗盤大戲。",
         entryPoint: "面對非農數據發布後的劇烈洗盤震盪，建議投資人嚴格控制倉位，避免盲目追高殺跌。",
         stocks: ["TSLA (特斯拉)", "MSFT (微軟)"]
     },
@@ -204,7 +204,7 @@ const usInfluencersData = [
         avatar: "https://ui-avatars.com/api/?name=傑&background=0984e3&color=fff",
         institutionalMatch: 3,
         institutionalMatchDesc: "無近期更新，維持中立。",
-        viewpoint: "【2026.07.05 週末最新解析】週末並未發布新影片。適逢美國獨立紀念日連假，其最新分析停留在 7/2 關於 META 的直播。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/5 週末以來尚無最新發言，維持先前看法：週末並未發布新影片。適逢美國獨立紀念日連假，其最新分析停留在 7/2 關於 META 的直播。",
         entryPoint: "週末無新解析，建議暫時維持現有部位，靜待連假後開盤的資金動向再作決策。",
         stocks: ["QQQ (納斯達克100)", "NVDA (輝達)"]
     }
@@ -235,7 +235,7 @@ const twInfluencersData = [
         style: "防禦保守",
         institutionalMatch: 5,
         institutionalMatchDesc: "【極度防禦】空手策略完美避開高檔 Gamma 翻轉的尾部崩跌風險。",
-        viewpoint: "【2026.07.02 最新解析】近期無更新。最新觀點維持 6月初的強烈示警：台股已進入「末升段」，他自曝「零持股」，並呼籲「不要賺最後一滴水」，提醒留意高檔回落風險。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/2 以來尚無最新發言，維持先前看法：近期無更新。最新觀點維持 6月初的強烈示警：台股已進入「末升段」，他自曝「零持股」，並呼籲「不要賺最後一滴水」，提醒留意高檔回落風險。",
         stocks: ["0050 (元大台灣50)", "0056 (元大高股息)", "00878 (國泰永續高股息)"],
         entryPoint: "考量其末升段警告，建議見好就收，適度提高現金水位以規避高檔風險。"
     },
@@ -244,7 +244,7 @@ const twInfluencersData = [
         style: "產業分析",
         institutionalMatch: 4,
         institutionalMatchDesc: "從基本面點出記憶體見頂與硬體架構轉變，領先散戶避開盲區。",
-        viewpoint: "【2026.07.02 最新解析】陸行之近期聚焦高通計畫以低價 LPDDR 取代 HBM，並將 CoWoS 簡化為 Chiplet 進軍 AI 資料中心。此外，他點出美光高毛利率暗示記憶體漲價週期恐近尾聲。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/2 以來尚無最新發言，維持先前看法：陸行之近期聚焦高通計畫以低價 LPDDR 取代 HBM，並將 CoWoS 簡化為 Chiplet 進軍 AI 資料中心。此外，他點出美光高毛利率暗示記憶體漲價週期恐近尾聲。",
         stocks: ["2330 (台積電)", "2454 (聯發科)", "2317 (鴻海)", "2382 (廣達)"],
         entryPoint: "密切觀察高通新架構對 HBM 及 CoWoS 供應鏈的衝擊，並建議逢高調節記憶體族群以規避觸頂風險。"
     },
@@ -289,7 +289,7 @@ const twInfluencersData = [
         style: "價值投資",
         institutionalMatch: 2,
         institutionalMatchDesc: "建議轉向 AI 軟體，與華爾街目前「逃離純軟體」的資金流向背離。",
-        viewpoint: "【2026.07.03 最新解析】胡睿涵表示台股正進行高檔健康籌碼清洗，切勿預設止跌點。止跌需觀察外資期貨空單降至6萬口以下且單日買超逾千億。AI 資金應從硬體轉向應用層面。",
+        viewpoint: "【2026.07.22 盤前追蹤】自 7/3 以來尚無最新發言，維持先前看法：胡睿涵表示台股正進行高檔健康籌碼清洗，切勿預設止跌點。止跌需觀察外資期貨空單降至6萬口以下且單日買超逾千億。AI 資金應從硬體轉向應用層面。",
         stocks: ["2330 (台積電)", "2308 (台達電)", "2317 (鴻海)"],
         entryPoint: "稍安勿躁，待外資籌碼轉多且出現止跌訊號後，再將資金轉向 AI 應用及軟體族群。"
     },
