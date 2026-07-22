@@ -36,9 +36,9 @@ const usInfluencersData = [
         style: "務實轉多",
         institutionalMatch: 5,
         institutionalMatchDesc: "精準命中資金從高估值軟體輪動至價值與防禦板塊的趨勢。",
-        viewpoint: "【2026.07.22 盤前最新】指出半導體板塊近期回調並進入熊市，短期難以恢復領導地位，但整體牛市未變，資金正向其他板塊輪動。",
+        viewpoint: "【2026.07.23 盤前最新】認為市場資金正從擁擠的AI及科技巨頭中撤出，近期回調是健康的重置。TSLA與GOOGL財報是觀察科技股動能能否維持的關鍵。",
         stocks: ["MSFT (微軟 ~$410)", "AAPL (蘋果 ~$291)", "GOOGL (Alphabet)"],
-        entryPoint: "留意資金輪動趨勢，短期對科技與半導體股保持謹慎。"
+        entryPoint: "建議將資金分散輪動至週期性、金融及消費類等非科技板塊。"
     },
     {
         name: "Bill Ackman (Pershing Square)",
@@ -72,9 +72,9 @@ const usInfluencersData = [
         style: "數據波段",
         institutionalMatch: 5,
         institutionalMatchDesc: "點出半導體乖離過大並增配黃金，與法人避險操作高度吻合。",
-        viewpoint: "【2026.07.22 盤前最新】指出半導體雖遭拋售但仍有創紀錄資金流入，標普具備技術支撐。警告大型企業破產激增及美債危機的宏觀風險。",
+        viewpoint: "【2026.07.23 盤前最新】對AI時代的大盤維持謹慎，警告投資者不要因股市反彈而掉以輕心，並指出能源等基建挑戰將直接影響TSLA等重科技發展。",
         stocks: ["TSM (台積電ADR ~$414)", "AMD (超微)", "AVGO (博通 ~$371)"],
-        entryPoint: "密切關注半導體資金流向及宏觀債務風險對大盤的潛在影響。"
+        entryPoint: "對科技股大盤保持警惕，切勿在短線反彈中過度自滿。"
     },
     {
         name: "Jensen Huang (黃仁勳)",
@@ -90,27 +90,27 @@ const usInfluencersData = [
         style: "顛覆破壞派",
         institutionalMatch: 2,
         institutionalMatchDesc: "專注自家產品，忽視整體宏觀流動性收緊與估值下修風險。",
-        viewpoint: "【2026.07.22 盤前最新】針對SpaceX股價跌破IPO價，發文強烈警告做空者生存機率極低。同時市場正密切關注特斯拉Q2財報。",
+        viewpoint: "【2026.07.23 盤前最新】Q2營收創高但EPS與自由現金流不及預期。財報會議上強調今年總支出將超過250億美元，重金投資於AI、Optimus機器人及擴大產能。",
         stocks: ["TSLA (~$397)", "GOOGL", "ASTS"],
-        entryPoint: "謹慎對待熱門科技巨頭的做空操作，以防範突發的軋空風險。"
+        entryPoint: "投資人需準備好承受公司轉型AI及機器人階段的龐大資本開支與短期利潤承壓。"
     },
     {
         name: "Cathie Wood (ARK木頭姐)",
         style: "破壞性創新",
         institutionalMatch: 1,
         institutionalMatchDesc: "【危險反指標】無視非農衰退訊號與法人派發，逆勢加碼高估值科技股。",
-        viewpoint: "【2026.07.22 盤前最新】ARK近期積極逢低買入SpaceX等高信念成長股，大舉減持AMD與Shopify，持續押注具長期顛覆性創新技術企業。",
+        viewpoint: "【2026.07.23 盤前最新】無懼短期盈餘不及預期，堅定看好兩家公司在AI與自動駕駛發展。持續加倉GOOGL；TSLA仍為核心，看重Robotaxi長線收益。",
         stocks: ["COIN", "PONY", "KDK", "BEAM"],
-        entryPoint: "把握市場波動機會，適度將資金轉向具有長期顛覆性潛力的創新領域。"
+        entryPoint: "著眼自動駕駛與AI生態的長期潛力，忽略短期財報波動並逢低佈局。"
     },
     {
         name: "Dan Ives (Wedbush)",
         style: "科技巨頭死忠",
         institutionalMatch: 2,
         institutionalMatchDesc: "科技死忠派，忽視軟體板塊正遭聰明錢大幅提款的現實。",
-        viewpoint: "【2026.07.22 盤前最新】宣佈離開Wedbush成立新銀行，但強烈看好「科技七巨頭」，認為回調只是過度反應，AI基建仍處超級週期早期。",
+        viewpoint: "【2026.07.23 盤前最新】極度看多TSLA，給出華爾街最高600美元目標價，認為AI與Robotaxi的擴展將推動其達到2至3兆美元市值，並看好長期潛力。",
         stocks: ["AAPL (~$291)", "MSFT (~$410)", "AVGO (~$371)"],
-        entryPoint: "把握AI科技股因市場過度反應而產生的逢低佈局機會。"
+        entryPoint: "將TSLA視為被低估的純粹AI公司，建議投資者逢低買入。"
     },
     {
         name: "Keith Gill (Roaring Kitty)",
@@ -126,9 +126,9 @@ const usInfluencersData = [
         style: "華爾街名嘴",
         institutionalMatch: 3,
         institutionalMatchDesc: "隨機點名，近期雖轉向硬體，但缺乏系統性量化依據。",
-        viewpoint: "【2026.07.22 盤前最新】建議從投機性科技股輪動至聯邦快遞、奇異等工業藍籌股，除非科技股出現大幅拋售否則不建議追高。",
+        viewpoint: "【2026.07.23 盤前最新】警告持有過多科技股可能帶來嚴重損失。建議在科技板塊徹底洗盤前，避免重倉TSLA與GOOGL，先觀察財報後的市場反應。",
         stocks: ["PG", "JNJ", "WM"],
-        entryPoint: "考慮將資金轉向基本面穩健的工業藍籌股以規避科技板塊波動風險。"
+        entryPoint: "建議暫時將資金輪動至高質量的工業與金融股以避險。"
     },
     {
         name: "美股小左",
@@ -144,27 +144,27 @@ const usInfluencersData = [
         style: "宏觀與底層邏輯",
         institutionalMatch: 4,
         institutionalMatchDesc: "關注 AI 雲端巨頭資本支出 (CapEx) 變現問題，符合法人疑慮。",
-        viewpoint: "【2026.07.22 盤前最新】頻繁討論AI硬體股暴跌後的抄底與逃命判斷、Palantir業務護城河深度解析，以及AI模型價格戰對產業鏈的影響。",
+        viewpoint: "【2026.07.23 盤前最新】重心放在宏觀邏輯與長線資產配置，探討「史詩級牛市」下的AI股票佈局，特別關注特斯拉的資本效率以及在AI硬體領域的機會。",
         stocks: ["TSLA (特斯拉)", "GOOGL (Alphabet)", "NVDA (輝達)"],
-        entryPoint: "深入研究AI企業的護城河，尋找具備長期競爭力的優質軟硬體標的。"
+        entryPoint: "重視宏觀邏輯配置，關注具備AI硬體優勢的資產。"
     },
     {
         name: "美股研究社",
         style: "科技股基本面分析",
         institutionalMatch: 4,
         institutionalMatchDesc: "警告科技巨頭估值波動與市場分化，與避險基金縮表邏輯一致。",
-        viewpoint: "【2026.07.22 盤前最新】持續發布關於輝達、蘋果、特斯拉等科技巨頭的財報解讀與AI戰略分析，並提供新能源與AI應用的深度研究。",
+        viewpoint: "【2026.07.23 盤前最新】指出AI產業進入「重資產戰爭」，市場從講故事轉向看現金流。GOOGL資本市場現在更看重高昂AI支出能否實質轉化為利潤率。",
         stocks: ["MSFT (微軟)", "AMZN (亞馬遜)", "CRWD (CrowdStrike)"],
-        entryPoint: "持續追蹤科技巨頭的最新財報與AI戰略佈局，尋找中長線投資線索。"
+        entryPoint: "密切關注科技巨頭AI資本支出的轉化率與實際業務回款。"
     },
     {
         name: "NaNa說美股",
         style: "技術面 & 情緒分析",
         institutionalMatch: 4,
         institutionalMatchDesc: "捕捉到 AI 軟硬體板塊資金輪動與節前洗盤風險。",
-        viewpoint: "【2026.07.22 盤前最新】探討中東局勢惡化、資金從科技流向半導體、量化程式拋壓，以及韓國股市崩盤散戶爆倉，並分析美光走勢。",
+        viewpoint: "【2026.07.23 盤前最新】將GOOGL與TSLA財報視為關鍵節點，認為需對財報季的個股波動保持謹慎，強調儲存晶片與科技巨頭的聯動效應，不建議盲目追高。",
         stocks: ["NVDA (輝達)", "MSFT (微軟)", "AAPL (蘋果)"],
-        entryPoint: "留意地緣政治風險及量化程式拋壓對科技與半導體板塊的短期衝擊。"
+        entryPoint: "面對財報不確定性，可考慮使用期權策略 (如 Jade Lizard) 來應對波動風險。"
     },
   {
     name: "Alan Chen",
@@ -316,9 +316,9 @@ const twInfluencersData = [
         style: "籌碼追蹤",
         institutionalMatch: 4,
         institutionalMatchDesc: "追蹤外資賣超，轉向被動元件等低基期硬體，符合輪動方向。",
-        viewpoint: "【2026.07.22 盤前最新】針對大盤劇烈震盪，探討AI概念股分化與修正時間，並將資金焦點轉向高股息、價值股等避風港防禦性族群。",
+        viewpoint: "【2026.07.23 盤前最新】節目聚焦科技巨頭財報，特別檢視特斯拉與 Alphabet 在AI領域的龐大投資是否能順利轉化為實際獲利與自由現金流。",
         stocks: ["3324 (雙鴻)", "3017 (奇鋐)", "2330 (台積電)", "1503 (士電)"],
-        entryPoint: "執行汰弱留強策略，搭配定期定額心法並適當配置防禦型資產。"
+        entryPoint: "在巨額AI資本支出引發市場波動之際，應審慎評估相關標的之投資風險。"
     },
     {
         name: "朱家泓 (東森)",
@@ -343,9 +343,9 @@ const twInfluencersData = [
         style: "總經與大盤解析",
         institutionalMatch: 4,
         institutionalMatchDesc: "關注外資空單與設備股，方向正確。",
-        viewpoint: "【2026.07.22 盤前最新】節目聚焦台股大漲點是否為V轉訊號，認為電子股有跌深強彈跡象，但下半年位階與籌碼面變數仍多。",
+        viewpoint: "【2026.07.23 盤前最新】關注特斯拉與 Alphabet 財報對台股AI供應鏈與半導體族群的連動影響，並探討AI資本支出激增帶來的隱憂及台股量縮反彈之真偽。",
         stocks: ["2330 (台積電)", "2454 (聯發科)", "2317 (鴻海)", "2382 (廣達)"],
-        entryPoint: "面對大波動應稍安勿躁，挑選具甜甜價的個股並保留現金彈性。"
+        entryPoint: "留意AI相關個股基本面，謹慎評估巨頭資本支出激增帶來的潛在板塊風險。"
     },
     {
         name: "郭哲榮 (折折)",
