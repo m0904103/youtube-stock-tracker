@@ -259,6 +259,38 @@
                     </div>
                     <div class="metric-status" id="q-sec-status" style="margin-top: 15px; text-align: center; color: #3498db; font-weight: bold;">--</div>
                 </div>
+
+                <!-- 對立兵推面板 (Red Teaming Panel) -->
+                <div class="quant-card" style="grid-column: 1 / -1; background: rgba(0, 0, 0, 0.4); border: 1px solid #8e44ad;">
+                    <h3 style="color: #8e44ad;">⚔️ 結構化對立矩陣 (Red Teaming Panel) - TSLA/NVDA/2330</h3>
+                    <p class="quant-desc">強制提取 Alpha 大佬的硬核數據進行交叉對抗驗證，對抗極端多空分歧。</p>
+                    <div style="display: flex; gap: 15px; margin-top: 15px;">
+                        <div style="flex: 1; border-right: 1px solid rgba(255,255,255,0.1); padding-right: 15px;">
+                            <h4 style="color: #2ecc71;">多方敘事 (Bullish)</h4>
+                            <ul style="font-size:0.85rem; color:#ccc; margin-left: 15px; margin-top:10px;">
+                                <li>AI 資本支出將持續呈指數級增長。</li>
+                                <li>降息循環將推升科技成長股估值。</li>
+                                <li>散戶與選擇權市場 Call 買盤爆發。</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1; border-right: 1px solid rgba(255,255,255,0.1); padding-right: 15px;">
+                            <h4 style="color: #e74c3c;">空方敘事 (Bearish)</h4>
+                            <ul style="font-size:0.85rem; color:#ccc; margin-left: 15px; margin-top:10px;">
+                                <li>記憶體超級週期排擠預算，軟體端獲利無法支撐硬體。</li>
+                                <li>通膨僵固，長天期殖利率攀升刺破泡沫。</li>
+                                <li>造市商處於 Short Gamma，流動性隨時踩踏。</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1;">
+                            <h4 style="color: #f39c12;">系統 Alpha 裁量 (Tie-breaker)</h4>
+                            <ul style="font-size:0.85rem; color:#fff; font-weight:bold; margin-left: 15px; margin-top:10px;">
+                                <li style="margin-bottom:5px;">Dylan Patel: 觀察前段軟體巨頭毛利是否維持 70%。</li>
+                                <li style="margin-bottom:5px;">M. Hartnett: 觀察 CPI 是否逼近 4% 與牛熊指標。</li>
+                                <li>C. McElligott: 關注 Gamma 翻轉點 (目前 SPX 7471)。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- 另類基本面預警 -->
@@ -299,6 +331,15 @@
             </div>
         </div>
     </div>
+    
+    <!-- 魔鬼代言人 Modal -->
+    <div id="quant-modal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
+        <div class="modal-content" style="background:#1e1e1e; padding:30px; border-radius:10px; max-width:600px; border:2px solid #e74c3c;">
+            <h2 id="modal-title" style="color:#e74c3c;"></h2>
+            <div id="modal-body" style="font-size:1.1rem; line-height:1.5;"></div>
+        </div>
+    </div>
+
     <!-- Floating Action Button -->
     <button id="fab-top" class="fab" onclick="showFabAction()">🏆</button>
 
