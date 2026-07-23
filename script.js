@@ -130,7 +130,7 @@ const twInfluencersData = [
         brierScore: "0.19",
         ece: "4%",
         viewpoint: "【硬核基本面】能看穿法說會公關話術，直指庫存去化或先進製程良率的真實狀況，掌握台積電與供應鏈資本支出動向。",
-        stocks: ["2330", "2454"],
+        stocks: ["台積電 2330", "聯發科 2454"],
         entryPoint: "法說會後，將其對毛利率展望轉化為半導體週期擴張/收縮判定。",
         instMatch: 5
     },
@@ -143,7 +143,7 @@ const twInfluencersData = [
         brierScore: "0.21",
         ece: "5%",
         viewpoint: "【實地查核】具備買方大資金視角，能區分「塞貨給渠道的假需求」與「終端拉貨的真需求」，避免被單月營收蒙蔽。",
-        stocks: ["2382", "3231"],
+        stocks: ["廣達 2382", "緯創 3231"],
         entryPoint: "驗證消費性電子與伺服器供應鏈的實際拉貨力道。",
         instMatch: 5
     },
