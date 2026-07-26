@@ -8,9 +8,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.15",
         ece: "2%",
-        viewpoint: "【硬核基本面】指出 AI 模型資本支出雖龐大，但前段軟體巨頭毛利仍高達 70%。戳破部分 CPU 廠商對 Blackwell 伺服器的過度樂觀幻想。",
+        viewpoint: "【2026.07.27 最新】7月更新對AMD的樂觀看法，認為其有機會打破Nvidia的CUDA護城河。並指出Meta積極建置算力，以及AI基礎設施面臨嚴重的記憶體短缺，推升多兆美元的AI債務融資市場。",
         stocks: ["NVDA", "AVGO", "AMPH"],
-        entryPoint: "追蹤資料中心 TCO 與 B.O.M 拆解，尋找具備定價權的硬體設施寡占者。",
+        entryPoint: "密切關注記憶體供應鏈與AI基礎設施板塊，留意AMD在軟體生態系追趕Nvidia的突破機會。",
         instMatch: 5
     },
     {
@@ -21,9 +21,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.22",
         ece: "5%",
-        viewpoint: "【量化反轉】警告 AI 概念股市值佔比逼近 48% 極端值，若『牛熊指標』觸發賣出，結合 CPI 逼近 4% 將引爆資金撤退。",
+        viewpoint: "【2026.07.27 最新】牛熊指標在7月底飆升至9.6的極端賣出訊號。警告市場過度樂觀，高度依賴無硬著陸、不升息與AI資本支出不減等脆弱假設，建議採取「夏日煞車」策略。",
         stocks: ["SPY", "QQQ", "TLT"],
-        entryPoint: "當牛熊指標大於 8.0 時，強制降低多頭曝險，切換防禦性資產。",
+        entryPoint: "降低高貝塔與風險資產曝險，逢高獲利了結並轉入防禦型股票或長天期債券。",
         instMatch: 5
     },
     {
@@ -34,9 +34,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.18",
         ece: "3%",
-        viewpoint: "【微觀籌碼】專注於造市商 Gamma 曝險水位與 CTA 機械性拋售點位。無視基本面，直指選擇權市場的流動性枯竭風險。",
+        viewpoint: "【2026.07.27 最新】警告中東局勢與油價上漲正引發利率市場的「微型恐慌」。指出8月市場流動性通常匱乏，科技七巨頭與AI交易正因資本支出攀升與資金擁擠轉為市場逆風。",
         stocks: ["VIX", "SPX"],
-        entryPoint: "跌破 Short Gamma 觸發點時，預期演算法拋售，提前買入尾部避險工具。",
+        entryPoint: "提防8月流動性枯竭引發的波動率(VIX)飆升，並對擁擠的科技巨頭交易保持高度警戒。",
         instMatch: 5
     },
     {
@@ -73,9 +73,9 @@ const usInfluencersData = [
         tier: "Core",
         brierScore: "0.45",
         ece: "15%",
-        viewpoint: "【防禦警示】資金正從擁擠的 AI 科技巨頭中撤出。TSLA 與 GOOGL 財報為測試科技波動能的底線。",
+        viewpoint: "【2026.07.27 最新】指出市場領頭羊正從半導體板塊向外擴散，這對牛市持久性是健康訊號。建議將資金輪動至超大規模雲端服務商(Hyperscalers)。",
         stocks: ["SPY", "XLV", "XLP"],
-        entryPoint: "作為高估值板塊回撤時的防禦參考錨點。",
+        entryPoint: "將投資組合中的半導體持倉獲利了結，輪動配置至估值較合理的超大規模雲端服務商。",
         instMatch: 3
     },
     {
@@ -86,9 +86,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.65",
         ece: "40%",
-        viewpoint: "【利益衝突警告】Q2 財報坦承自由現金流不及預期，預告 AI 支出將超 250 億美元。",
+        viewpoint: "【2026.07.27 最新】特斯拉第二季營收創紀錄但EPS大幅低於預期。強調公司正處投資AI基礎設施、Optimus機器人與Robotaxi的最高峰期，並提及記憶體晶片價格飆漲。",
         stocks: ["TSLA", "DOGE"],
-        entryPoint: "注意尾部情緒風險，避免因單一推文進行高槓桿做多。",
+        entryPoint: "留意AI資本支出高企對科技巨頭短期利潤的壓縮，但可長線關注其自動駕駛與機器人發展。",
         instMatch: 1
     },
     {
@@ -99,9 +99,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.75",
         ece: "55%",
-        viewpoint: "【死多頭訊號】無懼財報陣痛，堅定加倉 GOOGL 與 TSLA，完全忽略短期盈餘波動與資本成本。",
+        viewpoint: "【2026.07.27 最新】7月積極在波動中重新調整投資組合。趁股價回檔大幅加碼特斯拉與Meta，並持續投資SpaceX；同時針對部分獲利的半導體、金融科技進行減碼。",
         stocks: ["ARKK", "TSLA", "Roku"],
-        entryPoint: "僅適用極度寬鬆週期；緊縮環境下為反向指標。",
+        entryPoint: "趁市場回檔時逢低佈局具備長線顛覆性創新潛力（如AI與太空科技）的龍頭企業。",
         instMatch: 0
     },
     {
@@ -112,9 +112,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.85",
         ece: "70%",
-        viewpoint: "【經典反指標】強烈警告科技股洗盤，呼籲轉向工業與金融避險。",
+        viewpoint: "【2026.07.27 最新】對科技股、AI與半導體的「拋物線」暴漲發出強烈警告，直言科技股比重過高將面臨屠殺。建議資金從投機性科技股輪動至估值合理的金融與工業板塊。",
         stocks: ["QQQ"],
-        entryPoint: "高頻看多看空反轉極快，具備極強的反向指標統計意義。",
+        entryPoint: "嚴格執行紀律，將近期暴漲的AI科技股獲利了結一半，並將資金輪動至金融或工業板塊。",
         instMatch: 0
     }
 ];
@@ -129,9 +129,9 @@ const twInfluencersData = [
         tier: "Alpha",
         brierScore: "0.19",
         ece: "4%",
-        viewpoint: "【硬核基本面】能看穿法說會公關話術，直指庫存去化或先進製程良率的真實狀況，掌握台積電與供應鏈資本支出動向。",
+        viewpoint: "【2026.07.27 最新】近期指出AI伺服器與相關供應鏈營收年增率大於30%，成長動能強勁。針對市場對台積電的極高目標價，認為估值不應一體適用，多數法人是先射箭再畫靶。",
         stocks: ["台積電 2330", "聯發科 2454"],
-        entryPoint: "法說會後，將其對毛利率展望轉化為半導體週期擴張/收縮判定。",
+        entryPoint: "投資人不應過度執著外資目標價，應獨立評估與觀察基本面數據。",
         instMatch: 5
     },
     {
@@ -142,9 +142,9 @@ const twInfluencersData = [
         tier: "Alpha",
         brierScore: "0.21",
         ece: "5%",
-        viewpoint: "【實地查核】具備買方大資金視角，能區分「塞貨給渠道的假需求」與「終端拉貨的真需求」，避免被單月營收蒙蔽。",
+        viewpoint: "【2026.07.27 最新】指出科技巨頭仍依賴台積電，CoWoS吃緊本質為先進製程緊缺。認為AI賽局進入下半場，供應鏈雖處上升週期但有泡沫疑慮，呼籲操作需具備避險思維。",
         stocks: ["廣達 2382", "緯創 3231"],
-        entryPoint: "驗證消費性電子與伺服器供應鏈的實際拉貨力道。",
+        entryPoint: "在市場高檔震盪時不應盲目追價，需保留適度現金比重避險。",
         instMatch: 5
     },
     {
@@ -155,9 +155,9 @@ const twInfluencersData = [
         tier: "Alpha",
         brierScore: "0.24",
         ece: "3%",
-        viewpoint: "【防偽過濾器】從物理學與工程學底層邏輯，拆解常溫超導、量子運算等虛假題材是否具備量產可能。",
+        viewpoint: "【2026.07.27 最新】深度解析台積電晶背供電網路及先進封裝技術，探討矽光子與CPO技術在AI晶片傳輸效率的關鍵角色；同時關注台積電擴廠效應。",
         stocks: ["矽光子", "CoWoS"],
-        entryPoint: "偵測到異常題材暴漲且其判斷「技術不可行」時，封鎖做多權限。",
+        entryPoint: "建議投資人持續關注先進封裝與矽光子技術的後續發展與潛在商機。",
         instMatch: 4
     },
     {
@@ -194,9 +194,9 @@ const twInfluencersData = [
         tier: "Core",
         brierScore: "0.38",
         ece: "6%",
-        viewpoint: "【黑名單過濾】專注財務指標異常與盈餘品質，剔除存貨飆升、應收帳款異常的高風險個股。",
+        viewpoint: "【2026.07.27 最新】重點關注科技巨頭財報，檢視AI資本支出是否帶來實質獲利。分析地緣政治引發的估值修正，並看好受惠AI伺服器的PCB與記憶體族群。",
         stocks: ["財報異常股"],
-        entryPoint: "無情剔除高風險個股，作為系統的 API 負向篩選條件。",
+        entryPoint: "應密切關注美國科技巨頭財報中的AI資本支出回報率以確認未來趨勢。",
         instMatch: 3
     },
     {
@@ -220,9 +220,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.78",
         ece: "65%",
-        viewpoint: "【高頻噪音】頻繁喊進喊出，依賴極度簡化的技術線型進行事後解釋，缺乏正向期望值。",
+        viewpoint: "【2026.07.27 最新】7月24日警告市場有「二次崩盤」風險，但認為大盤短中期底部已確立，長線看好。選股強調低基期且基本面明確的標的。",
         stocks: ["投機熱門股"],
-        entryPoint: "散戶過度樂觀時的反向情緒警示。",
+        entryPoint: "不熟悉個股操作的投資人，建議直接長期持有0050並抱牢即可。",
         instMatch: 0
     },
     {
@@ -233,9 +233,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.72",
         ece: "50%",
-        viewpoint: "【高頻噪音】收視率導向，每日針對大漲大跌的股票進行事後諸葛式的點評。",
+        viewpoint: "【2026.07.27 最新】7月24日節目聚焦AI基建大戰與美股財報接力，並針對群創的CoPoS封裝商機、聯發科自研AI晶片、低軌衛星進行盤勢推演。",
         stocks: ["當日漲停板"],
-        entryPoint: "當其強烈推薦某族群時，通常是短線過熱、即將回檔的訊號。",
+        entryPoint: "可留意CoPoS封裝商機、自研AI晶片及低軌衛星等具備實質題材的族群。",
         instMatch: 0
     }
 ];
