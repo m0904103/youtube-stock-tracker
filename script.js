@@ -8,9 +8,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.15",
         ece: "2%",
-        viewpoint: "【2026.07.27 最新】7月更新對AMD的樂觀看法，認為其有機會打破Nvidia的CUDA護城河。並指出Meta積極建置算力，以及AI基礎設施面臨嚴重的記憶體短缺，推升多兆美元的AI債務融資市場。",
+        viewpoint: "【2026.07.28 最新】指出當前記憶體市場為『結構性短缺』而非暫時供需失衡，強調軟硬體『共同設計』是突破關鍵，透露 Anthropic 已於第二季實現正自由現金流。",
         stocks: ["NVDA", "AVGO", "AMPH"],
-        entryPoint: "密切關注記憶體供應鏈與AI基礎設施板塊，留意AMD在軟體生態系追趕Nvidia的突破機會。",
+        entryPoint: "關注AI基礎設施瓶頸，逢低佈局記憶體相關標的，留意具備軟硬整合優勢之企業。",
         instMatch: 5
     },
     {
@@ -21,9 +21,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.22",
         ece: "5%",
-        viewpoint: "【2026.07.27 最新】牛熊指標在7月底飆升至9.6的極端賣出訊號。警告市場過度樂觀，高度依賴無硬著陸、不升息與AI資本支出不減等脆弱假設，建議採取「夏日煞車」策略。",
+        viewpoint: "【2026.07.28 最新】警告BofA牛熊指標已達9.6的極度樂觀水位，基金經理人現金降至3.6%觸發反向賣出訊號；『藍領半導體』指數自高點回落21%，軟著陸共識過於脆弱。",
         stocks: ["SPY", "QQQ", "TLT"],
-        entryPoint: "降低高貝塔與風險資產曝險，逢高獲利了結並轉入防禦型股票或長天期債券。",
+        entryPoint: "市場情緒過度樂觀，建議採取反向操作，減碼科技與工業股，轉進防禦型與高股息資產。",
         instMatch: 5
     },
     {
@@ -34,9 +34,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.18",
         ece: "3%",
-        viewpoint: "【2026.07.27 最新】警告中東局勢與油價上漲正引發利率市場的「微型恐慌」。指出8月市場流動性通常匱乏，科技七巨頭與AI交易正因資本支出攀升與資金擁擠轉為市場逆風。",
+        viewpoint: "【2026.07.28 最新】形容當前利率市場出現『迷你恐慌』，警告中東局勢與油價飆升正引發通膨尾部風險；科技七雄已從『資本回報者』轉為『資本消耗者』。",
         stocks: ["VIX", "SPX"],
-        entryPoint: "提防8月流動性枯竭引發的波動率(VIX)飆升，並對擁擠的科技巨頭交易保持高度警戒。",
+        entryPoint: "防範通膨預期重燃帶來的利率衝擊，並重新評估AI巨頭龐大資本支出的實質回報率。",
         instMatch: 5
     },
     {
@@ -73,9 +73,9 @@ const usInfluencersData = [
         tier: "Core",
         brierScore: "0.45",
         ece: "15%",
-        viewpoint: "【2026.07.27 最新】指出市場領頭羊正從半導體板塊向外擴散，這對牛市持久性是健康訊號。建議將資金輪動至超大規模雲端服務商(Hyperscalers)。",
+        viewpoint: "【2026.07.28 最新】觀察到市場正經歷典型中期的『品質』輪動，半導體板塊已失去動能，資金應轉向AI應用能帶來明確利潤增長的銀行、醫療等產業。",
         stocks: ["SPY", "XLV", "XLP"],
-        entryPoint: "將投資組合中的半導體持倉獲利了結，輪動配置至估值較合理的超大規模雲端服務商。",
+        entryPoint: "避開漲多且動能衰退的半導體，轉進能實質受惠於AI應用並提升淨利率的非科技領域。",
         instMatch: 3
     },
     {
@@ -86,9 +86,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.65",
         ece: "40%",
-        viewpoint: "【2026.07.27 最新】特斯拉第二季營收創紀錄但EPS大幅低於預期。強調公司正處投資AI基礎設施、Optimus機器人與Robotaxi的最高峰期，並提及記憶體晶片價格飆漲。",
+        viewpoint: "【2026.07.28 最新】在Tesla第二季財報未達預期重挫後，強調公司正進行大規模資本支出以實現工業級擴張；預測AI將在五年內超越人類智慧，對SpaceX合併抱開放態度。",
         stocks: ["TSLA", "DOGE"],
-        entryPoint: "留意AI資本支出高企對科技巨頭短期利潤的壓縮，但可長線關注其自動駕駛與機器人發展。",
+        entryPoint: "面對短期財報壓力與資本支出大增，需耐心關注Tesla在機器人與AI應用的長期佈局。",
         instMatch: 1
     },
     {
@@ -99,9 +99,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.75",
         ece: "55%",
-        viewpoint: "【2026.07.27 最新】7月積極在波動中重新調整投資組合。趁股價回檔大幅加碼特斯拉與Meta，並持續投資SpaceX；同時針對部分獲利的半導體、金融科技進行減碼。",
+        viewpoint: "【2026.07.28 最新】趁SpaceX股價回落及Tesla財報大跌之際，逢低大幅加碼數千萬美元；同時透過獲利了結部分持股調整組合，維持對SpaceX可能成為全球最重要公司的信心。",
         stocks: ["ARKK", "TSLA", "Roku"],
-        entryPoint: "趁市場回檔時逢低佈局具備長線顛覆性創新潛力（如AI與太空科技）的龍頭企業。",
+        entryPoint: "秉持破壞性創新信念，在AI核心持股遇逆風時逢低承接，著眼長期顛覆性價值。",
         instMatch: 0
     },
     {
@@ -112,9 +112,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.85",
         ece: "70%",
-        viewpoint: "【2026.07.27 最新】對科技股、AI與半導體的「拋物線」暴漲發出強烈警告，直言科技股比重過高將面臨屠殺。建議資金從投機性科技股輪動至估值合理的金融與工業板塊。",
+        viewpoint: "【2026.07.28 最新】警告近日半導體拋售是由面臨保證金追繳的槓桿基金所引發的『怪物級』賣壓，擔憂華爾街對科技股過度集中，呼籲轉向金融與醫療等板塊。",
         stocks: ["QQQ"],
-        entryPoint: "嚴格執行紀律，將近期暴漲的AI科技股獲利了結一半，並將資金輪動至金融或工業板塊。",
+        entryPoint: "避開過度擁擠且槓桿過高的科技股，趁市場波動將資金分散至防禦性與傳產板塊。",
         instMatch: 0
     }
 ];
@@ -220,9 +220,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.78",
         ece: "65%",
-        viewpoint: "【2026.07.27 最新】7月24日警告市場有「二次崩盤」風險，但認為大盤短中期底部已確立，長線看好。選股強調低基期且基本面明確的標的。",
+        viewpoint: "【2026.07.28 最新】指出台股短中期底部已確立，長線看好。提醒投資人分辨真反彈與死貓跳，避免追高舊AI、CPO或PCB等短線漲多族群。",
         stocks: ["投機熱門股"],
-        entryPoint: "不熟悉個股操作的投資人，建議直接長期持有0050並抱牢即可。",
+        entryPoint: "建議長期持有市值型ETF(如0050)，或挑選基本面明確且處於低基期的個股。",
         instMatch: 0
     },
     {
@@ -233,9 +233,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.72",
         ece: "50%",
-        viewpoint: "【2026.07.27 最新】7月24日節目聚焦AI基建大戰與美股財報接力，並針對群創的CoPoS封裝商機、聯發科自研AI晶片、低軌衛星進行盤勢推演。",
+        viewpoint: "【2026.07.28 最新】聚焦台股震盪與量能急凍盤勢，探討矽光子等AI半導體供應鏈展望。提醒投資人在大盤回測時別把接刀當抄底。",
         stocks: ["當日漲停板"],
-        entryPoint: "可留意CoPoS封裝商機、自研AI晶片及低軌衛星等具備實質題材的族群。",
+        entryPoint: "應觀察兩大反彈訊號確認止跌契機後再行布局，切勿在量縮震盪時盲目抄底。",
         instMatch: 0
     }
 ];
