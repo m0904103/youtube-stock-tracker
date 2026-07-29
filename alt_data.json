@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-07-29 14:38:52",
+    "last_updated": "2026-07-29 22:00:57",
     "derivatives": {
-        "date": "2026-07-28",
+        "date": "2026-07-29",
         "dix": {
-            "value": 39.7,
+            "value": 42.5,
             "status": "中性 (Neutral)",
             "color": "#f39c12"
         },
@@ -34,7 +34,7 @@
             "status": "資金轉向實質與防禦板塊"
         },
         "gex": {
-            "value": 3.99,
+            "value": 6.18,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -43,14 +43,14 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 36,
-                "label": "浴火重生 (VIX飆升 19.5 後 V轉) | 溢價 12.0%",
+                "score": 30,
+                "label": "浴火重生 (VIX飆升 20.7 後 V轉) | 溢價 10.2%",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 14,
-                "label": "軋空狂熱 (空頭踩踏 V轉)",
+                "score": 10,
+                "label": "軋空狂熱 (空頭踩踏 V轉) (實體黑K懲罰)",
                 "color": "#2ecc71"
             },
             {
@@ -61,7 +61,7 @@
             }
         ],
         "macro_confidence": {
-            "score": 30,
+            "score": 24,
             "label": "AI生產力對抗高息"
         }
     },
