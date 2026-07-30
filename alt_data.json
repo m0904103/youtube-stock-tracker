@@ -1,11 +1,11 @@
 {
-    "last_updated": "2026-07-30 14:39:56",
+    "last_updated": "2026-07-30 22:04:42",
     "derivatives": {
-        "date": "2026-07-29",
+        "date": "2026-07-30",
         "dix": {
-            "value": 42.5,
-            "status": "中性 (Neutral)",
-            "color": "#f39c12"
+            "value": 45.3,
+            "status": "機構暗買 (Bullish - Short is Long)",
+            "color": "#2ecc71"
         },
         "tail_risk": {
             "skew": 150.02,
@@ -34,7 +34,7 @@
             "status": "資金轉向實質與防禦板塊"
         },
         "gex": {
-            "value": 6.18,
+            "value": 4.4,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -43,26 +43,26 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 53,
-                "label": "浴火重生 (VIX飆升 18.4 後 V轉) | ADR溢價護體",
+                "score": 59,
+                "label": "軋空宣洩 (VIX回落 17.1) | ADR溢價護體",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 19,
-                "label": "軋空狂熱 (空頭踩踏 V轉)",
+                "score": 44,
+                "label": "FOMO 進場 (錯過行情的焦慮)",
                 "color": "#2ecc71"
             },
             {
                 "name": "Xueqiu (中概股)",
-                "score": 25,
-                "label": "錯失恐懼 (FOMO)",
+                "score": 40,
+                "label": "半信半疑",
                 "color": "#f39c12"
             }
         ],
         "macro_confidence": {
-            "score": 35,
-            "label": "AI生產力對抗高息"
+            "score": 65,
+            "label": "經濟軟著陸確認"
         }
     },
     "alt_fundamentals": [
