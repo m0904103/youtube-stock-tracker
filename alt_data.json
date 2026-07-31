@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-31 04:00:41",
+    "last_updated": "2026-07-31 08:53:40",
     "derivatives": {
         "date": "2026-07-30",
         "dix": {
@@ -43,13 +43,13 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 49,
-                "label": "軋空宣洩 (VIX回落 17.1) | 溢價 8.8%",
+                "score": 51,
+                "label": "軋空宣洩 (VIX回落 16.8) | 溢價 7.4%",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 44,
+                "score": 45,
                 "label": "FOMO 進場 (錯過行情的焦慮)",
                 "color": "#2ecc71"
             },
