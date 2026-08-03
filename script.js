@@ -261,7 +261,7 @@ function renderGrid(containerId, data) {
                 <div class="influencer-style">${influencer.style}</div>
             </div>
             
-            <div class="section-title">最新觀點 (2026.08)</div>
+            <div class="section-title">最新觀點 </div>
             <p>${influencer.viewpoint}</p>
 
             <div class="section-title">關注標的</div>
