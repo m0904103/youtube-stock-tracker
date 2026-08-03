@@ -258,7 +258,7 @@ function renderGrid(containerId, data) {
         card.innerHTML = `
             <div class="card-header">
                 <div class="influencer-name">${influencer.name}</div>
-                <div class="influencer-style">${influencer.style}</div>
+                <div class="influencer-style">${influencer.type || ''}</div>
             </div>
             
             <div class="section-title">最新觀點 </div>
