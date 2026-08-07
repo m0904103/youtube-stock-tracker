@@ -8,9 +8,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.15",
         ece: "2%",
-        viewpoint: "【2026.08.06 最新】分析指出AI產業轉向信用融資驅動，雲端巨頭YTD發債4,500億美元；發表Kimi K3與Vera Rubin TCO分析，並預估CPO大規模量產將延至2028年。",
+        viewpoint: "【2026.08.07 最新】指出Google DeepMind高層離職潮使大模型研發優勢瓦解，但GCP奪得算力控制權將加速雲端營收。同時強調長途光纖網路已成為AI基礎設施的最關鍵瓶頸。",
         stocks: ["NVDA", "AVGO", "AMPH"],
-        entryPoint: "關注AI巨頭融資成本與推理端TCO效益，適度避開過度押注近期CPO量產的標的。",
+        entryPoint: "建議重點關注GCP雲端生態與長途光纖網路供應鏈標的。",
         instMatch: 5
     },
     {
@@ -21,9 +21,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.22",
         ece: "5%",
-        viewpoint: "【2026.08.06 最新】最新Flow Show指出標普500已達7,741點目標，警告8-10月季節性回檔風險；提醒30年美債殖利率達5.2%與實質殖利率3%將壓抑風險資產，資金轉向防禦資產。",
+        viewpoint: "【2026.08.07 最新】美銀牛熊指標飆升至9.7（創2021年以來新高），反映市場情緒極度樂觀與高收益債大量流入，警告當前極端情緒大幅增加美股面對突發衝擊的脆弱性。",
         stocks: ["SPY", "QQQ", "TLT"],
-        entryPoint: "留意8-10月季節性拉回與美債高殖利率壓力，適度提高防禦性資產與現金比重。",
+        entryPoint: "建議高檔適度控制槓桿並提升防禦性資產配置，慎防極端情緒後的回調。",
         instMatch: 5
     },
     {
@@ -34,9 +34,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.18",
         ece: "3%",
-        viewpoint: "【2026.08.06 最新】報告指出市場經歷極端動量反轉後，投資人透過買權追高導致「現貨與VIX同步上揚」的異常現象，顯示追高與避險需求同時激增，暗示波動將加劇。",
+        viewpoint: "【2026.08.07 最新】分析美股出現「正股與波動率同步上升（Spot Up, Vol Up）」異常動態，主因散戶與機構買權追高及超大型科技股空頭回補所引發的衍生品強制平倉行情。",
         stocks: ["VIX", "SPX"],
-        entryPoint: "留意期權買權過熱引起的追高風險，建議配置適度Delta避險或採用價差期權策略控管回檔風險。",
+        entryPoint: "警惕市場技術面與空頭回補引發的急漲，切勿在波動率偏高時盲目追高。",
         instMatch: 5
     },
     {
@@ -73,9 +73,9 @@ const usInfluencersData = [
         tier: "Core",
         brierScore: "0.45",
         ece: "15%",
-        viewpoint: "【2026.08.06 最新】最新觀點維持標普500上看8,000點，但指出市場進入週期中後期，領導力從半導體擴散，建議轉向「獲利品質輪動」，佈局高自由現金流與盈餘穩健之龍頭股。",
+        viewpoint: "【2026.08.07 最新】重申標普500指數年底目標價8,000點，指出市場正過渡至週期中期，資金將從純AI硬體轉向能利用AI提高營運效率與利潤率的「AI採用者」及高品質個股。",
         stocks: ["SPY", "XLV", "XLP"],
-        entryPoint: "將持股重心從純動量半導體轉向具備強勁自由現金流與高獲利品質的各行業龍頭。",
+        entryPoint: "建議聚焦具備穩定自由現金流且能藉由AI增效的高品質企業。",
         instMatch: 3
     },
     {
@@ -86,9 +86,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.65",
         ece: "40%",
-        viewpoint: "【2026.08.06 最新】SpaceX首份季報營收78億美元超預期，但AI與數據中心CapEx達158億美元引發賣壓。馬斯克強調將推出Grok 4.6/4.7與Grok 5，並確認全面採用Nvidia Vera Rubin架構。",
+        viewpoint: "【2026.08.07 最新】宣布特斯拉與SpaceX將於德州合資興建全球最大晶片廠「Terafab」（首期投資168億美元，總額1,190億美元），並預告Grok 4.6大模型於8月7日前後發布。",
         stocks: ["TSLA", "DOGE"],
-        entryPoint: "留意高CapEx對短期現金流之壓力，關注Nvidia供應鏈與長線AI/太空基礎設施佈局。",
+        entryPoint: "建議持續關注Terafab算力佈局與Tesla/SpaceX晶片自研對產業鏈的長遠影響。",
         instMatch: 1
     },
     {
@@ -99,9 +99,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.75",
         ece: "55%",
-        viewpoint: "【2026.08.06 最新】交易日誌顯示ARK加碼Circle逾1,700萬美元，並逢低抄底SpaceX、Nvidia、台積電與Tesla，同時逢高減持Shopify與Palantir等標的。",
+        viewpoint: "【2026.08.07 最新】ARK展開顯著資產輪動，大舉加碼Block（2,250萬美元）、Nvidia（1,760萬美元）、Circle與SpaceX，並大幅減持Shopify（1,690萬美元）、Roblox與Palantir。",
         stocks: ["ARKK", "TSLA", "Roku"],
-        entryPoint: "採逆向波段操作，在科技股拉回時逢低加碼AI基建與核心硬體龍頭，並逢高調節高溢價標的。",
+        entryPoint: "可參考其逢低重置資金至AI基礎建設與數位金融龍頭的換股策略。",
         instMatch: 0
     },
     {
@@ -112,9 +112,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.85",
         ece: "70%",
-        viewpoint: "【2026.08.06 最新】節目力挺Shopify財報後大漲17%，駁斥AI威脅論；針對AMD因SpaceX獨採Nvidia而下挫7%，強調AI晶片非零和博弈，並建議將SpaceX視為百年鐵路債般長線持有。",
+        viewpoint: "【2026.08.07 最新】主張將SpaceX視為世代級基礎設施長期投資；堅定駁斥AI將取代Shopify的觀點；看好Fortinet與CME Group，對Denison Mines及HCA持保守態度。",
         stocks: ["QQQ"],
-        entryPoint: "勿因短期個股利空慌亂賣出，AI硬體市場空間足夠容納多家巨頭，可擇優逢低分批佈局。",
+        entryPoint: "建議優先挑選具備長期基礎設施壁壘與穩健營運的優質個股。",
         instMatch: 0
     }
 ];
@@ -129,9 +129,9 @@ const twInfluencersData = [
         tier: "Alpha",
         brierScore: "0.19",
         ece: "4%",
-        viewpoint: "【2026.08.06 盤後】解讀美股AI財報指出，AMD未帶來驚喜且難言驅動台積電，但AI基礎建設如Astera Labs營收亮眼。整體AI供應鏈呈現明顯分態，非所有AI股皆能同步成長。",
+        viewpoint: "【2026.08.07 盤後】分析AMD與雲端巨頭財報指出，AMD營收季增幅度小難單獨撐起台積電；警示CSP巨頭資本支出大增但若營收未能跟上恐有泡沫風險，關注台積電7月營收及先進封裝效益。",
         stocks: ["台積電 2330", "聯發科 2454"],
-        entryPoint: "建議避開短期動能不明的高估值個股，轉向聚焦具備實質營收成長的AI基礎建設標的。",
+        entryPoint: "密切追蹤AI資本支出能否轉化為真實營收，對評價面已高個股維持審慎。",
         instMatch: 5
     },
     {
@@ -194,9 +194,9 @@ const twInfluencersData = [
         tier: "Core",
         brierScore: "0.38",
         ece: "6%",
-        viewpoint: "【2026.08.06 盤後】聚焦美股記憶體大廠財報與SpaceX解禁賣壓，指出SanDisk與WD財測未達高預期致盤後重挫；台股方面則看好伺服器滑軌龍頭川湖上半年EPS突破110元衝上萬金股。",
+        viewpoint: "【2026.08.07 盤後】8/7更新7月營收排行榜與市場檢視，華邦電法說後記憶體族群利多出盡拉回，宏捷科上半年EPS 2.93元提前擴產卻遭打跌停，反映市場在半年報公布前夕對展望與本益比檢視嚴苛。",
         stocks: ["財報異常股"],
-        entryPoint: "建議密切觀察伺服器供應鏈實質獲利表現，對財測極端高預期之個股保持嚴謹檢驗。",
+        entryPoint: "檢視最新公布之7月營收與半年報實質獲利，避開籌碼鬆動及業績不及預期的標的。",
         instMatch: 3
     },
     {
@@ -220,9 +220,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.78",
         ece: "65%",
-        viewpoint: "【2026.08.06 盤後】8/6盤後指出台股自跌逾500點大幅拉回展現強勁韌性，底部確立。其抄底1億元0050帳面獲利超千萬，堅守5萬點目標不變，並看好群聯、微星及鴻海。",
+        viewpoint: "【2026.08.07 盤後】8/7台股因韓股震盪回測非轉空，不到5%機率破4萬點，拉回視為百貨週年慶打折。鴻海7月營收衝9465.12億元創歷年單月新高、8月挑戰兆元，看好微星顯卡漲價與群聯逢低布局。",
         stocks: ["投機熱門股"],
-        entryPoint: "建議趁震盪拉回時分批逢低加碼市值型ETF或績優AI權值股。",
+        entryPoint: "大盤拉回逢低分批布局營收創新高的AI權值與績優股，勿恐慌殺低。",
         instMatch: 0
     },
     {
@@ -233,9 +233,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.72",
         ece: "50%",
-        viewpoint: "【2026.08.05 盤後】節目聚焦鴻海7月營收達9465億創歷史新高，解盤分析台股在美股大漲帶動下之止跌訊號與季線賣壓，追蹤矽晶圓及光通訊（聯鈞、波若威）等熱門AI供應鏈籌碼。",
+        viewpoint: "【2026.08.07 盤後】8/7盤後聚焦鴻海7月營收9465.12億（年增54.19%）創單月新高、廣達3662.74億（年增101.32%）創次高。AI基礎建設強勁，惟半年報高峰期市場已轉向檢視毛利率與估值落差。",
         stocks: ["當日漲停板"],
-        entryPoint: "關注鴻海供應鏈與矽晶圓族群，依止跌訊號與季線壓力彈性操作。",
+        entryPoint: "半年報密集公布期宜透過波段操作，篩選營收、毛利率與本益比皆優的AI供應鏈標的。",
         instMatch: 0
     }
 ];
