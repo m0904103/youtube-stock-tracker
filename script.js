@@ -8,9 +8,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.15",
         ece: "2%",
-        viewpoint: "【2026.08.07 最新】指出Google DeepMind高層離職潮使大模型研發優勢瓦解，但GCP奪得算力控制權將加速雲端營收。同時強調長途光纖網路已成為AI基礎設施的最關鍵瓶頸。",
+        viewpoint: "【2026.08.08 最新】8/7報告指出DeepMind高層人事變動有利於Google Cloud業務加速；看好SpaceX於2027年達到10GW AI算力建置且微軟為最大客戶。同時駁斥SK海力士HBM降價傳聞。",
         stocks: ["NVDA", "AVGO", "AMPH"],
-        entryPoint: "建議重點關注GCP雲端生態與長途光纖網路供應鏈標的。",
+        entryPoint: "關注Google Cloud財報重估價值與SpaceX/微軟供應鏈，避開市場無根據的HBM割肉謠言。",
         instMatch: 5
     },
     {
@@ -21,9 +21,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.22",
         ece: "5%",
-        viewpoint: "【2026.08.07 最新】美銀牛熊指標飆升至9.7（創2021年以來新高），反映市場情緒極度樂觀與高收益債大量流入，警告當前極端情緒大幅增加美股面對突發衝擊的脆弱性。",
+        viewpoint: "【2026.08.08 最新】8/7《Flow Show》指出BofA牛熊指標升至9.7引發賣出訊號。警告美股情緒過熱，建議撤退與輪動而非加碼，重點看守油價建議高檔適度控制槓桿並提升防禦性資產配置，慎防極端情緒後的回調。、日圓160與十年期美債殖利率5%紅線。",
         stocks: ["SPY", "QQQ", "TLT"],
-        entryPoint: "建議高檔適度控制槓桿並提升防禦性資產配置，慎防極端情緒後的回調。",
+        entryPoint: "減碼高貝塔科技與半導體股，轉向公用事業、REITs、小型股及美元等防禦型資產。",
         instMatch: 5
     },
     {
@@ -34,9 +34,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.18",
         ece: "3%",
-        viewpoint: "【2026.08.07 最新】分析美股出現「正股與波動率同步上升（Spot Up, Vol Up）」異常動態，主因散戶與機構買權追高及超大型科技股空頭回補所引發的衍生品強制平倉行情。",
+        viewpoint: "【2026.08.08 最新】最新跨資產分析指出，近期美股強勁反彈主因是市場中性策略被迫平倉（空超算巨頭、多AI概念股）引發的軋空潮，呈現「現貨與波動率同步上升」追價買權現象。",
         stocks: ["VIX", "SPX"],
-        entryPoint: "警惕市場技術面與空頭回補引發的急漲，切勿在波動率偏高時盲目追高。",
+        entryPoint: "警惕衍生品軋空帶動的無基本面暴漲，追高買權時須做好波動率快速回落的對沖。",
         instMatch: 5
     },
     {
@@ -73,9 +73,9 @@ const usInfluencersData = [
         tier: "Core",
         brierScore: "0.45",
         ece: "15%",
-        viewpoint: "【2026.08.07 最新】重申標普500指數年底目標價8,000點，指出市場正過渡至週期中期，資金將從純AI硬體轉向能利用AI提高營運效率與利潤率的「AI採用者」及高品質個股。",
+        viewpoint: "【2026.08.08 最新】維持S&P 500長期牛市目標，指出動能投資正從單純晶片硬體端輪動至能實質利用AI實現盈利成長的擴展型企業，市場呈現健康廣度擴張。",
         stocks: ["SPY", "XLV", "XLP"],
-        entryPoint: "建議聚焦具備穩定自由現金流且能藉由AI增效的高品質企業。",
+        entryPoint: "調整AI投資組合，從高估值晶片股適度獲利結算，轉向獲利穩定且實質增長的大盤績優股。",
         instMatch: 3
     },
     {
@@ -86,9 +86,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.65",
         ece: "40%",
-        viewpoint: "【2026.08.07 最新】宣布特斯拉與SpaceX將於德州合資興建全球最大晶片廠「Terafab」（首期投資168億美元，總額1,190億美元），並預告Grok 4.6大模型於8月7日前後發布。",
+        viewpoint: "【2026.08.08 最新】形容AI發展為「超音速海嘯」，指出目前最大瓶頸為記憶體與電網而非晶片價格。宣布在德州興建Terafab超級半導體廠，並揭露SpaceX單季AI基礎設施CapEx達158億美元。",
         stocks: ["TSLA", "DOGE"],
-        entryPoint: "建議持續關注Terafab算力佈局與Tesla/SpaceX晶片自研對產業鏈的長遠影響。",
+        entryPoint: "佈局AI電力能源基礎設施與記憶體供應鏈，把握SpaceX及Tesla硬體轉型紅利。",
         instMatch: 1
     },
     {
@@ -99,9 +99,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.75",
         ece: "55%",
-        viewpoint: "【2026.08.07 最新】ARK展開顯著資產輪動，大舉加碼Block（2,250萬美元）、Nvidia（1,760萬美元）、Circle與SpaceX，並大幅減持Shopify（1,690萬美元）、Roblox與Palantir。",
+        viewpoint: "【2026.08.08 最新】8/7交易日誌顯示，ARK大舉加碼Block（約2100萬美元）與SpaceX（約230萬美元）；同時在Palantir創高大漲後逢高減持70,259股（約1140萬美元）。",
         stocks: ["ARKK", "TSLA", "Roku"],
-        entryPoint: "可參考其逢低重置資金至AI基礎建設與數位金融龍頭的換股策略。",
+        entryPoint: "跟隨木頭姐策略，適度對高位噴發的AI個股進行獲利瞭結，逢低佈局轉型支付與航太新創。",
         instMatch: 0
     },
     {
@@ -112,9 +112,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.85",
         ece: "70%",
-        viewpoint: "【2026.08.07 最新】主張將SpaceX視為世代級基礎設施長期投資；堅定駁斥AI將取代Shopify的觀點；看好Fortinet與CME Group，對Denison Mines及HCA持保守態度。",
+        viewpoint: "【2026.08.08 最新】8/7《Mad Money》節目提醒投資人當前財報季嚴禁過度使用槓桿，看好防禦與基礎設施個股，Lightning Round中強烈看好洛克希德馬丁（LMT）與美利普金融（AMP）。",
         stocks: ["QQQ"],
-        entryPoint: "建議優先挑選具備長期基礎設施壁壘與穩健營運的優質個股。",
+        entryPoint: "嚴格控制交易槓桿，轉向防禦型國防與金融績優股以應對財報季波動。",
         instMatch: 0
     }
 ];
@@ -220,9 +220,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.78",
         ece: "65%",
-        viewpoint: "【2026.08.07 盤後】8/7台股因韓股震盪回測非轉空，不到5%機率破4萬點，拉回視為百貨週年慶打折。鴻海7月營收衝9465.12億元創歷年單月新高、8月挑戰兆元，看好微星顯卡漲價與群聯逢低布局。",
+        viewpoint: "【2026.08.08 週末】8/7晚間影片指出台股震盪係受韓股拖累之位階修正，跌破4萬點機率低於5%。鴻海7月營收9,465億創歷史新高，8月有機會破兆；廣達長線仍強。砸億元買進的0050將一路抱到5萬點。",
         stocks: ["投機熱門股"],
-        entryPoint: "大盤拉回逢低分批布局營收創新高的AI權值與績優股，勿恐慌殺低。",
+        entryPoint: "建議逢低把握績優權值股與0050的打折買點，抱緊持股不隨短線震盪恐慌拋售。",
         instMatch: 0
     },
     {
@@ -233,9 +233,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.72",
         ece: "50%",
-        viewpoint: "【2026.08.07 盤後】8/7盤後聚焦鴻海7月營收9465.12億（年增54.19%）創單月新高、廣達3662.74億（年增101.32%）創次高。AI基礎建設強勁，惟半年報高峰期市場已轉向檢視毛利率與估值落差。",
+        viewpoint: "【2026.08.08 週末】8/7晚間節目解析大盤收44,225點，解讀鴻海7月營收9,465億創歷史新高與廣達次高表現。提出半年報「4道濾網」（營收、EPS、毛利、本益比）選股法，看好CSP及BBU題材。",
         stocks: ["當日漲停板"],
-        entryPoint: "半年報密集公布期宜透過波段操作，篩選營收、毛利率與本益比皆優的AI供應鏈標的。",
+        entryPoint: "週末戰術建議運用4道濾網嚴篩半年報績優股，避開短線追高，採波段分批布局。",
         instMatch: 0
     }
 ];
