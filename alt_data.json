@@ -1,11 +1,11 @@
 {
-    "last_updated": "2026-08-13 21:43:18",
+    "last_updated": "2026-08-14 03:06:53",
     "derivatives": {
-        "date": "2026-08-12",
+        "date": "2026-08-13",
         "dix": {
-            "value": 44.4,
-            "status": "中性 (Neutral)",
-            "color": "#f39c12"
+            "value": 47.1,
+            "status": "機構暗買 (Bullish - Short is Long)",
+            "color": "#2ecc71"
         },
         "tail_risk": {
             "skew": 150.02,
@@ -34,7 +34,7 @@
             "status": "資金轉向實質與防禦板塊"
         },
         "gex": {
-            "value": 10.63,
+            "value": 9.18,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
