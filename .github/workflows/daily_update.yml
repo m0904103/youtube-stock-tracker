@@ -1,0 +1,38 @@
+name: Daily Stock Intelligence Auto Sync
+
+on:
+  schedule:
+    # 每日美股盤後 06:00 UTC+8 (即 22:00 UTC)
+    - cron: '0 22 * * *'
+    # 每日台股盤後 14:00 UTC+8 (即 06:00 UTC)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # 支援在 GitHub 介面上手動觸發
+
+jobs:
+  build-and-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. 檢出程式碼庫 (Checkout Repo)
+        uses: actions/checkout@v4
+
+      - name: 2. 設定 Python 環境 (Set up Python)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 3. 安裝依賴套件 (Install Dependencies)
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pandas beautifulsoup4
+
+      - name: 4. 執行輿情與另類數據抓取腳本 (Run Scraping Script)
+        run: |
+          python scripts/daily_fetch.py
+
+      - name: 5. 自動 Commit 並 Push 至 GitHub Pages (Auto Commit & Push)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add alt_data.json script.js index.html
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 [Auto] 每日股市輿情與另類數據同步更新 [skip ci]" && git push)

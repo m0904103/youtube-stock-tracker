@@ -247,18 +247,24 @@ function renderGrid(containerId, data) {
     
     grid.innerHTML = ''; 
 
-    data.forEach(influencer => {
+    data.forEach((influencer, idx) => {
         const card = document.createElement('div');
-        card.className = 'card';
+        const tier = influencer.tier || (influencer.instMatch >= 4 ? 'Alpha' : (influencer.instMatch >= 2 ? 'Core' : 'Noise'));
+        card.className = `card kol-row tier-${tier.toLowerCase()}`;
+        card.dataset.tier = tier;
+        card.dataset.search = `${influencer.name} ${influencer.type || ''} ${influencer.stocks.join(' ')} ${influencer.viewpoint}`.toLowerCase();
 
         const stocksHtml = influencer.stocks.map(stock => 
             `<span class="stock-tag">${stock}</span>`
         ).join('');
 
         card.innerHTML = `
-            <div class="card-header">
-                <div class="influencer-name">${influencer.name}</div>
-                <div class="influencer-style">${influencer.type || ''}</div>
+            <div class="card-header" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <div class="influencer-name">${influencer.name}</div>
+                    <div class="influencer-style">${influencer.type || ''}</div>
+                </div>
+                <span class="badge badge-${tier.toLowerCase()}" style="font-size:0.75rem; padding:3px 8px; border-radius:6px; font-weight:bold; background:rgba(255,255,255,0.1); color:#38bdf8;">${tier}</span>
             </div>
             
             <div class="section-title">最新觀點 </div>
@@ -271,6 +277,10 @@ function renderGrid(containerId, data) {
 
             <div class="section-title">操作與買入點位</div>
             <p>${influencer.entryPoint}</p>
+
+            <button class="btn-copy-quote" onclick="copyQuoteToClipboard('${influencer.name.replace(/'/g, "\\'")}')">
+                📋 複製觀點
+            </button>
         `;
 
         grid.appendChild(card);
@@ -432,6 +442,9 @@ document.addEventListener('DOMContentLoaded', () => {
     renderGrid('influencers-grid-us', usInfluencersData);
     renderGrid('influencers-grid-tw', twInfluencersData);
     fetchAltData();
+    initSearchAndFilter();
+    initGexCalculator();
+    renderBrierLeaderboard();
 
     // 根據當前時間自動切換市場標籤 (台灣時間)
     const currentHour = new Date().getHours();
@@ -584,3 +597,155 @@ document.addEventListener('mousemove', e => {
         card.style.setProperty("--mouse-y", `${y}px`);
     }
 });
+
+// ================= 🔍 搜尋、Tier 篩選、GEX 試算器與 Brier 排行榜 =================
+
+let activeTiers = new Set(["Alpha", "Core", "Noise"]);
+let searchQuery = "";
+
+function initSearchAndFilter() {
+    const searchInput = document.getElementById("searchInput");
+    const tierBtns = document.querySelectorAll(".tier-btn");
+
+    if (searchInput) {
+        searchInput.addEventListener("input", (e) => {
+            searchQuery = e.target.value.trim().toLowerCase();
+            applyFilters();
+        });
+    }
+
+    tierBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const selectedTier = btn.dataset.tier;
+
+            if (selectedTier === "ALL") {
+                activeTiers = new Set(["Alpha", "Core", "Noise"]);
+                tierBtns.forEach(b => b.classList.add("active"));
+            } else {
+                if (activeTiers.has(selectedTier)) {
+                    activeTiers.delete(selectedTier);
+                    btn.classList.remove("active");
+                } else {
+                    activeTiers.add(selectedTier);
+                    btn.classList.add("active");
+                }
+            }
+            applyFilters();
+        });
+    });
+}
+
+function applyFilters() {
+    const cards = document.querySelectorAll(".card.kol-row");
+
+    cards.forEach(card => {
+        const cardTier = card.dataset.tier;
+        const cardSearchText = card.dataset.search || "";
+
+        const matchesTier = activeTiers.has(cardTier);
+        const matchesSearch = cardSearchText.includes(searchQuery);
+
+        if (matchesTier && matchesSearch) {
+            card.classList.remove("hidden");
+            setTimeout(() => card.classList.remove("fade-out"), 10);
+        } else {
+            card.classList.add("fade-out");
+            setTimeout(() => {
+                if (card.classList.contains("fade-out")) {
+                    card.classList.add("hidden");
+                }
+            }, 300);
+        }
+    });
+}
+
+function initGexCalculator() {
+    const priceInput = document.getElementById("nvdaPriceInput");
+    if (priceInput) {
+        priceInput.addEventListener("input", updateGexDisplay);
+        updateGexDisplay();
+    }
+}
+
+function updateGexDisplay() {
+    const priceInput = document.getElementById("nvdaPriceInput");
+    if (!priceInput) return;
+
+    const currentPrice = parseFloat(priceInput.value) || 0;
+    const zeroGammaPrice = 195.86;
+    const sma200Price = 172.50;
+
+    const statusText = document.getElementById("gexStatusText");
+    const statusBox = document.getElementById("gexStatusBox");
+    const progressBar = document.getElementById("gexProgressBar");
+
+    if (!statusText || !statusBox || !progressBar) return;
+
+    const minPrice = 150;
+    const maxPrice = 230;
+    let percentage = ((currentPrice - minPrice) / (maxPrice - minPrice)) * 100;
+    percentage = Math.max(0, Math.min(100, percentage));
+
+    progressBar.style.width = `${percentage}%`;
+
+    if (currentPrice > zeroGammaPrice) {
+        statusText.textContent = `Long Gamma (波動抑制安全區 - 造市商高賣低買)`;
+        statusBox.className = "status-indicator-box status-long-gamma";
+        progressBar.style.backgroundColor = "#10b981";
+    } else if (currentPrice > sma200Price) {
+        statusText.textContent = `Short Gamma (踩踏危險區 - 造市商追跌拋售)`;
+        statusBox.className = "status-indicator-box status-short-gamma";
+        progressBar.style.backgroundColor = "#f59e0b";
+    } else {
+        statusText.textContent = `Short Gamma + CTA 清算區 (極限清算引爆線)`;
+        statusBox.className = "status-indicator-box status-short-gamma";
+        progressBar.style.backgroundColor = "#ef4444";
+    }
+}
+
+function renderBrierLeaderboard() {
+    const container = document.getElementById("brierLeaderboard");
+    if (!container) return;
+
+    const allData = [...usInfluencersData, ...twInfluencersData];
+    const sortedData = allData
+        .map(inf => ({
+            name: inf.name,
+            tier: inf.tier || (inf.instMatch >= 4 ? 'Alpha' : (inf.instMatch >= 2 ? 'Core' : 'Noise')),
+            score: parseFloat(inf.brierScore) || (inf.instMatch >= 4 ? 0.095 : (inf.instMatch >= 2 ? 0.178 : 0.340))
+        }))
+        .sort((a, b) => a.score - b.score)
+        .slice(0, 7);
+
+    container.innerHTML = sortedData.map((kol, index) => `
+        <li style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 0.9rem;">
+            <span><strong style="color: #00f0ff;">#${index + 1}</strong> ${kol.name} <span style="font-size:0.75rem; color:#94a3b8;">(${kol.tier})</span></span>
+            <span style="color: ${kol.score < 0.15 ? '#10b981' : '#f59e0b'}; font-weight: bold;">
+                BS: ${kol.score.toFixed(3)}
+            </span>
+        </li>
+    `).join('');
+}
+
+function copyQuoteToClipboard(name) {
+    const allData = [...usInfluencersData, ...twInfluencersData];
+    const kol = allData.find(item => item.name === name);
+    if (!kol) return;
+
+    const tier = kol.tier || (kol.instMatch >= 4 ? 'Alpha' : (kol.instMatch >= 2 ? 'Core' : 'Noise'));
+
+    const formattedText = 
+`🎯 【拾人牙慧 股市輿情監控】
+👤 KOL 專家：${kol.name} (${tier})
+📊 關注標的：${kol.stocks.join(', ')}
+💬 最新觀點：${kol.viewpoint}
+🎯 建議買點：${kol.entryPoint}
+
+🔗 系統即時監控面板：https://m0904103.github.io/youtube-stock-tracker/`;
+
+    navigator.clipboard.writeText(formattedText).then(() => {
+        alert(`✅ 已成功複製【${kol.name}】的最新觀點至剪貼簿！可直接貼上分享至 LINE / PTT / X。`);
+    }).catch(err => {
+        console.error("複製失敗：", err);
+    });
+}

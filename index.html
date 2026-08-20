@@ -32,6 +32,20 @@
         </div>
     </header>
 
+    <div class="container" style="padding-bottom: 0;">
+        <section class="filter-controls-container">
+          <div class="search-box-wrapper">
+            <input type="text" id="searchInput" placeholder="🔍 搜尋股票代碼 (NVDA, 2330) 或 KOL 名字..." autocomplete="off">
+          </div>
+          <div class="tier-buttons-group">
+            <button class="tier-btn active" data-tier="ALL">全部顯示</button>
+            <button class="tier-btn alpha-btn active" data-tier="Alpha"> Alpha (頂尖大佬)</button>
+            <button class="tier-btn core-btn active" data-tier="Core"> Core (主力機構)</button>
+            <button class="tier-btn noise-btn active" data-tier="Noise"> Noise (高頻網紅)</button>
+          </div>
+        </section>
+    </div>
+
     <!-- ================= 美股區塊 (US) ================= -->
     <div id="section-us" class="tab-content active">
         <main class="container">
@@ -163,6 +177,50 @@
                     載入中...
                 </span>
             </h2>
+
+            <!-- 另類數據與 GEX 避險區域試算卡片 -->
+            <section class="quant-dashboard-grid">
+              <!-- GEX 卡片 -->
+              <div class="quant-card gex-simulator-card">
+                <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                  <h3 style="font-size: 1.1rem; color: #fff;">⚡ NVDA Gamma 翻轉與 CTA 清算風險即時模擬器</h3>
+                  <span class="live-badge" style="background: rgba(0, 240, 255, 0.2); color: #00f0ff; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; border: 1px solid #00f0ff;">LIVE QUANT</span>
+                </div>
+                <div class="calculator-inputs">
+                  <label for="nvdaPriceInput" style="color: #ccd6f6; font-size: 0.9rem;">輸入 NVDA 當前現貨價 ($):</label>
+                  <input type="number" id="nvdaPriceInput" value="218.85" step="0.5" min="100" max="300">
+                </div>
+                <div class="gex-status-display">
+                  <div class="status-indicator-box" id="gexStatusBox">
+                    <span class="status-title">當前 Gamma 狀態：</span>
+                    <span class="status-value" id="gexStatusText">計算中...</span>
+                  </div>
+                  <!-- 動態進度條 -->
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" id="gexProgressBar"></div>
+                    <div class="marker zero-gamma-marker" style="left: 65%;" title="Zero-Gamma $195.86"></div>
+                    <div class="marker sma200-marker" style="left: 35%;" title="200 SMA $172.50"></div>
+                  </div>
+                  <div class="progress-bar-labels">
+                    <span>$150 (CTA 拋售區)</span>
+                    <span class="marker-label red-text">200 SMA: $172.50</span>
+                    <span class="marker-label orange-text">Zero Gamma: $195.86</span>
+                    <span>$230 (Long Gamma)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Brier Score KOL 排行榜 -->
+              <div class="quant-card brier-leaderboard-card">
+                <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                  <h3 style="font-size: 1.1rem; color: #fff;">🏆 KOL 預測校準度排行榜 (Brier Score)</h3>
+                  <span class="info-tooltip" title="Brier Score 越接近 0 代表預測準確率越高" style="cursor: pointer; color: #38bdf8;">ℹ️</span>
+                </div>
+                <ul class="leaderboard-list" id="brierLeaderboard" style="list-style: none; padding: 0; margin-top: 10px;">
+                  <!-- 由 JS 動態生成 -->
+                </ul>
+              </div>
+            </section>
 
             <div class="quant-dashboard">
                 <!-- 造市商與衍生品流動性 -->
