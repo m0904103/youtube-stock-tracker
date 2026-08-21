@@ -636,25 +636,32 @@ function initSearchAndFilter() {
 }
 
 function applyFilters() {
-    const cards = document.querySelectorAll(".card.kol-row");
+    const cards = document.querySelectorAll(".card");
+    const tableRows = document.querySelectorAll(".consensus-table tbody tr");
 
     cards.forEach(card => {
-        const cardTier = card.dataset.tier;
-        const cardSearchText = card.dataset.search || "";
+        const cardTier = card.dataset.tier || "Core";
+        const cardSearchText = (card.dataset.search || card.innerText || "").toLowerCase();
 
         const matchesTier = activeTiers.has(cardTier);
-        const matchesSearch = cardSearchText.includes(searchQuery);
+        const matchesSearch = !searchQuery || cardSearchText.includes(searchQuery);
 
         if (matchesTier && matchesSearch) {
-            card.classList.remove("hidden");
-            setTimeout(() => card.classList.remove("fade-out"), 10);
+            card.style.display = "";
+            card.classList.remove("hidden", "fade-out");
         } else {
-            card.classList.add("fade-out");
-            setTimeout(() => {
-                if (card.classList.contains("fade-out")) {
-                    card.classList.add("hidden");
-                }
-            }, 300);
+            card.style.display = "none";
+            card.classList.add("hidden");
+        }
+    });
+
+    tableRows.forEach(row => {
+        const rowText = row.innerText.toLowerCase();
+        const matchesSearch = !searchQuery || rowText.includes(searchQuery);
+        if (matchesSearch) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
         }
     });
 }
