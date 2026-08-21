@@ -156,7 +156,7 @@ const twInfluencersData = [
         brierScore: "0.24",
         ece: "3%",
         viewpoint: "【2026.08.20 盤後】SEMICON Taiwan導覽聚焦量子與矽光子，分析Google與AMD合作第十代TPU帶動ASIC與先進封裝需求。強調AI由雲端訓練轉向邊緣推論，CPO與先進封裝為長線關鍵。",
-        stocks: ["矽光子", "CoWoS"],
+        stocks: ["上銓 3363", "訊芯-KY 6451"],
         entryPoint: "長線布局CPO矽光子與CoWoS先進封裝供應鏈，勿過度追高本益比偏離基本面之短線題材股。",
         instMatch: 4
     },
