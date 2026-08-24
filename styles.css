@@ -490,6 +490,19 @@ footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-siz
     box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
 }
 
+.tier-btn.inverse-btn.active {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(147, 51, 234, 0.5));
+    border-color: #a855f7;
+    color: #c084fc;
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.3);
+}
+
+.badge-inverse {
+    background: rgba(168, 85, 247, 0.2) !important;
+    border: 1px solid #a855f7 !important;
+    color: #c084fc !important;
+}
+
 .tier-btn.noise-btn.active {
     background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(217, 119, 6, 0.5));
     border-color: #f59e0b;
