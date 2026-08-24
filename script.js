@@ -494,12 +494,15 @@ function showFabAction() {
 }
 
 function showQuantSummary() {
-        document.getElementById('modal-title').innerHTML = `👴 阿村伯的量化解盤`;
+    document.getElementById('modal-title').innerHTML = `👴 阿村伯的量化解盤`;
     const tbody = document.getElementById('modal-body');
     
     if (!window.altData) {
         tbody.innerHTML = `<p style="color: #ccc; text-align: center; padding: 20px;">資料載入中，阿村伯正在戴老花眼鏡...</p>`;
         document.getElementById('top-modal').style.display = 'block';
+        fetchAltData().then(() => {
+            if (window.altData) showQuantSummary();
+        });
         return;
     }
 
