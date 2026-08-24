@@ -8,9 +8,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.15",
         ece: "2%",
-        viewpoint: "【2026.08.21 最新】強調Cerebras CS-4發布提升系統部署與網路效能。指出AI硬體與軟體協同優化是降低CapEx成本關鍵，晶片與記憶體瓶頸仍影響輝達財報前夕的供應鏈表現。",
+        viewpoint: "【2026.08.24 最新】輝達CUDA護城河與vLLM優化維持強大算力性價比，AI基礎設施與Neoclouds需求強勁，晶片替代風險低。",
         stocks: ["NVDA", "AVGO", "AMPH"],
-        entryPoint: "建議佈局AI硬體協同優化與數據中心網路概念股，觀察輝達財報中供應鏈產能釋放狀況。",
+        entryPoint: "建議在輝達財報前維持AI核心晶片與算力供應鏈配置，毋需過度擔憂非NVDA晶片替代風險。",
         instMatch: 5
     },
     {
@@ -21,9 +21,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.22",
         ece: "5%",
-        viewpoint: "【2026.08.21 最新】美國國債即將突破40兆美元，情緒指標高達9.7顯現戰術性過熱。隨傑克遜霍爾年會前夕利率預期波動，長線看好美股但短線需避險，黃金為應對債務膨脹首選。",
+        viewpoint: "【2026.08.24 最新】基金經理人現金水位降至3.5%觸發賣出訊號，56%押注無著陸，市場過度擁擠且對傑克遜霍爾與財報缺乏防備。",
         stocks: ["SPY", "QQQ", "TLT"],
-        entryPoint: "建議增持黃金與硬資產進行尾部風險避險，並在傑克遜霍爾會議前落袋部分戰術性高估值獲利。",
+        entryPoint: "建議在市場極度擁擠下適度提防回檔風險，但可趁輝達財報前分批逢低布局優質AI龍頭。",
         instMatch: 5
     },
     {
@@ -34,9 +34,9 @@ const usInfluencersData = [
         tier: "Alpha",
         brierScore: "0.18",
         ece: "3%",
-        viewpoint: "【2026.08.21 最新】評財政部加大長債回購難掩AI巨頭發債（今年2,690億美元）擠壓國債市場的矛盾。AI CapEx融資潮推升長端利率與殖利率曲線陡峭化，傑克遜霍爾前夕長債波動升溫。",
+        viewpoint: "【2026.08.24 最新】輝達財報為市場終極壓力測試（期權定價波動7.8%），AI企業發債潮擠壓美債，黃金與比特幣成為債務焦慮出口。",
         stocks: ["VIX", "SPX"],
-        entryPoint: "建議警惕AI巨頭發債對債券殖利率的推升效應，減持高槓桿長天期債券並嚴控衍生品伽瑪風險。",
+        entryPoint: "建議短期利用期權進行輝達財報避險，並配置黃金以對沖美債殖利率陡峭化風險。",
         instMatch: 5
     },
     {
@@ -47,9 +47,9 @@ const usInfluencersData = [
         tier: "Core",
         brierScore: "0.25",
         ece: "4%",
-        viewpoint: "【2026.08.21 最新】13F顯示清倉美光、英特爾、博通等，重倉轉向 Alphabet 與亞馬遜（加碼逾10倍及買權），新建倉AMD與Lam Research。顯示在輝達財報前夕對AI硬體進行結構性換股。",
+        viewpoint: "【2026.08.24 最新】最新分析顯示清倉美光與英特爾等晶片股，轉向大幅加碼亞馬遜與Alphabet等AI買家，並新布局數位資產基礎設施。",
         stocks: ["IWM", "Commodities"],
-        entryPoint: "建議跟隨其調倉邏輯，適度自高估值晶片股獲利了結，轉向具備現金流與估值優勢的雲端巨頭。",
+        entryPoint: "建議跟隨其調倉思維，將部分半導體獲利資金轉向現金流穩健的雲端巨頭與數位基礎設施。",
         instMatch: 4
     },
     {
@@ -73,9 +73,9 @@ const usInfluencersData = [
         tier: "Core",
         brierScore: "0.45",
         ece: "15%",
-        viewpoint: "【2026.08.21 最新】指出市場已進入中週期階段，投資人要求「用財報證明實力」，而非僅憑AI願景。傳統60/40配置失效，建議轉向防禦性高品質股與黃金/商品輪動。",
+        viewpoint: "【2026.08.24 最新】傳統60/40股債配置失效，黃金具備長期避險價值；市場正經歷大宗商品輪動，美股上漲動能向高品質防禦股擴散。",
         stocks: ["SPY", "XLV", "XLP"],
-        entryPoint: "建議鎖定高資產品質與強勁自由現金流的大盤股，同時配置黃金作為防禦中週期波動的避險組合。",
+        entryPoint: "建議投資人降低科技股單一集中度，增加黃金與高品質週期股作為資產組合防禦屏障。",
         instMatch: 3
     },
     {
@@ -86,9 +86,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.65",
         ece: "40%",
-        viewpoint: "【2026.08.21 最新】強調Grok AI自動化能協助個人創業，星鏈拓展印度偏遠網路。重申SpaceX目標於2030年前達成每日30次以上星艦發射，並預計數月內實施星艦上層級塔架回收。",
+        viewpoint: "【2026.08.24 最新】SpaceX完成2026年第100次發射且衛星突破1.1萬顆；特斯拉官宣9月3日舉行Cybercab Robotaxi發佈會。",
         stocks: ["TSLA", "DOGE"],
-        entryPoint: "建議關注SpaceX與xAI供應鏈生態系，並評估AI Agent工具帶來的邊緣運算與軟體應用新商機。",
+        entryPoint: "建議密切關注9月初Robotaxi發佈會的技術進展，並在特斯拉短線因召回波動時尋找逢低布局點。",
         instMatch: 1
     },
     {
@@ -99,9 +99,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.75",
         ece: "55%",
-        viewpoint: "【2026.08.21 最新】8/20交易日誌顯示加碼760萬美元核能業者BWXT，並逢低買進博通、Cerebras與Rocket Lab共4,120萬美元，同時減持AMD。發文認為AI將推高股息防禦型新基金ARKY。",
+        viewpoint: "【2026.08.24 最新】8月中下旬持續逆勢逢低大舉加碼輝達，特斯拉維持ARKK第一大持股（9.24%），堅信2030年AI支出達1.5兆美元。",
         stocks: ["ARKK", "TSLA", "Roku"],
-        entryPoint: "建議逢低布局經AI篩選之尖端科技與核能能源供應鏈，並留意AI軟體落地應用之潛力股。",
+        entryPoint: "建議在輝達財報前跟隨ARK腳步分批逢低加碼AI算力與電動車龍頭，保持長線高信念。",
         instMatch: 0
     },
     {
@@ -112,9 +112,9 @@ const usInfluencersData = [
         tier: "Noise",
         brierScore: "0.85",
         ece: "70%",
-        viewpoint: "【2026.08.21 最新】專訪美光CEO指出AI記憶體需求為結構性非週期性，大力看好記憶體擴建潮。認為Salesforce與Workday等軟體股拉回已過度，並翻多建議直接持有比特幣現貨。",
+        viewpoint: "【2026.08.24 最新】輝達仍為AI革命核心，記憶體美光打破景氣循環；8/24呼籲避開加密貨幣轉向黃金，並警惕新股IPO潮過多擠壓資金。",
         stocks: ["QQQ"],
-        entryPoint: "建議趁軟體績優股拉回時分批建倉，並在輝達財報前留意美光等AI記憶體基建股的支撐力道。",
+        entryPoint: "建議逢低持有輝達與美光等實質獲利半導體股，同時避開高估值新股與純炒作資產。",
         instMatch: 0
     }
 ];
@@ -142,9 +142,9 @@ const twInfluencersData = [
         tier: "Alpha",
         brierScore: "0.21",
         ece: "5%",
-        viewpoint: "【2026.08.06 盤後】認為AI非泡沫且評價便宜，指出韓國保證金爆倉、FOMC及CSP財報等利空已出盡。台積電先進製程與CoWoS龍頭地位穩固，籌碼清洗後第四季表現可期。",
+        viewpoint: "【2026.08.24 盤後】指出AI資料中心最關鍵瓶頸已從GPU晶片轉為「電力」與「光通訊」，美電網缺口帶動表後供電與光學互連需求。台積電與輝達本益比偏低具基本面支撐。",
         stocks: ["廣達 2382", "緯創 3231"],
-        entryPoint: "建議趁大盤回檔時逢低布局台積電及CPO、高速傳輸等硬核基本面標的。",
+        entryPoint: "跳脫單一晶片題材，逢回佈局AI基礎設施中的電力與光通訊黑馬股。",
         instMatch: 5
     },
     {
@@ -155,9 +155,9 @@ const twInfluencersData = [
         tier: "Alpha",
         brierScore: "0.24",
         ece: "3%",
-        viewpoint: "【2026.08.20 盤後】SEMICON Taiwan導覽聚焦量子與矽光子，分析Google與AMD合作第十代TPU帶動ASIC與先進封裝需求。強調AI由雲端訓練轉向邊緣推論，CPO與先進封裝為長線關鍵。",
+        viewpoint: "【2026.08.24 盤後】8/24分析輝達伺服器傳漲價，主因記憶體與台積電先進製程產能吃緊，AI需求強勁使輝達難向供應商砍價並順利轉嫁成本；提醒留意SEMICON 2026展前AI供應鏈瓶頸。",
         stocks: ["上銓 3363", "訊芯-KY 6451"],
-        entryPoint: "長線布局CPO矽光子與CoWoS先進封裝供應鏈，勿過度追高本益比偏離基本面之短線題材股。",
+        entryPoint: "關注輝達供應鏈中具備先進封裝與高階記憶體定價權的瓶頸受惠股。",
         instMatch: 4
     },
     {
@@ -194,9 +194,9 @@ const twInfluencersData = [
         tier: "Core",
         brierScore: "0.38",
         ece: "6%",
-        viewpoint: "【2026.08.21 盤後】節目探討Intel重返記憶體與宇樹機器人發展；8/21指出台股開低走高且台積電尾盤助攻大盤重回45,000點，機器人展帶熱市場話題。",
+        viewpoint: "【2026.08.24 盤後】8/24指出市場正迎接「AI三大壓力測試」（輝達財報前夕、Fed演說與核心PCE數據）。看好AI供應鏈長線基本面，提醒關注產能與耗材庫存。",
         stocks: ["財報異常股"],
-        entryPoint: "關注機器人產業實質獲利落地情況與記憶體新技術發展。",
+        entryPoint: "輝達財報揭曉前宜控管倉位，聚焦AI先進封裝與耗材族群基本面變化。",
         instMatch: 3
     },
     {
@@ -220,9 +220,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.78",
         ece: "65%",
-        viewpoint: "【2026.08.21 盤後】8/21盤後直播指出台股量能雖急凍，但大盤站回45,224點，高達95%個股處於谷底翻轉階段不需恐慌，看好年底挑戰5萬點、長期上看10萬點。",
+        viewpoint: "【2026.08.24 盤後】8/24盤後指出台股成交量急凍如三角收斂頂點，為行情發動前兆。長線維持台股上看5萬至10萬點看法，砸1億元重押0050並看好低位階AI/記憶體族群。",
         stocks: ["投機熱門股"],
-        entryPoint: "勿因短線量縮恐慌殺低，可趁震盪分批布局權值龍頭股與0050。",
+        entryPoint: "把握量縮震盪逢低分批佈局低位階績優股與0050，切勿恐慌殺低。",
         instMatch: 0
     },
     {
@@ -233,9 +233,9 @@ const twInfluencersData = [
         tier: "Noise",
         brierScore: "0.72",
         ece: "50%",
-        viewpoint: "【2026.08.21 盤後】8/21盤後解析台股開低走高收45,224點。聯電與旺宏季線負乖離16%具加碼契機，國巨打雙底；0050九月成分股調整前五天進場勝率逾85%。",
+        viewpoint: "【2026.08.24 盤後】8/24盤後解盤聚焦「落後補漲」策略，提出三大抄底條件（季線負乖離大、上半年獲利、Q2三率三升）。看好被動元件與半導體築底反彈，提醒面板宜區間操作。",
         stocks: ["當日漲停板"],
-        entryPoint: "留意高負乖離優質股反彈契機，並善用0050成分股調整時點進行策略布局。",
+        entryPoint: "優先挑選Q2三率三升且與季線負乖離大的落後補漲股，區間操作籌碼凌亂標的。",
         instMatch: 0
     }
 ];
