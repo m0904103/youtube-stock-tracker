@@ -8,7 +8,7 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.075",
         "ece": "1%",
-        "viewpoint": "【2026.08.24 最新】輝達(NVDA)財報前夕零Gamma翻轉點精確位於$195.86，Call Wall集中於$220。若現貨保持於$195.86上方，造市商Long Gamma將鎖住波動率。",
+        "viewpoint": "【2026.08.25 最新】監測顯示NVDA財報前買權高度集中，做市商Gamma暴露極大。期權隱含波動率(IV)飆升，短天期期權Delta對沖將放大雙向波動，慎防業績落地後IV Crush與Vega修正。翻轉點精確位於$195.86，Call Wall集中於$220。若現貨保持於$195.86上方，造市商Long Gamma將鎖住波動率。",
         "stocks": [
             "NVDA",
             "SPY",
@@ -25,7 +25,7 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.088",
         "ece": "2%",
-        "viewpoint": "【2026.08.24 最新】OPEX到期日後Vanna壓制效能釋放，造市商動態對沖在財報前夕提供強勁現貨買盤。警惕9月季節性波動率VIX爆發風險。",
+        "viewpoint": "【2026.08.25 最新】聚焦8/26輝達財報與Jackson Hole央行年會共振。指出市場處於極端動量擁擠，做市商倉位將在業績落地後釋放流動性，需慎防回檔引發系統性連鎖去槓桿。壓制效能釋放，造市商動態對沖在財報前夕提供強勁現貨買盤。警惕9月季節性波動率VIX爆發風險。",
         "stocks": [
             "SPX",
             "VIX",
@@ -165,7 +165,7 @@ const twInfluencersData = [
         "tier": "Core",
         "brierScore": "0.110",
         "ece": "3%",
-        "viewpoint": "【2026.08.24 最新】最新供應鏈調查顯示，台積電 CoWoS 產能與 ABF 載板良率改善帶動 Blackwell NVL72 量產進度提前；iPhone 18 3nm 晶片備貨強勁。",
+        "viewpoint": "【2026.08.25 盤後】輝達因記憶體成本飆升擬調漲伺服器15%；台積電CoPoS玻璃基板量產時程落在2027下半年，市場預期有落差，非所有供應鏈均能受惠。，台積電 CoWoS 產能與 ABF 載板良率改善帶動 Blackwell NVL72 量產進度提前；iPhone 18 3nm 晶片備貨強勁。",
         "stocks": [
             "台積電 2330",
             "鴻海 2317",
@@ -182,7 +182,7 @@ const twInfluencersData = [
         "tier": "Core",
         "brierScore": "0.125",
         "ece": "4%",
-        "viewpoint": "【2026.08.24 盤後】大摩最新硬體報告重申對台股 AI 伺服器供應鏈「加碼」評等，看好廣達、鴻海與緯創在 GB200 全機櫃出貨帶動下，Q3-Q4 營收將再創歷史新高。",
+        "viewpoint": "【2026.08.25 盤後】半導體漲價循環確立，台積電先進製程與封裝報價續揚，全球四大CSP資本支出大增帶動台積電積極擴建12座前段廠與4座封裝廠。對台股 AI 伺服器供應鏈「加碼」評等，看好廣達、鴻海與緯創在 GB200 全機櫃出貨帶動下，Q3-Q4 營收將再創歷史新高。",
         "stocks": [
             "廣達 2382",
             "鴻海 2317",
