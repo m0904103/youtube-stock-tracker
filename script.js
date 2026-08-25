@@ -150,7 +150,7 @@ const usInfluencersData = [
         ece: "70%",
         viewpoint: "【2026.08.25 最新】盤前強力駁斥對NVDA資本支出可持續性的質疑，指出市場對AI晶片供需比仍達15:1；強烈看好財報帶動股價向上突破，呼籲投資人切勿因悲觀過早下車。",
         stocks: ["QQQ"],
-        entryPoint: "不要對AI領頭羊過早獲利了結，應持股續抱(Own it, don't trade it)。",
+        entryPoint: "不要對AI領頭羊過早獲利了結，應持股續抱(Own it, don't trade it)。't trade it)。",
         instMatch: 0
     }
 ];
