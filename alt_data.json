@@ -1,10 +1,11 @@
 {
+    "last_updated": "2026-08-26 06:53:32",
     "derivatives": {
-        "date": "2026-08-24",
+        "date": "2026-08-25",
         "dix": {
-            "value": 44.6,
-            "status": "中性 (Neutral)",
-            "color": "#f39c12"
+            "value": 46.9,
+            "status": "機構暗買 (Bullish - Short is Long)",
+            "color": "#2ecc71"
         },
         "tail_risk": {
             "skew": 150.02,
@@ -33,7 +34,7 @@
             "status": "資金轉向實質與防禦板塊"
         },
         "gex": {
-            "value": 5.47,
+            "value": 5.62,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -42,13 +43,13 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 55,
-                "label": "軋空宣洩 (VIX回落 15.8) | 溢價 9.0%",
+                "score": 57,
+                "label": "軋空宣洩 (VIX回落 15.4) | 溢價 9.9%",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 49,
+                "score": 51,
                 "label": "FOMO 進場 (錯過行情的焦慮)",
                 "color": "#2ecc71"
             },
@@ -114,6 +115,10 @@
             "probability": "高",
             "description": "美國區免費財經 App 下載榜：Robinhood 跌出前 50，散戶退潮訊號明確。"
         }
+<<<<<<< HEAD
     ],
     "last_updated": "2026-08-26 21:30:00"
+=======
+    ]
+>>>>>>> cada075e29a999b27b11574e4c9beb5631a15e19
 }

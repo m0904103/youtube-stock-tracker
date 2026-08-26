@@ -150,7 +150,7 @@ const usInfluencersData = [
         ece: "70%",
         viewpoint: "【2026.08.26 最新】稱NVDA財報為AI浪潮的公投，駁斥市場看空與競爭威脅，直言每年都有號稱超越NVDA的晶片但無實質威脅；呼籲投資人聚焦電力與算力交付進度。",
         stocks: ["QQQ"],
-        entryPoint: "忽視短期雜音並堅定抱牢NVDA核心持股(Own it, don't trade it)，檢視電力交付。't trade it)。't trade it)。",
+        entryPoint: "忽視短期雜音並堅定抱牢NVDA核心持股(Own it, don't trade it)，檢視電力交付。't trade it)，檢視電力交付。't trade it)。't trade it)。",
         instMatch: 0
     }
 ];
