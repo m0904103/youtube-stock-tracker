@@ -8,13 +8,13 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.075",
         "ece": "1%",
-        "viewpoint": "【2026.08.26 最新】NVDA財報為市場終極催化劑。VIX期限結構顯示避險需求上升但成本相對低廉，期權造市商對沖結構將放大財報後的指數單邊波動。",
+        "viewpoint": "【2026.08.27 盤後】盤後拉升帶動IV Crush（隱含波動率崩跌），做市商在財報前壓抑的Gamma空頭回補，觸發大盤與NVDA期權鏈向上重定價，空頭擠壓效應顯著。",
         "stocks": [
             "NVDA",
             "SPY",
             "QQQ"
         ],
-        "entryPoint": "建議利用低成本波動率工具進行指數避險，切勿在流動性支撐下單向逆勢放空。",
+        "entryPoint": "建議逢IV驟降獲利了結近月價外Call，轉向逢回拉回布局遠月牛市價差。",
         "instMatch": 5
     },
     {
@@ -25,13 +25,13 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.088",
         "ece": "2%",
-        "viewpoint": "【2026.08.26 最新】警告市場做多NVDA買權（Long Calls）過度擁擠，OPEX後的Gamma斷崖已改變造市商對沖動態，需防範財報發布後波動率重定價帶來的下修風險。",
+        "viewpoint": "【2026.08.27 盤後】市場重倉Long Call引發做市商Short Call對沖，盤後大漲雖觸發Charm與Vanna買盤，但隨波動率溢價快速收縮，需警惕流動性消退後的衝高回落。",
         "stocks": [
             "SPX",
             "VIX",
             "NVDA"
         ],
-        "entryPoint": "提防買權踩踏風險，建議逢高獲利了結或布局不對稱下檔保護以規避波動率崩跌。",
+        "entryPoint": "不宜追高末日買權，建議利用隱含波動率潰縮進行期權收租或價差鎖利。",
         "instMatch": 5
     },
     {
@@ -42,13 +42,13 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.150",
         "ece": "2%",
-        "viewpoint": "【2026.08.26 最新】分析OpenAI自研推論晶片Jalapeño，NVDA在通用計算與全模態訓練上仍具霸權；Vera Rubin架構在AgentX任務展現30倍能效，軟硬協同為核心護城河。",
+        "viewpoint": "【2026.08.27 盤後】Blackwell產能與良率順利放量，GB200機櫃出貨強勁推升毛利率表現，軟硬體共研與CUDA生態壁壘堅固，客製化ASIC短期內難以撼動其王者地位。",
         "stocks": [
             "NVDA",
             "TSM",
             "AVGO"
         ],
-        "entryPoint": "聚焦NVDA在全棧軟體生態與Rubin架構的技術護城河，關注雲端自研晶片份額變化。",
+        "entryPoint": "持續做多輝達及先進封裝、高速傳輸等核心AI供應鏈標的。",
         "instMatch": 5
     },
     {
@@ -59,14 +59,14 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.180",
         "ece": "3%",
-        "viewpoint": "【2026.08.26 最新】稱NVDA財報影響力超越通膨數據，期權定價約7.8%隱含波動；盤前正Gamma提供波動率鉗制，財報公布後將引發Vanna與Charm資金流解鎖觸發單邊行情。",
+        "viewpoint": "【2026.08.27 盤後】財報利多落地消除市場重大尾部風險，盤後漲勢化解期權跨式定價壓力，波動率重置將觸發CTA與波動率目標基金等系統性資金進行大規模再平衡回補。",
         "stocks": [
             "SPX",
             "CTA Triggers",
             "NVDA"
         ],
-        "entryPoint": "密切監控財報公布後的Gamma釋放與突破方向，順應機械式資金流向進行動能跟隨。",
-        "instMatch": 4
+        "entryPoint": "順應波動率壓降帶來的系統性買盤，維持短線做多科技權值股策略。",
+        "instMatch": 5
     },
     {
         "name": "Stanley Druckenmiller",
@@ -76,13 +76,13 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.145",
         "ece": "2%",
-        "viewpoint": "【2026.08.26 最新】清倉美光與英特爾等晶片股，轉向大幅加碼亞馬遜與Alphabet等AI買家，並新布局數位資產基礎設施，防範硬體端資本支出過度擴張。",
+        "viewpoint": "【2026.08.27 盤後】輝達財報證實AI雲端巨頭獲利轉化能力，維持重倉亞馬遜、Alphabet與台積電等AI終端落地買家，對硬體設備維持動態獲利了結與資產輪動。",
         "stocks": [
             "AMZN",
             "GOOGL",
             "TSM"
         ],
-        "entryPoint": "跟隨其調倉思維，將部分半導體獲利資金轉向現金流穩健的雲端巨頭與數位基礎設施。",
+        "entryPoint": "順應AI紅利向雲端巨頭與數位基建擴散趨勢，維持靈活資產輪動。",
         "instMatch": 5
     },
     {
@@ -93,13 +93,13 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.160",
         "ece": "3%",
-        "viewpoint": "【2026.08.26 最新】強調目前信貸市場與股票估值已定價完美無瑕（Priced for Perfection），AI投資熱潮中應維持嚴格風險紀律，防範流動性與利率意外。",
+        "viewpoint": "【2026.08.27 盤後】輝達亮眼財報消除短期疑慮，但市場仍處於高估值週期。在樂觀情緒蔓延時應堅持基本面定錨，避免因FOMO（錯失恐懼）追逐過度槓桿。",
         "stocks": [
             "HYG",
             "SPY",
             "OAK"
         ],
-        "entryPoint": "控制投資組合總槓桿，增加防禦性高評級債券配置以鎖定無風險收益。",
+        "entryPoint": "嚴守風險紀律，維持適度防禦性高收益債與現金水位，不盲目追高。",
         "instMatch": 5
     },
     {
@@ -110,14 +110,14 @@ const usInfluencersData = [
         "tier": "Core",
         "brierScore": "0.220",
         "ece": "5%",
-        "viewpoint": "【2026.08.26 最新】視今日為美股方向選擇窗口，NVDA財報為標普挑戰7,900–8,000點關鍵考驗；若黃仁勳釋出強勁AI算力指引，將帶動大盤重啟新一輪多頭攻勢。",
+        "viewpoint": "【2026.08.27 盤後】輝達強勁指引粉碎AI泡沫疑慮，成功掃除下半年市場關鍵障礙，算力需求維持不墜，確立標普500指數持續挑戰新高的多頭主升浪。",
         "stocks": [
             "NVDA",
             "SPY",
             "IWM"
         ],
-        "entryPoint": "維持堅定看多立場，可趁財報前夕的震盪回檔積極逢低布局AI龍頭與權值股。",
-        "instMatch": 3
+        "entryPoint": "逢任何盤中拉回皆是進場時機，全力做多AI半導體與雲端概念股。",
+        "instMatch": 4
     },
     {
         "name": "Jim Cramer",
@@ -127,13 +127,13 @@ const usInfluencersData = [
         "tier": "Inverse",
         "brierScore": "0.410",
         "ece": "12%",
-        "viewpoint": "【2026.08.26 最新】稱NVDA財報為AI浪潮的公投，駁斥市場看空與競爭威脅，直言每年都有號稱超越NVDA的晶片但無實質威脅；呼籲投資人聚焦電力與算力交付進度。",
+        "viewpoint": "【2026.08.27 盤後】財報與指引再度證明輝達是AI基礎建設無可替代的龍頭，直接打臉市場空頭與供應鏈悲觀論調，再次印證『Own it, don't trade it』。",
         "stocks": [
             "NVDA",
             "AMD",
             "MSFT"
         ],
-        "entryPoint": "忽視短期雜音並堅定抱牢NVDA核心持股(Own it, don't trade it)，檢視電力交付。",
+        "entryPoint": "抱緊現貨切勿輕易波段進出，長期享受AI超級週期紅利。",
         "instMatch": 1
     },
     {
@@ -144,13 +144,13 @@ const usInfluencersData = [
         "tier": "Inverse",
         "brierScore": "0.380",
         "ece": "11%",
-        "viewpoint": "【2026.08.26 最新】8月連續逢低大舉加碼NVDA數千萬美元，同時減持AMD與Palantir以集中持倉；堅信AI基礎設施週期仍處極早期階段，展現對NVDA長期增長極高信心。",
+        "viewpoint": "【2026.08.27 盤後】財報確認AI硬體擴張週期仍在初期階段，算力資本支出需求強勁，驗證回檔加碼策略正確，長期算力將進一步外溢至下游軟體應用端。",
         "stocks": [
             "NVDA",
             "TSLA",
             "PLTR"
         ],
-        "entryPoint": "堅持破壞性創新投資思維，在市場震盪拉回時將資金集中配置於AI基礎設施龍頭。",
+        "entryPoint": "維持AI核心硬體配置，並伺機逢低增持具高增長潛力的AI應用標的。",
         "instMatch": 2
     }
 ];
@@ -165,13 +165,13 @@ const twInfluencersData = [
         "tier": "Core",
         "brierScore": "0.110",
         "ece": "3%",
-        "viewpoint": "【2026.08.26 盤後】聚焦Blackwell平台成熟放量與下世代Rubin架構過渡節奏；Rubin樣品已交付並預計下半年量產，但需克服HBM4認證、網路升級與液冷散熱等挑戰。",
+        "viewpoint": "【2026.08.27 盤後解讀】輝達產品策略轉向雙晶片架構，台積電CoWoS-L封裝需求成為主流，AI需求長線強勁，但GB200高功耗散熱考驗短期量產爬坡速度。",
         "stocks": [
             "台積電 2330",
             "鴻海 2317",
-            "欣興 3037"
+            "雙鴻 3324"
         ],
-        "entryPoint": "留意Rubin高階量產時程與散熱/HBM驗證進度對供應鏈的影響。",
+        "entryPoint": "聚焦CoWoS-L與液冷散熱關鍵供應商，避開轉換期受壓族群。",
         "instMatch": 5
     },
     {
@@ -182,13 +182,13 @@ const twInfluencersData = [
         "tier": "Core",
         "brierScore": "0.125",
         "ece": "4%",
-        "viewpoint": "【2026.08.26 盤後】大摩維持台積電為半導體首選，看好CoWoS先進封裝產能擴張；並透過鴻海、廣達等台系ODM出貨動能，正面看待雲端AI長期需求與Token降本趨勢。",
+        "viewpoint": "【2026.08.27 盤後解讀】輝達強勁財報鞏固AI需求，台積電先進製程與CoWoS封裝產能維持滿載為最大受惠者，重申台積電優於大盤評級與長期結構性成長。",
         "stocks": [
+            "台積電 2330",
             "廣達 2382",
-            "鴻海 2317",
-            "緯創 3231"
+            "鴻海 2317"
         ],
-        "entryPoint": "逢低聚焦具先進封裝護城河的台積電及出貨能見度高的ODM龍頭。",
+        "entryPoint": "持續長線布局台積電及具技術壁壘的先進封裝核心供應鏈。",
         "instMatch": 5
     },
     {
@@ -199,12 +199,12 @@ const twInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.190",
         "ece": "4%",
-        "viewpoint": "【2026.08.26 盤後】關注輝達即將公布之財報能否在記憶體漲價下守住75%毛利率，並警示Rubin Ultra若降規減少HBM容量對供應鏈影響，提醒留意庫存月數與CoWoS動能。",
+        "viewpoint": "【2026.08.27 盤後解讀】提醒市場關注財報指引與預期差，毛利率雖處高檔但需留意成本壓力，若庫存月數攀升需警戒利多出盡與回檔風險，焦點在Blackwell放量節奏。",
         "stocks": [
             "台積電 2330",
             "聯發科 2454"
         ],
-        "entryPoint": "財報公布前夕切忌盲目追高，應緊盯毛利率指引與庫存月數變化。",
+        "entryPoint": "留意毛利率與庫存天數變化，切勿盲目追高，靜待籌碼沉澱。",
         "instMatch": 5
     },
     {
@@ -215,13 +215,13 @@ const twInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.195",
         "ece": "4%",
-        "viewpoint": "【2026.08.26 盤後】認為AI行情未見頂且獲利有撐，但當前最短料瓶頸已由GPU晶片轉向「電力」供應；建議關注算力基礎設施，鎖定電力概念股與下世代光通訊/CPO矽光子。",
+        "viewpoint": "【2026.08.27 盤後解讀】認為AI軍備競賽步入下半場，需警戒GB200出貨遞延、獲利缺乏大幅上修空間及ASIC競爭加劇，操作上嚴守紀律，降低高估值硬體曝險。",
         "stocks": [
             "廣達 2382",
             "緯創 3231",
             "台達電 2308"
         ],
-        "entryPoint": "布局重心由單純GPU轉向電力供應鏈與CPO矽光子技術變革。",
+        "entryPoint": "嚴守紀律不跟股票談戀愛，逢高調節並檢視長期護城河。",
         "instMatch": 4
     },
     {
@@ -232,13 +232,13 @@ const twInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.210",
         "ece": "5%",
-        "viewpoint": "【2026.08.26 盤後】解析輝達下世代架構與台積電先進封裝產能，指出CoWoS-L與矽光子(CPO)封裝技術將是2026-2027年解決互連頻寬瓶頸的唯一物理路徑。",
+        "viewpoint": "【2026.08.27 盤後解讀】輝達最新伺服器財報凸顯資料中心功耗暴增，矽光子(CPO)與台積電SoIC封裝將加速導入，解決銅線傳輸之物理散熱極限。",
         "stocks": [
             "上銓 3363",
             "訊芯-KY 6451",
             "日月光投控 3711"
         ],
-        "entryPoint": "關注具備矽光子CPO封測與光學元件實質量產能力的瓶頸受惠股。",
+        "entryPoint": "聚焦具備矽光子CPO封測與光學元件實質量產能力的瓶頸受惠股。",
         "instMatch": 4
     },
     {
@@ -249,13 +249,13 @@ const twInfluencersData = [
         "tier": "Core",
         "brierScore": "0.200",
         "ece": "4%",
-        "viewpoint": "【2026.08.26 盤後】預期企業獲利強勁支撐台股長線，CSP巨頭AI資本支出持續爆發，台灣為供應鏈重組最大受惠者；但降息路徑偏審慎且市場乖離率高，注意波動常態化。",
+        "viewpoint": "【2026.08.27 盤後解讀】CSP資本支出狂飆推動台灣供應鏈與企業獲利強勁成長，但台股高檔乖離率已大，面臨產業K型分化與高利率環境，需居安思危防範震盪。",
         "stocks": [
             "台幣匯率",
             "富邦金 2881",
             "國泰金 2882"
         ],
-        "entryPoint": "肯定AI長線多頭但須留意高乖離波動，避免過度槓桿並做好資產配置。",
+        "entryPoint": "長線受惠AI大趨勢，但短線乖離過高應嚴控槓桿、避免追高。",
         "instMatch": 4
     },
     {
@@ -266,13 +266,13 @@ const twInfluencersData = [
         "tier": "Inverse",
         "brierScore": "0.320",
         "ece": "8%",
-        "viewpoint": "【2026.08.26 盤後】認為台股長線受惠AI新創與國際資本湧入，但短線指數估值已高，外資避險情緒升溫，建議關注具利基市場之中小型隱形冠軍與低基期傳產。",
+        "viewpoint": "【2026.08.27 盤後解讀】輝達財報帶動台美股短線狂歡，但警惕末升段資金極端集中於權值股，提醒逢高分批獲利了結並轉向生技與傳產防禦板塊。",
         "stocks": [
             "中小型潛力股",
             "生技醫療",
             "重電綠能"
         ],
-        "entryPoint": "建議適度提高現金比率避險，並將資金轉向AI能源與非電補漲族群。",
+        "entryPoint": "建議適度提高現金比率避險，並將資金轉向非電補漲族群。",
         "instMatch": 2
     },
     {
@@ -283,13 +283,13 @@ const twInfluencersData = [
         "tier": "Core",
         "brierScore": "0.230",
         "ece": "5%",
-        "viewpoint": "【2026.08.26 盤後】輝達財報為AI景氣溫度計，市場預期營收高成長，聚焦資料中心與新平台放量進程；持續追蹤台積電先進製程/CoWoS與廣達、鴻海伺服器市況。",
+        "viewpoint": "【2026.08.27 盤後解讀】輝達財報展現強勁動能，台積電CoWoS產能擴充與GB200放量直接挹注組裝與散熱族群，後續應緊盯CSP自由現金流與實際指引落差。",
         "stocks": [
             "台積電 2330",
             "廣達 2382",
             "鴻海 2317"
         ],
-        "entryPoint": "以財報實質數據與法說展望為依據，嚴守紀律動態調整AI持股組合。",
+        "entryPoint": "檢視供應鏈營收兌現能力與評價位階，依循財務基本面操作。",
         "instMatch": 4
     },
     {
@@ -300,13 +300,13 @@ const twInfluencersData = [
         "tier": "Inverse",
         "brierScore": "0.450",
         "ece": "15%",
-        "viewpoint": "【2026.08.26 盤後】堅定看好台股長線趨勢，解讀盤面量縮為三角收斂醞釀期而非崩盤；認為輝達AI已轉化為實質獲利，財報前後若遇震盪皆為逢低布局良機。",
+        "viewpoint": "【2026.08.27 盤後解讀】輝達財報超預期印證AI迎來十年大爆發，台股震盪洗盤皆為逢低布局良機，看好具實質業績保護之先進封裝與伺服器族群。",
         "stocks": [
             "0050",
             "環球晶 6488",
             "世芯-KY 3661"
         ],
-        "entryPoint": "震盪拉回不殺低不做空，逢回積極布局市值型ETF與權值核心。",
+        "entryPoint": "拉回即是買點，嚴控槓桿並分批布局台積電與0050。",
         "instMatch": 1
     },
     {
@@ -317,13 +317,13 @@ const twInfluencersData = [
         "tier": "Inverse",
         "brierScore": "0.430",
         "ece": "14%",
-        "viewpoint": "【2026.08.26 盤後】8/26解盤聚焦AI資料中心升級推升之CPO矽光子量產商機，探討FAU光纖陣列模組與光互連題材；台積電呈現區間震盪，資金於高階電子與補漲股輪動。",
+        "viewpoint": "【2026.08.27 盤後解讀】輝達亮眼財報帶動台股反彈，但市場高度預期下波動加劇，需留意雲端大廠資本支出延續性與融資水位，慎防盤中震盪與追高風險。",
         "stocks": [
             "聯鈞 3450",
-            "上詮 3363",
-            "波若威 3163"
+            "上銓 3363",
+            "雙鴻 3324"
         ],
-        "entryPoint": "把握CPO矽光子量產受惠股，並於台積電區間下緣採分批低接策略。",
+        "entryPoint": "開盤切忌盲目追高，採取逢回低接或配置指數型ETF。",
         "instMatch": 1
     }
 ];
