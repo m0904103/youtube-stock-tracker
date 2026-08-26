@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-08-26 06:53:32",
+    "last_updated": "2026-08-26 21:30:00",
     "derivatives": {
         "date": "2026-08-25",
         "dix": {
@@ -115,10 +115,5 @@
             "probability": "高",
             "description": "美國區免費財經 App 下載榜：Robinhood 跌出前 50，散戶退潮訊號明確。"
         }
-<<<<<<< HEAD
-    ],
-    "last_updated": "2026-08-26 21:30:00"
-=======
     ]
->>>>>>> cada075e29a999b27b11574e4c9beb5631a15e19
 }
