@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-09-08 23:12:24",
+    "last_updated": "2026-09-09 05:02:00",
     "derivatives": {
-        "date": "2026-09-04",
+        "date": "2026-09-08",
         "dix": {
-            "value": 47.6,
+            "value": 48.5,
             "status": "機構暗買 (Bullish - Short is Long)",
             "color": "#2ecc71"
         },
@@ -34,7 +34,7 @@
             "status": "資金轉向實質與防禦板塊"
         },
         "gex": {
-            "value": 8.4,
+            "value": 5.96,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -43,13 +43,13 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 58,
-                "label": "軋空宣洩 (VIX回落 15.3) | 溢價 12.0%",
+                "score": 56,
+                "label": "軋空宣洩 (VIX回落 15.7) | 溢價 12.0%",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
-                "score": 51,
+                "score": 50,
                 "label": "FOMO 進場 (錯過行情的焦慮)",
                 "color": "#2ecc71"
             },
