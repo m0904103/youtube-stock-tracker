@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-10-07 19:01:01",
+    "last_updated": "2026-10-08 00:43:18",
     "derivatives": {
-        "date": "2026-10-06",
+        "date": "2026-10-07",
         "dix": {
-            "value": 48.3,
+            "value": 47.9,
             "status": "機構暗買 (Bullish - Short is Long)",
             "color": "#2ecc71"
         },
@@ -34,7 +34,7 @@
             "status": "資金轉向實質與防禦板塊"
         },
         "gex": {
-            "value": 8.63,
+            "value": 7.84,
             "status": "波動收斂 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
