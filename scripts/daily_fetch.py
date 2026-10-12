@@ -2,6 +2,10 @@
 import json
 import os
 import datetime
+import sys
+
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 def fetch_latest_quant_data():
     """
