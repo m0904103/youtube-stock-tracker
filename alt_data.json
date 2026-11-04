@@ -1,41 +1,40 @@
 {
-    "last_updated": "2026-11-03 19:40:51",
+    "last_updated": "2026-11-04 08:37:22",
     "derivatives": {
-        "date": "2026-11-02",
+        "date": "2026-11-03",
         "dix": {
-            "value": 40.0,
-            "status": "中性 (Neutral)",
+            "value": 42.2,
+            "status": "中性換手 (Neutral)",
             "color": "#f39c12"
         },
         "tail_risk": {
-            "skew": 150.02,
-            "vix": 16.15,
-            "status": "機構大買 OTM Puts 避險",
-            "color": "#e74c3c"
+            "skew": 150.01,
+            "vix": 20.83,
+            "status": "機構維持尾部避險但恐慌溢價收斂",
+            "color": "#f39c12"
         },
         "liquidity_levels": {
-            "current_spx": 7483.24,
-            "gamma_flip": 7471,
-            "cta_sell_trigger": 7250,
-            "status": "如履薄冰 (逼近 Gamma 翻轉點)",
+            "current_spx": 7568.92,
+            "gamma_flip": 7697,
+            "cta_sell_trigger": 7316,
+            "status": "回測 Gamma 翻轉支撐區・嚴控槓桿",
             "color": "#f39c12"
         },
         "sector_rotation": {
             "outflows": [
-                "AI純硬體",
-                "非必需消費"
+                "高負債純題材股",
+                "傳統PC與消費電子"
             ],
             "inflows": [
-                "半導體設備",
-                "醫療保健",
-                "公用事業",
-                "羅素2000 (IWM)"
+                "AI算力基建 (NVDA/AMD/TSM)",
+                "高速網通與液冷 (ANET/VRT/SMCI)",
+                "核能與AI電力長約 (PNW/CEG)"
             ],
-            "status": "資金轉向實質與防禦板塊"
+            "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +15.5%)"
         },
         "gex": {
-            "value": 2.78,
-            "status": "波動收斂 (Dealer Long Gamma)",
+            "value": 3.06,
+            "status": "正Gamma緩衝護盤 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
     },
@@ -43,77 +42,63 @@
         "retail_forums": [
             {
                 "name": "PTT Stock (台股)",
-                "score": 39,
-                "label": "浴火重生 (VIX飆升 20.7 後 V轉) | ADR溢價護體",
-                "color": "#f39c12"
-            },
-            {
-                "name": "Reddit r/stocks (美股)",
-                "score": 10,
-                "label": "軋空狂熱 (空頭踩踏 V轉)",
+                "score": 68,
+                "label": "錯殺後強彈預期 | TSM ADR溢價 +15.5% 護體",
                 "color": "#2ecc71"
             },
             {
-                "name": "Xueqiu (中概股)",
-                "score": 25,
-                "label": "錯失恐懼 (FOMO)",
+                "name": "Reddit r/stocks (美股)",
+                "score": 64,
+                "label": "AI算力財報狂熱 (AMD/ANET超預期, VIX=20.83)",
+                "color": "#2ecc71"
+            },
+            {
+                "name": "Xueqiu (中概與港股)",
+                "score": 52,
+                "label": "南向資金單日狂買234億港元抄底ETF",
                 "color": "#f39c12"
             }
         ],
         "macro_confidence": {
-            "score": 24,
-            "label": "AI生產力對抗高息"
+            "score": 66,
+            "label": "上游算力基建業績兌現 vs 科技巨頭發債擴張資本支出"
         }
     },
     "alt_fundamentals": [
         {
-            "ticker": "MSFT",
-            "sector": "雲端與 AI 軟體",
-            "signal": "Similarweb 網頁流量 (Web Traffic)",
+            "ticker": "AMD / NVDA",
+            "sector": "AI 數據中心算力",
+            "signal": "CSP 資本支出與伺服器出貨追蹤",
+            "probability": "極高",
+            "description": "AMD Q3 數據中心營收暴增 +97%、預估2027年伺服器營收翻倍；NVDA 現價 206.69 美元穩守 200MA (204.56) 生命線。"
+        },
+        {
+            "ticker": "TSM / 2330.TW",
+            "sector": "先進製程與電力長約",
+            "signal": "亞利桑那州 25 年 1.88GW 供電協議 & ADR 溢價",
+            "probability": "極高",
+            "description": "台積電鎖定美國廠25年1.88GW龐大電力供應，ADR (404.8美元) 較台股現貨 (2295.0元) 溢價高達 +15.5%，外資回補動能強勁。"
+        },
+        {
+            "ticker": "ANET / SMCI",
+            "sector": "AI 網通與液冷伺服器",
+            "signal": "Panjiva 海關提單與企業財測上調",
             "probability": "高",
-            "description": "Copilot 企業版登入頁面在 5 月出現顯著峰值，預估 SaaS 訂閱超乎預期。"
+            "description": "Arista Q3 營收年增 +58.5% 創上市最高增速；SMCI 上調全年營收展望至 720~820 億美元，證實 AI 機櫃交貨加速。"
         },
         {
-            "ticker": "SBUX / Retail",
-            "sector": "非必需消費",
-            "signal": "Earnest 信用卡消費 (CC Data)",
+            "ticker": "META / ORCL",
+            "sector": "雲端巨頭融資動能",
+            "signal": "機構債券認購訂單簿 (Orderbook)",
             "probability": "高",
-            "description": "MCC 5812 (餐飲) 數據顯示美國低端客群消費頻次急劇下降，面臨財測下修風險。"
+            "description": "Meta 150億美元公司債獲高達 580 億美元（近4倍）機構超額認購，未來三年科技巨頭 4.5 兆美元 AI 基建資金彈藥充沛。"
         },
         {
-            "ticker": "WMT / TGT",
-            "sector": "零售百貨",
-            "signal": "Planet Labs 衛星車流 (Satellite)",
-            "probability": "中",
-            "description": "衛星影像顯示全美前百大零售商週末停車場車流量年減 -4.2%，消費降級警示。"
-        },
-        {
-            "ticker": "NVDA / SMCI",
-            "sector": "AI 伺服器硬體",
-            "signal": "Panjiva 海關提單 (Bill of Lading)",
+            "ticker": "SPCX / RKLB",
+            "sector": "太空軍工與低軌衛星",
+            "signal": "美國太空軍發射排程與 AWS-4 頻譜",
             "probability": "高",
-            "description": "台廠 ODM 運往北美之 AI 伺服器貨櫃總噸數月增 +35%，財報前瞻看多。"
-        },
-        {
-            "ticker": "Cybersecurity",
-            "sector": "資安板塊",
-            "signal": "ADS-B 私人飛機航跡 (Jet Tracking)",
-            "probability": "中",
-            "description": "科技巨頭 CEO 專機異常頻繁降落於某中型資安公司總部附近，併購事件潛在發生。"
-        },
-        {
-            "ticker": "SaaS Cloud",
-            "sector": "軟體即服務",
-            "signal": "Thinknum 職缺爬蟲 (Job Postings)",
-            "probability": "高",
-            "description": "SaaS 軟體產業活躍職缺數急凍 -22%，基本面衰退前兆。"
-        },
-        {
-            "ticker": "HOOD / COIN",
-            "sector": "數位金融 / 券商",
-            "signal": "Sensor Tower 榜單 (App Intelligence)",
-            "probability": "高",
-            "description": "美國區免費財經 App 下載榜：Robinhood 跌出前 50，散戶退潮訊號明確。"
+            "description": "SpaceX 鎖定 11/12 范登堡太空軍 USSF-317 任務並推進地面行動通訊網路，商業航太與國防訂單雙輪驅動。"
         }
     ]
 }

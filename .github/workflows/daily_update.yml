@@ -2,11 +2,15 @@ name: Daily Stock Intelligence Auto Sync
 
 on:
   schedule:
-    # 每日美股盤後 06:00 UTC+8 (即 22:00 UTC)
+    # 每日台股開盤前 08:30 (UTC 00:30)
+    - cron: '30 0 * * 1-5'
+    # 每日台股收盤後 14:00 (UTC 06:00)
+    - cron: '0 6 * * 1-5'
+    # 每日美股開盤前 20:30 (UTC 12:30)
+    - cron: '30 12 * * 1-5'
+    # 每日美股收盤後 06:00 (UTC 22:00)
     - cron: '0 22 * * *'
-    # 每日台股盤後 14:00 UTC+8 (即 06:00 UTC)
-    - cron: '0 6 * * *'
-  workflow_dispatch: # 支援在 GitHub 介面上手動觸發
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -18,28 +22,23 @@ jobs:
       contents: write
 
     steps:
-      - name: 1. 檢出程式碼庫 (Checkout Repo)
+      - name: 1. Checkout Repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 2. 設定 Python 環境 (Set up Python)
+      - name: 2. Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
-      - name: 3. 安裝依賴套件 (Install Dependencies)
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests pandas beautifulsoup4
-
-      - name: 4. 執行輿情與另類數據抓取腳本 (Run Scraping Script)
+      - name: 3. Run Unified Institutional & Quant Intelligence Sync
         run: |
           python scripts/daily_fetch.py
 
-      - name: 5. 自動 Commit 並 Push 至 GitHub Pages (Auto Commit & Push)
+      - name: 4. Auto Commit & Push to GitHub Pages
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
           git add alt_data.json script.js index.html
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 [Auto] 每日股市輿情與另類數據同步更新 [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): update institutional sentiment, KOL radar & quant GEX data" && git pull --rebase origin main && git push origin main)
