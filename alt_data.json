@@ -1,24 +1,24 @@
 {
-    "last_updated": "2026-11-05 03:56:04",
+    "last_updated": "2026-11-05 08:55:07",
     "derivatives": {
-        "date": "2026-11-03",
+        "date": "2026-11-04",
         "dix": {
-            "value": 42.2,
+            "value": 40.8,
             "status": "中性換手 (Neutral)",
             "color": "#f39c12"
         },
         "tail_risk": {
-            "skew": 150.01,
-            "vix": 16.78,
+            "skew": 150.9,
+            "vix": 16.61,
             "status": "機構維持尾部避險但恐慌溢價收斂",
             "color": "#f39c12"
         },
         "liquidity_levels": {
-            "current_spx": 7697.38,
+            "current_spx": 7688.62,
             "gamma_flip": 7696,
             "cta_sell_trigger": 7320,
-            "status": "站穩 Gamma 翻轉點之上",
-            "color": "#2ecc71"
+            "status": "回測 Gamma 翻轉支撐區・嚴控槓桿",
+            "color": "#f39c12"
         },
         "sector_rotation": {
             "outflows": [
@@ -30,10 +30,10 @@
                 "高速網通與液冷 (ANET/VRT/SMCI)",
                 "核能與AI電力長約 (PNW/CEG)"
             ],
-            "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +14.6%)"
+            "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +14.9%)"
         },
         "gex": {
-            "value": 3.06,
+            "value": 5.46,
             "status": "正Gamma緩衝護盤 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -43,13 +43,13 @@
             {
                 "name": "PTT Stock (台股)",
                 "score": 68,
-                "label": "錯殺後強彈預期 | TSM ADR溢價 +14.6% 護體",
+                "label": "錯殺後強彈預期 | TSM ADR溢價 +14.9% 護體",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
                 "score": 64,
-                "label": "AI算力財報狂熱 (AMD/ANET超預期, VIX=16.78)",
+                "label": "AI算力財報狂熱 (AMD/ANET超預期, VIX=16.61)",
                 "color": "#2ecc71"
             },
             {
@@ -70,14 +70,14 @@
             "sector": "AI 數據中心算力",
             "signal": "CSP 資本支出與伺服器出貨追蹤",
             "probability": "極高",
-            "description": "AMD Q3 數據中心營收暴增 +97%、預估2027年伺服器營收翻倍；NVDA 現價 202.62 美元穩守 200MA (204.68) 生命線。"
+            "description": "AMD Q3 數據中心營收暴增 +97%、預估2027年伺服器營收翻倍；NVDA 現價 200.13 美元穩守 200MA (204.67) 生命線。"
         },
         {
             "ticker": "TSM / 2330.TW",
             "sector": "先進製程與電力長約",
             "signal": "亞利桑那州 25 年 1.88GW 供電協議 & ADR 溢價",
             "probability": "極高",
-            "description": "台積電鎖定美國廠25年1.88GW龐大電力供應，ADR (394.22美元) 較台股現貨 (2260.0元) 溢價高達 +14.6%，外資回補動能強勁。"
+            "description": "台積電鎖定美國廠25年1.88GW龐大電力供應，ADR (395.75美元) 較台股現貨 (2260.0元) 溢價高達 +14.9%，外資回補動能強勁。"
         },
         {
             "ticker": "ANET / SMCI",
