@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-05 20:25:52",
+    "last_updated": "2026-11-05 21:50:49",
     "derivatives": {
         "date": "2026-11-04",
         "dix": {
@@ -9,7 +9,7 @@
         },
         "tail_risk": {
             "skew": 150.9,
-            "vix": 16.74,
+            "vix": 16.85,
             "status": "機構維持尾部避險但恐慌溢價收斂",
             "color": "#f39c12"
         },
@@ -49,7 +49,7 @@
             {
                 "name": "Reddit r/stocks (美股)",
                 "score": 64,
-                "label": "AI算力財報狂熱 (AMD/ANET超預期, VIX=16.74)",
+                "label": "AI算力財報狂熱 (AMD/ANET超預期, VIX=16.85)",
                 "color": "#2ecc71"
             },
             {
