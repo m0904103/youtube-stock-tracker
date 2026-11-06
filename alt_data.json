@@ -1,14 +1,14 @@
 {
-    "last_updated": "2026-11-06 06:02:15",
+    "last_updated": "2026-11-06 09:55:57",
     "derivatives": {
-        "date": "2026-11-04",
+        "date": "2026-11-05",
         "dix": {
-            "value": 40.8,
-            "status": "中性換手 (Neutral)",
-            "color": "#f39c12"
+            "value": 37.9,
+            "status": "流動性收縮警戒 (Bearish)",
+            "color": "#e74c3c"
         },
         "tail_risk": {
-            "skew": 150.9,
+            "skew": 149.37,
             "vix": 28.18,
             "status": "VIX 高位震盪・機構重兵避險",
             "color": "#e74c3c"
@@ -30,10 +30,10 @@
                 "高速網通與液冷 (ANET/VRT/SMCI)",
                 "核能與AI電力長約 (PNW/CEG)"
             ],
-            "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +4.3%)"
+            "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +12.4%)"
         },
         "gex": {
-            "value": 5.46,
+            "value": 1.84,
             "status": "正Gamma緩衝護盤 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -43,7 +43,7 @@
             {
                 "name": "PTT Stock (台股)",
                 "score": 68,
-                "label": "錯殺後強彈預期 | TSM ADR溢價 +4.3% 護體",
+                "label": "錯殺後強彈預期 | TSM ADR溢價 +12.4% 護體",
                 "color": "#2ecc71"
             },
             {
@@ -70,14 +70,14 @@
             "sector": "AI 數據中心算力",
             "signal": "CSP 資本支出與伺服器出貨追蹤",
             "probability": "極高",
-            "description": "AMD Q3 數據中心營收暴增 +97%、預估2027年伺服器營收翻倍；NVDA 現價 181.6 美元穩守 200MA (204.66) 生命線。"
+            "description": "AMD Q3 數據中心營收暴增 +97%、預估2027年伺服器營收翻倍；NVDA 現價 181.6 美元穩守 200MA (204.67) 生命線。"
         },
         {
             "ticker": "TSM / 2330.TW",
             "sector": "先進製程與電力長約",
             "signal": "亞利桑那州 25 年 1.88GW 供電協議 & ADR 溢價",
             "probability": "極高",
-            "description": "台積電鎖定美國廠25年1.88GW龐大電力供應，ADR (353.1美元) 較台股現貨 (2240.0元) 溢價高達 +4.3%，外資回補動能強勁。"
+            "description": "台積電鎖定美國廠25年1.88GW龐大電力供應，ADR (353.1美元) 較台股現貨 (2075.0元) 溢價高達 +12.4%，外資回補動能強勁。"
         },
         {
             "ticker": "ANET / SMCI",
