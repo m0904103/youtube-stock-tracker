@@ -1,14 +1,14 @@
 {
-    "last_updated": "2026-11-07 05:32:13",
+    "last_updated": "2026-11-07 09:28:11",
     "derivatives": {
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "dix": {
-            "value": 37.9,
-            "status": "流動性收縮警戒 (Bearish)",
-            "color": "#e74c3c"
+            "value": 42.4,
+            "status": "中性換手 (Neutral)",
+            "color": "#f39c12"
         },
         "tail_risk": {
-            "skew": 149.37,
+            "skew": 153.55,
             "vix": 25.64,
             "status": "VIX 高位震盪・機構重兵避險",
             "color": "#e74c3c"
@@ -33,7 +33,7 @@
             "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +15.3%)"
         },
         "gex": {
-            "value": 1.84,
+            "value": 0.49,
             "status": "正Gamma緩衝護盤 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
@@ -70,7 +70,7 @@
             "sector": "AI 數據中心算力",
             "signal": "CSP 資本支出與伺服器出貨追蹤",
             "probability": "極高",
-            "description": "AMD Q3 數據中心營收暴增 +97%、預估2027年伺服器營收翻倍；NVDA 現價 186.64 美元穩守 200MA (204.67) 生命線。"
+            "description": "AMD Q3 數據中心營收暴增 +97%、預估2027年伺服器營收翻倍；NVDA 現價 186.64 美元穩守 200MA (204.66) 生命線。"
         },
         {
             "ticker": "TSM / 2330.TW",
