@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-11 14:58:07",
+    "last_updated": "2026-11-11 21:24:16",
     "derivatives": {
         "date": "2026-11-10",
         "dix": {
@@ -9,7 +9,7 @@
         },
         "tail_risk": {
             "skew": 151.12,
-            "vix": 19.46,
+            "vix": 18.46,
             "status": "機構維持尾部避險但恐慌溢價收斂",
             "color": "#f39c12"
         },
@@ -30,7 +30,7 @@
                 "高速網通與液冷 (ANET/VRT/SMCI)",
                 "核能與AI電力長約 (PNW/CEG)"
             ],
-            "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +8.9%)"
+            "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +8.7%)"
         },
         "gex": {
             "value": 4.55,
@@ -43,13 +43,13 @@
             {
                 "name": "PTT Stock (台股)",
                 "score": 68,
-                "label": "錯殺後強彈預期 | TSM ADR溢價 +8.9% 護體",
+                "label": "錯殺後強彈預期 | TSM ADR溢價 +8.7% 護體",
                 "color": "#2ecc71"
             },
             {
                 "name": "Reddit r/stocks (美股)",
                 "score": 64,
-                "label": "AI算力財報狂熱 (AMD/ANET超預期, VIX=19.46)",
+                "label": "AI算力財報狂熱 (AMD/ANET超預期, VIX=18.46)",
                 "color": "#2ecc71"
             },
             {
@@ -77,7 +77,7 @@
             "sector": "先進製程與電力長約",
             "signal": "亞利桑那州 25 年 1.88GW 供電協議 & ADR 溢價",
             "probability": "極高",
-            "description": "台積電鎖定美國廠25年1.88GW龐大電力供應，ADR (396.48美元) 較台股現貨 (2395.0元) 溢價高達 +8.9%，外資回補動能強勁。"
+            "description": "台積電鎖定美國廠25年1.88GW龐大電力供應，ADR (396.48美元) 較台股現貨 (2395.0元) 溢價高達 +8.7%，外資回補動能強勁。"
         },
         {
             "ticker": "ANET / SMCI",
