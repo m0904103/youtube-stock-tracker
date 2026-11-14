@@ -1,14 +1,14 @@
 {
-    "last_updated": "2026-11-14 05:59:57",
+    "last_updated": "2026-11-14 09:54:48",
     "derivatives": {
-        "date": "2026-11-12",
+        "date": "2026-11-13",
         "dix": {
-            "value": 42.5,
-            "status": "中性換手 (Neutral)",
-            "color": "#f39c12"
+            "value": 44.5,
+            "status": "機構暗池逢低吸籌 (Bullish Dark Pool)",
+            "color": "#2ecc71"
         },
         "tail_risk": {
-            "skew": 150.16,
+            "skew": 147.14,
             "vix": 19.3,
             "status": "機構維持尾部避險但恐慌溢價收斂",
             "color": "#f39c12"
@@ -33,7 +33,7 @@
             "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +11.6%)"
         },
         "gex": {
-            "value": 5.76,
+            "value": 6.13,
             "status": "正Gamma緩衝護盤 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }

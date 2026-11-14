@@ -8,7 +8,7 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.075",
         "ece": "1%",
-        "viewpoint": "【2026.11.14 最新】暗池 DIX 達 42.5%、GEX 為 5.76B 美元；NVDA 現價 162.85 美元精準守住 200 日年線 (204.19)，隨 AMD 財報超預期與選舉不確定性落地，造市商回補看漲期權 Gamma 助推晶片股反彈。",
+        "viewpoint": "【2026.11.14 最新】暗池 DIX 達 44.5%、GEX 為 6.13B 美元；NVDA 現價 162.85 美元精準守住 200 日年線 (204.19)，隨 AMD 財報超預期與選舉不確定性落地，造市商回補看漲期權 Gamma 助推晶片股反彈。",
         "stocks": [
             "NVDA",
             "AMD",
@@ -25,7 +25,7 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.088",
         "ece": "2%",
-        "viewpoint": "【2026.11.14 最新】VIX 指數維持於 19.3、SKEW 達 150.16；事件風險（選舉與科技巨頭財報）過後，隱含波動率 (IV) 快速回落將觸發強勁的 Vanna 與 Charm 正向買盤回補，有利標普與納指延續修復行情。",
+        "viewpoint": "【2026.11.14 最新】VIX 指數維持於 19.3、SKEW 達 147.14；事件風險（選舉與科技巨頭財報）過後，隱含波動率 (IV) 快速回落將觸發強勁的 Vanna 與 Charm 正向買盤回補，有利標普與納指延續修復行情。",
         "stocks": [
             "SPX",
             "VIX",
