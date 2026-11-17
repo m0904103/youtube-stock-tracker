@@ -8,7 +8,7 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.075",
         "ece": "1%",
-        "viewpoint": "【2026.11.18 最新】暗池 DIX 達 40.9%、GEX 為 2.56B 美元；NVDA 現價 155.46 美元精準守住 200 日年線 (203.87)，隨 AMD 財報超預期與選舉不確定性落地，造市商回補看漲期權 Gamma 助推晶片股反彈。",
+        "viewpoint": "【2026.11.18 最新】暗池 DIX 達 38.5%、GEX 為 1.19B 美元；NVDA 現價 155.46 美元精準守住 200 日年線 (203.87)，隨 AMD 財報超預期與選舉不確定性落地，造市商回補看漲期權 Gamma 助推晶片股反彈。",
         "stocks": [
             "NVDA",
             "AMD",
@@ -25,7 +25,7 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.088",
         "ece": "2%",
-        "viewpoint": "【2026.11.18 最新】VIX 指數維持於 26.23、SKEW 達 146.33；事件風險（選舉與科技巨頭財報）過後，隱含波動率 (IV) 快速回落將觸發強勁的 Vanna 與 Charm 正向買盤回補，有利標普與納指延續修復行情。",
+        "viewpoint": "【2026.11.18 最新】VIX 指數維持於 25.46、SKEW 達 145.11；事件風險（選舉與科技巨頭財報）過後，隱含波動率 (IV) 快速回落將觸發強勁的 Vanna 與 Charm 正向買盤回補，有利標普與納指延續修復行情。",
         "stocks": [
             "SPX",
             "VIX",
@@ -49,7 +49,7 @@ const usInfluencersData = [
             "AMD",
             "ANET"
         ],
-        "entryPoint": "聚焦賣鏟子的上游晶圓代工與算力霸主（TSM 現價 359.64、NVDA 155.46），回測年線即為機構長線買點。",
+        "entryPoint": "聚焦賣鏟子的上游晶圓代工與算力霸主（TSM 現價 359.69、NVDA 155.46），回測年線即為機構長線買點。",
         "instMatch": 5
     },
     {
@@ -206,7 +206,7 @@ const twInfluencersData = [
             "台積電 2330",
             "聯發科 2454"
         ],
-        "entryPoint": "台積電 ADR (359.64美元) 溢價高達 +9.1%，現貨逢恐慌錯殺堅定抱牢。",
+        "entryPoint": "台積電 ADR (359.69美元) 溢價高達 +9.1%，現貨逢恐慌錯殺堅定抱牢。",
         "instMatch": 5
     },
     {
