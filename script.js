@@ -8,13 +8,13 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.075",
         "ece": "1%",
-        "viewpoint": "【2026.11.18 最新】暗池 DIX 達 38.5%、GEX 為 1.19B 美元；NVDA 現價 155.46 美元精準守住 200 日年線 (203.87)，隨 AMD 財報超預期與選舉不確定性落地，造市商回補看漲期權 Gamma 助推晶片股反彈。",
+        "viewpoint": "【2026.11.18 最新】暗池 DIX 達 38.5%、GEX 為 1.19B 美元；NVDA 現價 154.38 美元精準守住 200 日年線 (203.74)，隨 AMD 財報超預期與選舉不確定性落地，造市商回補看漲期權 Gamma 助推晶片股反彈。",
         "stocks": [
             "NVDA",
             "AMD",
             "QQQ"
         ],
-        "entryPoint": "NVDA 守穩年線 203.87 美元為機構鐵底，突破 Zero-Gamma 206.99 美元確認右側強勢。",
+        "entryPoint": "NVDA 守穩年線 203.74 美元為機構鐵底，突破 Zero-Gamma 206.04 美元確認右側強勢。",
         "instMatch": 5
     },
     {
@@ -25,7 +25,7 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.088",
         "ece": "2%",
-        "viewpoint": "【2026.11.18 最新】VIX 指數維持於 25.46、SKEW 達 145.11；事件風險（選舉與科技巨頭財報）過後，隱含波動率 (IV) 快速回落將觸發強勁的 Vanna 與 Charm 正向買盤回補，有利標普與納指延續修復行情。",
+        "viewpoint": "【2026.11.18 最新】VIX 指數維持於 25.68、SKEW 達 145.11；事件風險（選舉與科技巨頭財報）過後，隱含波動率 (IV) 快速回落將觸發強勁的 Vanna 與 Charm 正向買盤回補，有利標普與納指延續修復行情。",
         "stocks": [
             "SPX",
             "VIX",
@@ -49,7 +49,7 @@ const usInfluencersData = [
             "AMD",
             "ANET"
         ],
-        "entryPoint": "聚焦賣鏟子的上游晶圓代工與算力霸主（TSM 現價 359.69、NVDA 155.46），回測年線即為機構長線買點。",
+        "entryPoint": "聚焦賣鏟子的上游晶圓代工與算力霸主（TSM 現價 361.77、NVDA 154.38），回測年線即為機構長線買點。",
         "instMatch": 5
     },
     {
@@ -60,13 +60,13 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.180",
         "ece": "3%",
-        "viewpoint": "【2026.11.18 最新】標普 SPX (7340.53) 守住 CTA 長線多空觸發線 (7345)，前期洗盤已清理過度擁擠的短線槓桿部位；隨費半指數強彈 3%，量化趨勢基金重新轉為淨買入。",
+        "viewpoint": "【2026.11.18 最新】標普 SPX (7338.74) 守住 CTA 長線多空觸發線 (7347)，前期洗盤已清理過度擁擠的短線槓桿部位；隨費半指數強彈 3%，量化趨勢基金重新轉為淨買入。",
         "stocks": [
             "SPX",
             "SOXX",
             "NVDA"
         ],
-        "entryPoint": "以 SPX 7345 與季線為多空分水嶺，嚴禁高倍槓桿，採現股波段配置。",
+        "entryPoint": "以 SPX 7347 與季線為多空分水嶺，嚴禁高倍槓桿，採現股波段配置。",
         "instMatch": 5
     },
     {
@@ -173,7 +173,7 @@ const twInfluencersData = [
             "鴻海 2317",
             "廣達 2382"
         ],
-        "entryPoint": "台積電現貨 (2175.0元) 大幅折價於 ADR (+8.9%)，靜待開盤跳空止跌收腳。",
+        "entryPoint": "台積電現貨 (2175.0元) 大幅折價於 ADR (+9.6%)，靜待開盤跳空止跌收腳。",
         "instMatch": 5
     },
     {
@@ -206,7 +206,7 @@ const twInfluencersData = [
             "台積電 2330",
             "聯發科 2454"
         ],
-        "entryPoint": "台積電 ADR (359.69美元) 溢價高達 +8.9%，現貨逢恐慌錯殺堅定抱牢。",
+        "entryPoint": "台積電 ADR (361.77美元) 溢價高達 +9.6%，現貨逢恐慌錯殺堅定抱牢。",
         "instMatch": 5
     },
     {
@@ -319,7 +319,7 @@ const twInfluencersData = [
         "tier": "Inverse",
         "brierScore": "0.430",
         "ece": "14%",
-        "viewpoint": "【2026.11.18 最新】聚焦美股 AI 財報大驚喜（AMD、SMCI、Arista）與台積電 ADR 高溢價（+8.9%）對台股開盤的激勵效應，鎖定率先站回均線的 AI 權值與散熱光通訊族群。",
+        "viewpoint": "【2026.11.18 最新】聚焦美股 AI 財報大驚喜（AMD、SMCI、Arista）與台積電 ADR 高溢價（+9.6%）對台股開盤的激勵效應，鎖定率先站回均線的 AI 權值與散熱光通訊族群。",
         "stocks": [
             "台積電 2330",
             "鴻海 2317",
