@@ -8,13 +8,13 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.075",
         "ece": "1%",
-        "viewpoint": "【2026.11.21 最新】暗池 DIX 達 38.8%、GEX 為 -2.16B 美元；NVDA 現價 125.53 美元精準守住 200 日年線 (203.58)，隨 AMD 財報超預期與選舉不確定性落地，造市商回補看漲期權 Gamma 助推晶片股反彈。",
+        "viewpoint": "【2026.11.21 最新】暗池 DIX 達 38.8%、GEX 為 -2.16B 美元；NVDA 現價 125.53 美元精準守住 200 日年線 (203.35)，隨 AMD 財報超預期與選舉不確定性落地，造市商回補看漲期權 Gamma 助推晶片股反彈。",
         "stocks": [
             "NVDA",
             "AMD",
             "QQQ"
         ],
-        "entryPoint": "NVDA 守穩年線 203.58 美元為機構鐵底，突破 Zero-Gamma 204.95 美元確認右側強勢。",
+        "entryPoint": "NVDA 守穩年線 203.35 美元為機構鐵底，突破 Zero-Gamma 203.29 美元確認右側強勢。",
         "instMatch": 5
     },
     {
