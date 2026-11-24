@@ -173,7 +173,7 @@ const twInfluencersData = [
             "鴻海 2317",
             "廣達 2382"
         ],
-        "entryPoint": "台積電現貨 (2030.0元) 大幅折價於 ADR (+17.7%)，靜待開盤跳空止跌收腳。",
+        "entryPoint": "台積電現貨 (2230.0元) 大幅折價於 ADR (+7.1%)，靜待開盤跳空止跌收腳。",
         "instMatch": 5
     },
     {
@@ -206,7 +206,7 @@ const twInfluencersData = [
             "台積電 2330",
             "聯發科 2454"
         ],
-        "entryPoint": "台積電 ADR (363.6美元) 溢價高達 +17.7%，現貨逢恐慌錯殺堅定抱牢。",
+        "entryPoint": "台積電 ADR (363.6美元) 溢價高達 +7.1%，現貨逢恐慌錯殺堅定抱牢。",
         "instMatch": 5
     },
     {
@@ -319,7 +319,7 @@ const twInfluencersData = [
         "tier": "Inverse",
         "brierScore": "0.430",
         "ece": "14%",
-        "viewpoint": "【2026.11.24 最新】聚焦美股 AI 財報大驚喜（AMD、SMCI、Arista）與台積電 ADR 高溢價（+17.7%）對台股開盤的激勵效應，鎖定率先站回均線的 AI 權值與散熱光通訊族群。",
+        "viewpoint": "【2026.11.24 最新】聚焦美股 AI 財報大驚喜（AMD、SMCI、Arista）與台積電 ADR 高溢價（+7.1%）對台股開盤的激勵效應，鎖定率先站回均線的 AI 權值與散熱光通訊族群。",
         "stocks": [
             "台積電 2330",
             "鴻海 2317",
