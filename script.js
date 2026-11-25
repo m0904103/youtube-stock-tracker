@@ -25,7 +25,7 @@ const usInfluencersData = [
         "tier": "Alpha",
         "brierScore": "0.088",
         "ece": "2%",
-        "viewpoint": "【2026.11.25 最新】VIX 指數維持於 28.23、SKEW 達 139.16；事件風險（選舉與科技巨頭財報）過後，隱含波動率 (IV) 快速回落將觸發強勁的 Vanna 與 Charm 正向買盤回補，有利標普與納指延續修復行情。",
+        "viewpoint": "【2026.11.25 最新】VIX 指數維持於 27.73、SKEW 達 139.16；事件風險（選舉與科技巨頭財報）過後，隱含波動率 (IV) 快速回落將觸發強勁的 Vanna 與 Charm 正向買盤回補，有利標普與納指延續修復行情。",
         "stocks": [
             "SPX",
             "VIX",
