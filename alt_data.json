@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-11-28 05:30:05",
+    "last_updated": "2026-11-28 11:39:03",
     "derivatives": {
-        "date": "2026-11-25",
+        "date": "2026-11-27",
         "dix": {
-            "value": 43.0,
+            "value": 42.5,
             "status": "中性換手 (Neutral)",
             "color": "#f39c12"
         },
@@ -33,7 +33,7 @@
             "status": "資金高度集中於實質AI數據中心營收爆發股 (TSM ADR溢價 +6.9%)"
         },
         "gex": {
-            "value": 0.92,
+            "value": 3.4,
             "status": "正Gamma緩衝護盤 (Dealer Long Gamma)",
             "color": "#2ecc71"
         }
